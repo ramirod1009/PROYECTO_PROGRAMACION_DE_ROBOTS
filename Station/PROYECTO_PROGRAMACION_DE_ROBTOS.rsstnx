@@ -3912,7 +3912,7 @@
     </TaskSimulationConfiguration>
     <IRC5Controller ID="1186" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{0dbbc1c3-18d6-4cca-9c7a-1335f2426414}" />
-      <SystemIdentity Value="{83CC862B-DA31-49A8-A905-C84727D1F1DB}" />
+      <SystemIdentity Value="{5436DFA8-8A59-49DD-8614-8DA5BFBD5EFF}" />
       <RAPIDData ID="1187" />
       <MechanicalUnits>
         <ObjectRef ID="2253" />
@@ -7915,7 +7915,7 @@
     </ControllerSimulationConfiguration>
     <IRC5Controller ID="2270" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{9df43fc5-ff79-4788-94d4-0f318f0b413b}" />
-      <SystemIdentity Value="{6322ABA6-DFBA-4597-8EA1-13DA71A60C41}" />
+      <SystemIdentity Value="{8A66EC5E-BFBC-4713-A750-5D3A6088BB16}" />
       <RAPIDData ID="2271" />
       <MechanicalUnits>
         <ObjectRef ID="3337" />
@@ -11845,7 +11845,7 @@
     </ComponentInstance>
   </Objects>
   <ReferencedDocuments>
-    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
-    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
+    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
+    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
   </ReferencedDocuments>
 </PIMDocument>
