@@ -3881,6 +3881,9 @@
         <ObjectRef ID="3338" />
         <ObjectRef ID="3347" />
         <ObjectRef ID="3349" />
+        <ObjectRef ID="3351" />
+        <ObjectRef ID="3353" />
+        <ObjectRef ID="3362" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -3892,11 +3895,16 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="AssemblyRoot" />
       <ClipPlane ID="-1" />
+      <Attachments>
+        <ObjectRef ID="3365" />
+      </Attachments>
       <Definitions>
         <ObjectRef ID="2265" />
         <ObjectRef ID="2267" />
         <ObjectRef ID="3346" />
         <ObjectRef ID="3348" />
+        <ObjectRef ID="3350" />
+        <ObjectRef ID="3352" />
       </Definitions>
       <Textures />
     </AssemblyRoot>
@@ -3912,7 +3920,7 @@
     </TaskSimulationConfiguration>
     <IRC5Controller ID="1186" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{0dbbc1c3-18d6-4cca-9c7a-1335f2426414}" />
-      <SystemIdentity Value="{5436DFA8-8A59-49DD-8614-8DA5BFBD5EFF}" />
+      <SystemIdentity Value="{4617B17E-5634-45C8-A8EF-3200DDE94BF9}" />
       <RAPIDData ID="1187" />
       <MechanicalUnits>
         <ObjectRef ID="2253" />
@@ -3923,7 +3931,7 @@
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0" W="1" />
       </ControllerWorld>
-      <SystemPath Value="..\Virtual Controllers\IRB120_3_58" />
+      <SystemPath Value="..\Virtual Controllers\IRB120_3_58_themainone" />
       <MechMovingCtrlWorld ID="-1" />
       <BrushColors>
         <Element Key="1">
@@ -3971,6 +3979,7 @@
       <Declarations>
         <ObjectRef ID="1189" />
         <ObjectRef ID="1191" />
+        <ObjectRef ID="3354" />
       </Declarations>
       <DefinedRoutineDeclarations>
         <ObjectRef ID="1193" />
@@ -4022,7 +4031,7 @@
         <ObjectRef ID="2241" />
       </DefinedMoveInstructionGroups>
       <ActiveWObj ID="1191" />
-      <ActiveTool ID="1189" />
+      <ActiveTool ID="3354" />
       <ActivePath ID="-1" />
       <ActiveProcess ID="1962" />
       <Frame>
@@ -7447,7 +7456,7 @@
       </LogicalAxis>
       <LockedAxisLogicalAxis />
     </MechanicalUnit>
-    <MechanismInstance ID="2254" Name="IRB120_3_58__01" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="6" NumTransforms="7" TraceTCP="false">
+    <MechanismInstance ID="2254" Name="IRB120_3_58__01_themainone" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="6" NumTransforms="7" TraceTCP="false">
       <UniqueId Value="{3980f26c-bd81-468f-b89c-49f199ab9ad3}" />
       <Definition ID="11" DocID="1" />
       <ChildInstances>
@@ -7474,7 +7483,7 @@
         <Double Value="0" />
         <Double Value="0" />
         <Double Value="0" />
-        <Double Value="0.523598775598299" />
+        <Double Value="0.523598849773407" />
         <Double Value="0" />
       </JointValues>
       <CalibFrames />
@@ -7724,10 +7733,10 @@
     <MechanismLinkInstance ID="2260" Name="Link5" Parent="2254" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="18" DocID="1" />
       <Transform>
-        <RowX X="0.866025403784435" Y="0" Z="-0.500000000000006" W="0" />
+        <RowX X="0.866025366696879" Y="0" Z="-0.500000064237532" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000000000006" Y="0" Z="0.866025403784435" W="0" />
-        <RowT X="-0.274539671942902" Y="0" Z="0.235403995615807" W="1" />
+        <RowZ X="0.500000064237532" Y="0" Z="0.866025366696879" W="0" />
+        <RowT X="-0.274539701212102" Y="0" Z="0.2354040383807" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7753,10 +7762,10 @@
     <MechanismLinkInstance ID="2261" Name="Link6" Parent="2254" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="19" DocID="1" />
       <Transform>
-        <RowX X="0.866025403784435" Y="0" Z="-0.500000000000006" W="0" />
+        <RowX X="0.866025366696879" Y="0" Z="-0.500000064237532" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000000000006" Y="0" Z="0.866025403784435" W="0" />
-        <RowT X="-0.274539671942902" Y="0" Z="0.235403995615807" W="1" />
+        <RowZ X="0.500000064237532" Y="0" Z="0.866025366696879" W="0" />
+        <RowT X="-0.274539701212102" Y="0" Z="0.2354040383807" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7808,7 +7817,7 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="-1.28784152585569" Y="-0.701065689722311" Z="0" W="1" />
+        <RowT X="-1.67522664376611" Y="-0.701065689722311" Z="0" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7831,7 +7840,7 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="-1.26774997412281" Y="0.333056641666773" Z="0" W="1" />
+        <RowT X="-1.63682948894906" Y="0.290780523527725" Z="0" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7915,7 +7924,7 @@
     </ControllerSimulationConfiguration>
     <IRC5Controller ID="2270" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{9df43fc5-ff79-4788-94d4-0f318f0b413b}" />
-      <SystemIdentity Value="{8A66EC5E-BFBC-4713-A750-5D3A6088BB16}" />
+      <SystemIdentity Value="{C9C88E85-8467-4DF6-9452-84DE471F7E7E}" />
       <RAPIDData ID="2271" />
       <MechanicalUnits>
         <ObjectRef ID="3337" />
@@ -7974,7 +7983,13 @@
       <Declarations>
         <ObjectRef ID="2273" />
         <ObjectRef ID="2275" />
+        <ObjectRef ID="3356" />
+        <ObjectRef ID="3359" />
       </Declarations>
+      <Targets>
+        <ObjectRef ID="3358" />
+        <ObjectRef ID="3361" />
+      </Targets>
       <DefinedRoutineDeclarations>
         <ObjectRef ID="2277" />
         <ObjectRef ID="2304" />
@@ -11843,9 +11858,224 @@
         <ControlPoints />
       </PhysicsSurfaceVelocity>
     </ComponentInstance>
+    <PartDef ID="3350" Name="" Parent="1183">
+      <GeoPart StreamType="GeoDataStream" StreamID="fd6362cb76d14f9fa2fbf287fcd07710" StreamChangeRef="08ecb348d8f241ce9c57c09ead200c6c" />
+      <GfxData StreamType="GfxDataStream" StreamID="dcbc92d9b6924e81afbf42313466b1f7" StreamChangeRef="f090578a743a459d9c44d878db3285b2" />
+      <BoundingBox>
+        <Min X="0" Y="0" Z="0" />
+        <Max X="0.27" Y="0.21" Z="0.115" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="3351" Name="HEADPHONES_BOX" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="3350" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="1.576646" Y="-0.109445969294059" Z="0.772346" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <PartDef ID="3352" Name="" Parent="1183">
+      <GeoPart StreamType="GeoDataStream" StreamID="e56165f98a6c474a997a6b4e4f8e61c5" StreamChangeRef="758c2af11a584be0b1ae18bdd3c97868" />
+      <GfxData StreamType="GfxDataStream" StreamID="be40f69ac6064236a3df6cb9036457f1" StreamChangeRef="4e2778cbaeec4983b1bee330004e219e" />
+      <BoundingBox>
+        <Min X="0" Y="0" Z="0" />
+        <Max X="0.18" Y="0.11" Z="0.084" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="3353" Name="MOUSE_BOX" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="3352" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="2.14779226962197" Y="-0.0677288406502382" Z="0.774549" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <DataDeclaration ID="3354" Name="MyTool" Parent="1188" StorageType="1" DataType="tooldata" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <DeclarationInfo ID="3355" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[TRUE,[[31.792631019,0,229.638935148],[0.945518576,0,0.325568154,0]],[1,[0,0,1],[1,0,0,0],0,0,0]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="3355" Name="" Parent="3354" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="CalibData" />
+    </RAPIDDeclarationInfo>
+    <DataDeclaration ID="3356" Name="Target_10" Parent="2272" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0,-7.27870457239987E-08,2.48691918613986E-07,0,0.523598611354828,0" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="3357" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[364.353829072,0,594],[0.5,0,0.866025404,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="3357" Name="" Parent="3356" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="3358" Name="Target_10" Parent="2272" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="false">
+      <Robtarget ID="3356" />
+      <Workobject ID="2275" />
+      <ReferenceFrame>
+        <RowX X="-0.500000000186682" Y="0" Z="-0.866025403676658" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.866025403676658" Y="0" Z="-0.500000000186682" W="0" />
+        <RowT X="0.364353829072" Y="0" Z="0.594" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="3359" Name="Target_20" Parent="2272" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0,-7.27870457239987E-08,2.48691918613986E-07,0,0.523598611354828,0" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="3360" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[364.353829072,0,594],[0.5,0,0.866025404,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="3360" Name="" Parent="3359" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="3361" Name="Target_20" Parent="2272" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="false">
+      <Robtarget ID="3359" />
+      <Workobject ID="2275" />
+      <ReferenceFrame>
+        <RowX X="-0.500000000186682" Y="0" Z="-0.866025403676658" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.866025403676658" Y="0" Z="-0.500000000186682" W="0" />
+        <RowT X="0.364353829072" Y="0" Z="0.594" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <MechanismInstance ID="3362" Name="MyTool" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
+      <Definition ID="9" DocID="3" />
+      <ChildInstances>
+        <ObjectRef ID="3363" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="-0.500000064237533" Y="0" Z="-0.866025366696879" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.866025366696879" Y="0" Z="-0.500000064237532" W="0" />
+        <RowT X="0.752518826402176" Y="0.00791499999999964" Z="1.4139999953749" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Mechanism" />
+      <ClipPlane ID="-1" />
+      <JointValues />
+      <CalibFrames />
+      <CalibFrameKnownValid />
+      <HomePos />
+      <UserDefinedPositions />
+      <TransitionTimes />
+      <JointLimitsMatrix />
+      <JointLimitsVector />
+      <JointModelOffset />
+    </MechanismInstance>
+    <MechanismLinkInstance ID="3363" Name="SpintecTool" Parent="3362" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="6" DocID="3" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <AttachmentPoints>
+        <ObjectRef ID="3364" />
+      </AttachmentPoints>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="PartMechanismLink" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+      <CorrectionTransform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </CorrectionTransform>
+    </MechanismLinkInstance>
+    <Frame ID="3364" Name="MyTool" Parent="3363" FrameSize="0.05" ShowName="false" FrameType="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Transform>
+        <RowX X="0.788010753606722" Y="0" Z="-0.615661475325658" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.615661475325658" Y="0" Z="0.788010753606722" W="0" />
+        <RowT X="0.0317926310186755" Y="0" Z="0.229638935148286" W="1" />
+      </Transform>
+    </Frame>
+    <Attachment ID="3365" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
+      <SourceObject ID="2261" />
+      <TargetObject ID="3362" />
+      <OffsetTransform>
+        <RowX X="0" Y="0" Z="-1" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="1" Y="0" Z="0" W="0" />
+        <RowT X="0.374" Y="0" Z="0.63" W="1" />
+      </OffsetTransform>
+      <OriginalTransform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </OriginalTransform>
+    </Attachment>
   </Objects>
   <ReferencedDocuments>
-    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
-    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
+    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
+    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
+    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Training Objects\myTool.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Training Objects\myTool.rslib" GUID="{A3CF06C6-9F5C-4B19-884C-6700EE8891A9}" />
   </ReferencedDocuments>
 </PIMDocument>
