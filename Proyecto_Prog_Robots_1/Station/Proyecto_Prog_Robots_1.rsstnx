@@ -3941,7 +3941,7 @@
     </ControllerSimulationConfiguration>
     <IRC5Controller ID="1188" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{884b0db2-05cf-4c9c-9a6c-f282335f7a82}" />
-      <SystemIdentity Value="{524EA586-114D-4FE6-93AC-7A56DEC3B5A8}" />
+      <SystemIdentity Value="{86ADCABE-5720-452B-9D5A-93C34A641337}" />
       <RAPIDData ID="1189" />
       <MechanicalUnits>
         <ObjectRef ID="2257" />
@@ -3952,7 +3952,7 @@
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0" W="1" />
       </ControllerWorld>
-      <SystemPath Value="C:\Users\nikos\OneDrive\Documentos\GitHub\PROYECTO_PROGRAMACION_DE_ROBOTS\Proyecto_Prog_Robots_1\Virtual Controllers\themainone" />
+      <SystemPath Value="..\Virtual Controllers\themainone" />
       <MechMovingCtrlWorld ID="-1" />
       <BrushColors>
         <Element Key="1">
@@ -4056,7 +4056,7 @@
       <ActivePath ID="-1" />
       <ActiveProcess ID="1964" />
       <Frame>
-        <RowX X="-0.999999999999999" Y="0" Z="0" W="0" />
+        <RowX X="-1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0.775" W="1" />
@@ -7488,7 +7488,7 @@
     </MechanicalUnit>
     <IRC5Controller ID="2258" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{33e37ace-1963-4616-9377-813d86c09ae7}" />
-      <SystemIdentity Value="{52B2C7C8-04BD-4B83-9F58-4C6149636F41}" />
+      <SystemIdentity Value="{461E167A-3458-4870-9A91-EEFF7265CA41}" />
       <RAPIDData ID="2259" />
       <MechanicalUnits>
         <ObjectRef ID="3327" />
@@ -7499,7 +7499,7 @@
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0" W="1" />
       </ControllerWorld>
-      <SystemPath Value="C:\Users\nikos\OneDrive\Documentos\GitHub\PROYECTO_PROGRAMACION_DE_ROBOTS\Proyecto_Prog_Robots_1\Virtual Controllers\thesecondone" />
+      <SystemPath Value="..\Virtual Controllers\thesecondone" />
       <MechMovingCtrlWorld ID="-1" />
       <BrushColors>
         <Element Key="1">
@@ -11035,7 +11035,7 @@
     </MechanicalUnit>
     <IRC5Controller ID="3328" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{0a88a564-1c32-4015-b961-a5348dc8b204}" />
-      <SystemIdentity Value="{431E23D8-FDF2-4457-92E0-86B35034FAE1}" />
+      <SystemIdentity Value="{028A5A30-8495-4C46-BC2E-7F3C28EF13B9}" />
       <RAPIDData ID="3329" />
       <MechanicalUnits>
         <ObjectRef ID="4397" />
@@ -11046,7 +11046,7 @@
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0" W="1" />
       </ControllerWorld>
-      <SystemPath Value="C:\Users\nikos\OneDrive\Documentos\GitHub\PROYECTO_PROGRAMACION_DE_ROBOTS\Proyecto_Prog_Robots_1\Virtual Controllers\thethirdone" />
+      <SystemPath Value="..\Virtual Controllers\thethirdone" />
       <MechMovingCtrlWorld ID="-1" />
       <BrushColors>
         <Element Key="1">
@@ -14952,7 +14952,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="PartMechanismLink" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15369,7 +15372,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="PartMechanismLink" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15786,7 +15792,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="PartMechanismLink" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15843,7 +15852,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15863,7 +15875,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15883,7 +15898,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15911,7 +15929,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15939,7 +15960,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15967,7 +15991,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -15995,7 +16022,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -16023,7 +16053,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -16051,7 +16084,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -16079,7 +16115,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -16107,7 +16146,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -16117,8 +16159,8 @@
     </ComponentInstance>
   </Objects>
   <ReferencedDocuments>
-    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
-    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Training Objects\myTool.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Training Objects\myTool.rslib" GUID="{A3CF06C6-9F5C-4B19-884C-6700EE8891A9}" />
-    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
+    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
+    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Training Objects\myTool.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Training Objects\myTool.rslib" GUID="{A3CF06C6-9F5C-4B19-884C-6700EE8891A9}" />
+    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
   </ReferencedDocuments>
 </PIMDocument>
