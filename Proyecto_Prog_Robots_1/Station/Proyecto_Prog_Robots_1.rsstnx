@@ -74,7 +74,7 @@
         <ObjectRef ID="2258" />
         <ObjectRef ID="3328" />
       </IRC5Controllers>
-      <ActiveTask ID="3330" />
+      <ActiveTask ID="1190" />
       <MechUnitToTask>
         <Element Key="2257">
           <Value ID="1190" />
@@ -4001,7 +4001,16 @@
         <ObjectRef ID="1191" />
         <ObjectRef ID="1193" />
         <ObjectRef ID="2255" />
+        <ObjectRef ID="4453" />
+        <ObjectRef ID="4456" />
+        <ObjectRef ID="4459" />
+        <ObjectRef ID="4462" />
       </Declarations>
+      <Targets>
+        <ObjectRef ID="4455" />
+        <ObjectRef ID="4458" />
+        <ObjectRef ID="4461" />
+      </Targets>
       <DefinedRoutineDeclarations>
         <ObjectRef ID="1195" />
         <ObjectRef ID="1222" />
@@ -4051,7 +4060,7 @@
         <ObjectRef ID="2226" />
         <ObjectRef ID="2243" />
       </DefinedMoveInstructionGroups>
-      <ActiveWObj ID="1193" />
+      <ActiveWObj ID="4462" />
       <ActiveTool ID="2255" />
       <ActivePath ID="-1" />
       <ActiveProcess ID="1964" />
@@ -14604,10 +14613,10 @@
       <ClipPlane ID="-1" />
       <JointValues>
         <Double Value="0" />
+        <Double Value="0.454160302877426" />
+        <Double Value="-0.456616908311844" />
         <Double Value="0" />
-        <Double Value="0" />
-        <Double Value="0" />
-        <Double Value="0.523598775598299" />
+        <Double Value="0.526055693626404" />
         <Double Value="0" />
       </JointValues>
       <CalibFrames />
@@ -14770,10 +14779,10 @@
     <MechanismLinkInstance ID="4401" Name="Link2" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="15" DocID="1" />
       <Transform>
-        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowX X="0.898629726697597" Y="0" Z="-0.438707891763304" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
+        <RowZ X="0.438707891763304" Y="0" Z="0.898629726697597" W="0" />
+        <RowT X="-0.127225288611358" Y="0" Z="0.029397379257697" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14799,10 +14808,10 @@
     <MechanismLinkInstance ID="4402" Name="Link3" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="16" DocID="1" />
       <Transform>
-        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351602" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
+        <RowZ X="-0.00245660296351602" Y="0" Z="0.999996982546387" W="0" />
+        <RowT X="0.119826828435661" Y="0" Z="-0.0273682840176259" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14828,10 +14837,10 @@
     <MechanismLinkInstance ID="4403" Name="Link4" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="17" DocID="1" />
       <Transform>
-        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351602" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
+        <RowZ X="-0.00245660296351602" Y="0" Z="0.999996982546387" W="0" />
+        <RowT X="0.119826828435661" Y="0" Z="-0.0273682840176258" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14857,10 +14866,10 @@
     <MechanismLinkInstance ID="4404" Name="Link5" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="18" DocID="1" />
       <Transform>
-        <RowX X="0.866025403784439" Y="0" Z="-0.5" W="0" />
+        <RowX X="0.866025247487549" Y="0" Z="-0.500000270714056" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.5" Y="0" Z="0.866025403784439" W="0" />
-        <RowT X="-0.274539671942901" Y="0" Z="0.235403995615804" W="1" />
+        <RowZ X="0.500000270714056" Y="0" Z="0.866025247487549" W="0" />
+        <RowT X="-0.15626153799344" Y="0" Z="0.208775884920069" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14886,10 +14895,10 @@
     <MechanismLinkInstance ID="4405" Name="Link6" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="19" DocID="1" />
       <Transform>
-        <RowX X="0.866025403784439" Y="0" Z="-0.5" W="0" />
+        <RowX X="0.866025247487549" Y="0" Z="-0.500000270714056" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.5" Y="0" Z="0.866025403784439" W="0" />
-        <RowT X="-0.274539671942901" Y="0" Z="0.235403995615804" W="1" />
+        <RowZ X="0.500000270714056" Y="0" Z="0.866025247487549" W="0" />
+        <RowT X="-0.15626153799344" Y="0" Z="0.208775884920069" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14918,10 +14927,10 @@
         <ObjectRef ID="4407" />
       </ChildInstances>
       <Transform>
-        <RowX X="0.5" Y="0" Z="-0.866025403784439" W="0" />
+        <RowX X="0.500000270714056" Y="0" Z="-0.866025247487549" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-0.866025403784439" Y="0" Z="-0.5" W="0" />
-        <RowT X="-0.364353829072479" Y="0" Z="1.369" W="1" />
+        <RowZ X="-0.866025247487549" Y="0" Z="-0.500000270714056" W="0" />
+        <RowT X="-0.482632075116758" Y="0" Z="1.34237168959017" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -16109,7 +16118,7 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
+        <RowT X="2.21124698040648" Y="0" Z="0" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -16157,6 +16166,106 @@
         <ControlPoints />
       </PhysicsSurfaceVelocity>
     </ComponentInstance>
+    <DataDeclaration ID="4453" Name="Ini_themainone" Parent="1190" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0,0.242454901337624,-0.714334547519684,0,0.995478749275208,0" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="4454" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[547.330719216,0,573.377866787],[0.190808938,0,0.981627195,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4454" Name="" Parent="4453" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="4455" Name="Ini_themainone" Parent="1190" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="false">
+      <Robtarget ID="4453" />
+      <Workobject ID="4462" />
+      <ReferenceFrame>
+        <RowX X="-0.927183898415731" Y="0" Z="-0.374606484885951" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.374606484885951" Y="0" Z="-0.927183898415731" W="0" />
+        <RowT X="0.547330719216" Y="0" Z="0.573377866787" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="4456" Name="PosAtaque_themainone" Parent="1190" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0,0.454160302877426,-0.456616908311844,0,0.526055693626404,0" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="4457" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[665.608740466,0,425.019025937],[0.190808916,0,0.981627199,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4457" Name="" Parent="4456" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="4458" Name="PosAtaque_themainone" Parent="1190" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="false">
+      <Robtarget ID="4456" />
+      <Workobject ID="4462" />
+      <ReferenceFrame>
+        <RowX X="-0.927183915167408" Y="0" Z="-0.374606443424077" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.374606443424077" Y="0" Z="-0.927183915167408" W="0" />
+        <RowT X="0.665608740466" Y="0" Z="0.425019025937" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="4459" Name="Cogida_themainone" Parent="1190" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <DeclarationInfo ID="4460" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[663.753,25,125],[0,0,1,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4460" Name="" Parent="4459" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="4461" Name="Cogida_themainone" Parent="1190" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="false">
+      <Robtarget ID="4459" />
+      <Workobject ID="4462" />
+      <ReferenceFrame>
+        <RowX X="-1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="-1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0.663753" Y="0.025" Z="0.125" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="4462" Name="WO_themainone" Parent="1190" StorageType="2" DataType="wobjdata" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <DeclarationInfo ID="4463" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[FALSE,TRUE,&quot;&quot;,[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]]" />
+      <UserFrameFollowObject ID="-1" />
+      <UserFrameFollowOffset>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </UserFrameFollowOffset>
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4463" Name="" Parent="4462" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="CalibData" />
+    </RAPIDDeclarationInfo>
   </Objects>
   <ReferencedDocuments>
     <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
