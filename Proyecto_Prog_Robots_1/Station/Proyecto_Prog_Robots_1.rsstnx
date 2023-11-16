@@ -3978,17 +3978,17 @@
       <Attributes>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="646" />
+            <Double Value="617" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="20" />
+            <Double Value="10" />
           </Value>
         </Attribute>
       </Attributes>
       <UniqueId Value="{884b0db2-05cf-4c9c-9a6c-f282335f7a82}" />
-      <SystemIdentity Value="{4BFBE995-3BBD-4F36-A0C8-B3250CC2120B}" />
+      <SystemIdentity Value="{C3FAEFA1-6D09-417D-BA40-F9BFB967247D}" />
       <RAPIDData ID="1189" />
       <MechanicalUnits>
         <ObjectRef ID="2257" />
@@ -7556,7 +7556,7 @@
         </Attribute>
       </Attributes>
       <UniqueId Value="{33e37ace-1963-4616-9377-813d86c09ae7}" />
-      <SystemIdentity Value="{FBEEE896-C824-4F42-BB6F-DA3001EBE057}" />
+      <SystemIdentity Value="{2743C63D-6EA7-41A5-9702-F0917CE2AC87}" />
       <RAPIDData ID="2259" />
       <MechanicalUnits>
         <ObjectRef ID="3327" />
@@ -11115,7 +11115,7 @@
         </Attribute>
       </Attributes>
       <UniqueId Value="{0a88a564-1c32-4015-b961-a5348dc8b204}" />
-      <SystemIdentity Value="{559500E5-C1D0-4427-8CE2-FB9371494553}" />
+      <SystemIdentity Value="{9F304D50-5F36-44B9-82FF-FE981CC74115}" />
       <RAPIDData ID="3329" />
       <MechanicalUnits>
         <ObjectRef ID="4397" />
@@ -14886,10 +14886,10 @@
     <MechanismLinkInstance ID="4402" Name="Link3" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="16" DocID="1" />
       <Transform>
-        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351619" W="0" />
+        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351602" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.00245660296351619" Y="0" Z="0.999996982546387" W="0" />
-        <RowT X="0.119826828435661" Y="0" Z="-0.0273682840176258" W="1" />
+        <RowZ X="-0.00245660296351602" Y="0" Z="0.999996982546387" W="0" />
+        <RowT X="0.119826828435661" Y="0" Z="-0.0273682840176259" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14915,9 +14915,9 @@
     <MechanismLinkInstance ID="4403" Name="Link4" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="17" DocID="1" />
       <Transform>
-        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351619" W="0" />
+        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351602" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.00245660296351619" Y="0" Z="0.999996982546387" W="0" />
+        <RowZ X="-0.00245660296351602" Y="0" Z="0.999996982546387" W="0" />
         <RowT X="0.119826828435661" Y="0" Z="-0.0273682840176258" W="1" />
       </Transform>
       <Source Value="" />
@@ -16457,12 +16457,12 @@
         </Element>
         <Element Key="Headphones_Sensor">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Mouse_Sensor">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17188,12 +17188,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{948c9237-0270-4ee2-a2d6-2e9b0d38ccb6};{1e6aee54-f395-4b89-9a05-3f394807901d};{aee7e50f-925c-4d3e-87d7-a7c90a6a1748};{8e1d4589-6840-484f-a004-c6bed2945c43};{7a2511a0-b313-4c27-8350-558098bd512b};{f66d8e9c-5093-45be-b09f-6b3b0d62b426}" />
+            <String Value="{1e6aee54-f395-4b89-9a05-3f394807901d};{aee7e50f-925c-4d3e-87d7-a7c90a6a1748};{8e1d4589-6840-484f-a004-c6bed2945c43};{7a2511a0-b313-4c27-8350-558098bd512b};{f66d8e9c-5093-45be-b09f-6b3b0d62b426};{9c7d8b5c-8cd0-4258-9191-b3f7719042cd};{c90534a8-b9ab-4a26-aad4-c9cbc3da761d};{f237d0e8-0cbc-4f26-8572-a070445edea6};{de8e546c-e611-4cda-87e4-61506a635f3b}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="3" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17301,12 +17301,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{7f19cb5a-953f-46e4-ac2b-e063fb456e0a};{5be413a6-8839-4640-ba29-54e188e3a581};{b831864b-f9de-43b1-91a5-022f6de05fe0};{f3a0ed73-c5ef-4da6-bb95-fb250e7f1b73};{31273149-ae14-423e-84c0-355c8fdea836};{737e6fa1-8522-4432-b22c-7317b8a2976b};{6eb16a4c-d645-4b0a-8117-006fd1779021}" />
+            <String Value="{5be413a6-8839-4640-ba29-54e188e3a581};{b831864b-f9de-43b1-91a5-022f6de05fe0};{f3a0ed73-c5ef-4da6-bb95-fb250e7f1b73};{31273149-ae14-423e-84c0-355c8fdea836};{737e6fa1-8522-4432-b22c-7317b8a2976b};{6eb16a4c-d645-4b0a-8117-006fd1779021};{b77340ca-f306-4185-9969-e51a14106ca9};{f75f94ea-90b3-446b-bf3c-84ac15853fe3}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="3" />
+            <Integer Value="1" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17809,7 +17809,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Value">
           <Value>
-            <Double Value="0.702570512752314" />
+            <Double Value="0.025842275482529" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Min">
@@ -17888,7 +17888,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.702570512752314" />
+            <Double Value="0.025842275482529" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17949,7 +17949,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17959,7 +17959,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.702570512752314" />
+            <Double Value="0.025842275482529" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -18020,7 +18020,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -18092,7 +18092,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -18169,7 +18169,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -18372,17 +18372,17 @@
     </SmartComponentInstance>
   </Objects>
   <ReferencedDocuments>
-    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
-    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Training Objects\myTool.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Training Objects\myTool.rslib" GUID="{A3CF06C6-9F5C-4B19-884C-6700EE8891A9}" />
-    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
-    <DocRef ID="4" DocumentType="ComponentLibrary" Location="C:\Users\nikos\OneDrive\Documentos\GitHub\PROYECTO_PROGRAMACION_DE_ROBOTS\Proyecto_Prog_Robots_1\Components\Cinta transportadora.rslib" RelativeLocation="..\Components\Cinta transportadora.rslib" GUID="{4CA20A5F-068D-43A1-AC5F-1058761F025F}" />
-    <DocRef ID="5" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LineSensor.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LineSensor.rslib" GUID="{7DC22A2D-18E4-45E6-95B3-87F458B51DC4}" />
-    <DocRef ID="6" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Source.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Source.rslib" GUID="{52EF547B-1441-4232-80BA-79F8CA5362D5}" />
-    <DocRef ID="7" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Queue.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Queue.rslib" GUID="{3EFE5D56-485A-4B4B-8331-1AA5FEEE95EA}" />
-    <DocRef ID="8" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Timer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Timer.rslib" GUID="{D8D84F33-D6E4-41DD-B88C-E45D8662C415}" />
-    <DocRef ID="9" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LogicGate.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LogicGate.rslib" GUID="{1421AB33-9F45-49AE-A995-F20D059581EF}" />
-    <DocRef ID="10" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Random.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Random.rslib" GUID="{65DBB3A7-241D-4947-8905-F5722E8E7BCC}" />
-    <DocRef ID="11" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Comparer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Comparer.rslib" GUID="{85CE3999-0243-42A3-8FAB-E88E3CA3B6A1}" />
-    <DocRef ID="12" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LinearMover.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LinearMover.rslib" GUID="{6336703E-A316-45A7-88E8-D9ACFEDADA3D}" />
+    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
+    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Training Objects\myTool.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Training Objects\myTool.rslib" GUID="{A3CF06C6-9F5C-4B19-884C-6700EE8891A9}" />
+    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
+    <DocRef ID="4" DocumentType="ComponentLibrary" Location="C:\Users\ramir\OneDrive\Documents\RobotStudio\Projects\PROYECTO_PROGRAMACION_DE_ROBOTS\Proyecto_Prog_Robots_1\Components\Cinta transportadora.rslib" RelativeLocation="..\Components\Cinta transportadora.rslib" GUID="{6727B49D-AE98-40EC-9330-6F55272C9F9C}" />
+    <DocRef ID="5" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LineSensor.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LineSensor.rslib" GUID="{7DC22A2D-18E4-45E6-95B3-87F458B51DC4}" />
+    <DocRef ID="6" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Source.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Source.rslib" GUID="{52EF547B-1441-4232-80BA-79F8CA5362D5}" />
+    <DocRef ID="7" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Queue.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Queue.rslib" GUID="{3EFE5D56-485A-4B4B-8331-1AA5FEEE95EA}" />
+    <DocRef ID="8" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Timer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Timer.rslib" GUID="{D8D84F33-D6E4-41DD-B88C-E45D8662C415}" />
+    <DocRef ID="9" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LogicGate.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LogicGate.rslib" GUID="{1421AB33-9F45-49AE-A995-F20D059581EF}" />
+    <DocRef ID="10" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Random.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Random.rslib" GUID="{65DBB3A7-241D-4947-8905-F5722E8E7BCC}" />
+    <DocRef ID="11" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Comparer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Comparer.rslib" GUID="{85CE3999-0243-42A3-8FAB-E88E3CA3B6A1}" />
+    <DocRef ID="12" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LinearMover.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LinearMover.rslib" GUID="{6336703E-A316-45A7-88E8-D9ACFEDADA3D}" />
   </ReferencedDocuments>
 </PIMDocument>
