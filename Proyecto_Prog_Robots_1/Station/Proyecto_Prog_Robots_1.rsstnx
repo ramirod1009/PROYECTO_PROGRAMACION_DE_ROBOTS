@@ -3923,7 +3923,7 @@
         <ObjectRef ID="4446" />
         <ObjectRef ID="4448" />
         <ObjectRef ID="4466" />
-        <ObjectRef ID="4506" />
+        <ObjectRef ID="4515" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -3936,7 +3936,7 @@
       <ComponentType Value="AssemblyRoot" />
       <ClipPlane ID="-1" />
       <Attachments>
-        <ObjectRef ID="4509" />
+        <ObjectRef ID="4518" />
       </Attachments>
       <Definitions>
         <ObjectRef ID="4437" />
@@ -3945,8 +3945,8 @@
         <ObjectRef ID="4443" />
         <ObjectRef ID="4445" />
         <ObjectRef ID="4447" />
-        <ObjectRef ID="4503" />
-        <ObjectRef ID="4505" />
+        <ObjectRef ID="4512" />
+        <ObjectRef ID="4514" />
       </Definitions>
       <Textures />
     </AssemblyRoot>
@@ -4054,6 +4054,7 @@
         <ObjectRef ID="4495" />
         <ObjectRef ID="4497" />
         <ObjectRef ID="4500" />
+        <ObjectRef ID="4510" />
       </Declarations>
       <Targets>
         <ObjectRef ID="4455" />
@@ -4112,7 +4113,7 @@
         <ObjectRef ID="2243" />
       </DefinedMoveInstructionGroups>
       <ActiveWObj ID="4462" />
-      <ActiveTool ID="4495" />
+      <ActiveTool ID="4510" />
       <ActivePath ID="4491" />
       <ActiveProcess ID="1964" />
       <Frame>
@@ -14890,9 +14891,9 @@
     <MechanismLinkInstance ID="4402" Name="Link3" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="16" DocID="1" />
       <Transform>
-        <RowX X="0.999996982033878" Y="0" Z="0.00245681157914324" W="0" />
+        <RowX X="0.999996982033878" Y="0" Z="0.00245681157914363" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.00245681157914324" Y="0" Z="0.999996982033878" W="0" />
+        <RowZ X="-0.00245681157914363" Y="0" Z="0.999996982033878" W="0" />
         <RowT X="0.119827039262601" Y="0" Z="-0.0273683296221833" W="1" />
       </Transform>
       <Source Value="" />
@@ -14919,9 +14920,9 @@
     <MechanismLinkInstance ID="4403" Name="Link4" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="17" DocID="1" />
       <Transform>
-        <RowX X="0.999996982033878" Y="0" Z="0.00245681157914324" W="0" />
+        <RowX X="0.999996982033878" Y="0" Z="0.00245681157914363" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.00245681157914324" Y="0" Z="0.999996982033878" W="0" />
+        <RowZ X="-0.00245681157914363" Y="0" Z="0.999996982033878" W="0" />
         <RowT X="0.119827039262601" Y="0" Z="-0.0273683296221833" W="1" />
       </Transform>
       <Source Value="" />
@@ -14948,9 +14949,9 @@
     <MechanismLinkInstance ID="4404" Name="Link5" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="18" DocID="1" />
       <Transform>
-        <RowX X="0.866025292191054" Y="0" Z="-0.500000193285363" W="0" />
+        <RowX X="0.866025292191054" Y="0" Z="-0.500000193285362" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000193285363" Y="0" Z="0.866025292191054" W="0" />
+        <RowZ X="0.500000193285362" Y="0" Z="0.866025292191054" W="0" />
         <RowT X="-0.156261423469505" Y="0" Z="0.208775850447877" W="1" />
       </Transform>
       <Source Value="" />
@@ -14977,9 +14978,9 @@
     <MechanismLinkInstance ID="4405" Name="Link6" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="19" DocID="1" />
       <Transform>
-        <RowX X="0.866025292191054" Y="0" Z="-0.500000193285363" W="0" />
+        <RowX X="0.866025292191054" Y="0" Z="-0.500000193285362" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000193285363" Y="0" Z="0.866025292191054" W="0" />
+        <RowZ X="0.500000193285362" Y="0" Z="0.866025292191054" W="0" />
         <RowT X="-0.156261423469505" Y="0" Z="0.208775850447877" W="1" />
       </Transform>
       <Source Value="" />
@@ -16928,7 +16929,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{aee7e50f-925c-4d3e-87d7-a7c90a6a1748};{8e1d4589-6840-484f-a004-c6bed2945c43};{7a2511a0-b313-4c27-8350-558098bd512b};{f66d8e9c-5093-45be-b09f-6b3b0d62b426};{9c7d8b5c-8cd0-4258-9191-b3f7719042cd};{c90534a8-b9ab-4a26-aad4-c9cbc3da761d};{f237d0e8-0cbc-4f26-8572-a070445edea6};{de8e546c-e611-4cda-87e4-61506a635f3b};{589750e4-5109-497a-9d4f-8124be507c6d};{5f7680bb-29e8-4ee5-b69e-f5a939f588ae};{2839d94e-1579-4ba7-8cfa-1476b3b1f7f1};{4c8ab7d0-88a2-4b15-95e4-430f89045765};{d1d71d99-3718-4f0d-8165-52efcc9cc9b9};{66a939ef-5404-4ef1-afc6-8f43774fcb8d};{03e2a2c4-08e5-4075-b9a9-ae76a1d6444b}" />
+            <String Value="{8e1d4589-6840-484f-a004-c6bed2945c43};{7a2511a0-b313-4c27-8350-558098bd512b};{f66d8e9c-5093-45be-b09f-6b3b0d62b426};{9c7d8b5c-8cd0-4258-9191-b3f7719042cd};{c90534a8-b9ab-4a26-aad4-c9cbc3da761d};{f237d0e8-0cbc-4f26-8572-a070445edea6};{de8e546c-e611-4cda-87e4-61506a635f3b};{589750e4-5109-497a-9d4f-8124be507c6d};{5f7680bb-29e8-4ee5-b69e-f5a939f588ae};{2839d94e-1579-4ba7-8cfa-1476b3b1f7f1};{4c8ab7d0-88a2-4b15-95e4-430f89045765};{d1d71d99-3718-4f0d-8165-52efcc9cc9b9};{66a939ef-5404-4ef1-afc6-8f43774fcb8d};{03e2a2c4-08e5-4075-b9a9-ae76a1d6444b};{926815a6-5fa8-4618-8bee-607cfe9b5384};{8c1b5c7d-916d-48ef-8778-514e4d0f287d};{66e38129-c496-4be2-ad04-edc24b118d4a};{986630cd-8d7c-497b-835f-3c5fc67cc21f}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
@@ -17041,7 +17042,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{f3a0ed73-c5ef-4da6-bb95-fb250e7f1b73};{31273149-ae14-423e-84c0-355c8fdea836};{737e6fa1-8522-4432-b22c-7317b8a2976b};{6eb16a4c-d645-4b0a-8117-006fd1779021};{b77340ca-f306-4185-9969-e51a14106ca9};{f75f94ea-90b3-446b-bf3c-84ac15853fe3};{a8758f70-656a-4fba-8cf6-3ccb21e83852};{638d65b6-e999-4afe-b76f-ebdb0c215fd7};{d4131bf2-2ed5-42bf-bdf8-8c007b93c5de};{08628b1c-c996-40d9-a1a1-68630880aa0d};{80b0036d-adf4-4908-910e-6b2814eb02e4}" />
+            <String Value="{31273149-ae14-423e-84c0-355c8fdea836};{737e6fa1-8522-4432-b22c-7317b8a2976b};{6eb16a4c-d645-4b0a-8117-006fd1779021};{b77340ca-f306-4185-9969-e51a14106ca9};{f75f94ea-90b3-446b-bf3c-84ac15853fe3};{a8758f70-656a-4fba-8cf6-3ccb21e83852};{638d65b6-e999-4afe-b76f-ebdb0c215fd7};{d4131bf2-2ed5-42bf-bdf8-8c007b93c5de};{08628b1c-c996-40d9-a1a1-68630880aa0d};{80b0036d-adf4-4908-910e-6b2814eb02e4};{ca467141-762e-47a4-b3aa-411f2bb6a43c};{2bc0d594-8b02-4535-8eaf-ef309acf5d0d}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
@@ -17549,7 +17550,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Value">
           <Value>
-            <Double Value="0.46775904552441" />
+            <Double Value="0.776185294974682" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Min">
@@ -17628,7 +17629,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.46775904552441" />
+            <Double Value="0.776185294974682" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17689,7 +17690,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -17699,7 +17700,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.46775904552441" />
+            <Double Value="0.776185294974682" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17760,7 +17761,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17832,7 +17833,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -17909,7 +17910,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -18190,23 +18191,32 @@
       </ReferenceFrame>
       <Color Red="0" Green="0" Blue="0" Alpha="0" />
     </Target>
-    <MechanismDef ID="4503" Name="" Parent="1183" MechanismType="1" UsingCustomFwdKin="false" KinFlags="0">
-      <ForwardKinematics ID="4504" />
+    <DataDeclaration ID="4510" Name="Gripper" Parent="1190" StorageType="1" DataType="tooldata" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <DeclarationInfo ID="4511" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[TRUE,[[0,0,50],[1,0,0,0]],[1,[0,0,1],[1,0,0,0],0,0,0]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4511" Name="" Parent="4510" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="CalibData" />
+    </RAPIDDeclarationInfo>
+    <MechanismDef ID="4512" Name="" Parent="1183" MechanismType="1" UsingCustomFwdKin="false" KinFlags="0">
+      <ForwardKinematics ID="4513" />
       <Flanges />
       <ModelToolData>
         <Element type="TModelToolData" LinkIndex="0">
-          <Name Value="VacuumGripper" />
+          <Name Value="Gripper" />
           <OffsetTransform>
             <RowX X="1" Y="0" Z="0" W="0" />
             <RowY X="0" Y="1" Z="0" W="0" />
             <RowZ X="0" Y="0" Z="1" W="0" />
-            <RowT X="0" Y="0" Z="0.11" W="1" />
+            <RowT X="0" Y="0" Z="0.05" W="1" />
           </OffsetTransform>
           <CenterOfGravity X="0" Y="0" Z="0" />
           <CenterOfInertia X="0" Y="0" Z="0" />
         </Element>
       </ModelToolData>
-      <ModelName Value="VacuumGripper" />
+      <ModelName Value="Gripper" />
       <ModelBaseFrame>
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
@@ -18236,7 +18246,7 @@
         <Inertia X="0" Y="0" Z="0" />
       </LoadData>
     </MechanismDef>
-    <ForwardKinematicsDH ID="4504" Name="" Parent="4503" NumActiveKJoints="0" NumJoints="0" NumLinks="1">
+    <ForwardKinematicsDH ID="4513" Name="" Parent="4512" NumActiveKJoints="0" NumJoints="0" NumLinks="1">
       <BaseJoints />
       <JointDependency NumCols="0" NumRows="0">
         <MatrixElements />
@@ -18252,24 +18262,24 @@
       <JointInfos />
       <UserDefinedKinBaseFrame />
     </ForwardKinematicsDH>
-    <PartDef ID="4505" Name="VacuumGripperDefinitivo" Parent="1183">
+    <PartDef ID="4514" Name="VacuumGripperDefinitivo_3" Parent="1183">
       <GeoPart StreamID="-1" />
-      <GfxData StreamType="GfxDataStream" StreamID="4c03233fdaee4ed3b4455bf420399fa7" StreamChangeRef="6b1c4129491b45e6a52ccad5a3ee71c5" />
+      <GfxData StreamType="GfxDataStream" StreamID="595130e693eb4574bf112b87d35064a0" StreamChangeRef="47e0207ec8194c51a848136c8bd28c17" />
       <BoundingBox>
-        <Min X="-0.0788911209106445" Y="-0.097885627746582" Z="-0.0115354385375977" />
-        <Max X="0.0790765838623047" Y="0.0979447631835938" Z="0.103960334777832" />
+        <Min X="-0.0394455604553223" Y="-0.048942813873291" Z="-0.00576771926879883" />
+        <Max X="0.0395382919311523" Y="0.0489723815917969" Z="0.051980167388916" />
       </BoundingBox>
     </PartDef>
-    <MechanismInstance ID="4506" Name="VacuumGripper" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
-      <Definition ID="4503" />
+    <MechanismInstance ID="4515" Name="Gripper" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
+      <Definition ID="4512" />
       <ChildInstances>
-        <ObjectRef ID="4507" />
+        <ObjectRef ID="4516" />
       </ChildInstances>
       <Transform>
-        <RowX X="0.500000193285363" Y="0" Z="-0.866025292191054" W="0" />
+        <RowX X="0.500000193285362" Y="0" Z="-0.866025292191054" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-0.866025292191054" Y="0" Z="-0.500000193285363" W="0" />
-        <RowT X="-0.482632157579728" Y="0" Z="1.34237171223952" W="1" />
+        <RowZ X="-0.866025292191054" Y="0" Z="-0.500000193285362" W="0" />
+        <RowT X="-0.482632157579728" Y="0" Z="1.34237171223951" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -18285,8 +18295,8 @@
       <JointLimitsVector />
       <JointModelOffset />
     </MechanismInstance>
-    <MechanismLinkInstance ID="4507" Name="VacuumGripperDefinitivo" Parent="4506" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
-      <Definition ID="4505" />
+    <MechanismLinkInstance ID="4516" Name="VacuumGripperDefinitivo_3" Parent="4515" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="4514" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
@@ -18294,7 +18304,7 @@
         <RowT X="0" Y="0" Z="0" W="1" />
       </Transform>
       <AttachmentPoints>
-        <ObjectRef ID="4508" />
+        <ObjectRef ID="4517" />
       </AttachmentPoints>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -18314,7 +18324,7 @@
         <RowT X="0" Y="0" Z="0" W="1" />
       </CorrectionTransform>
     </MechanismLinkInstance>
-    <Frame ID="4508" Name="VacuumGripper" Parent="4507" FrameSize="0.05" ShowName="false" FrameType="0">
+    <Frame ID="4517" Name="Gripper" Parent="4516" FrameSize="0.05" ShowName="false" FrameType="0">
       <Attributes>
         <Attribute Key="GfxObject.Invisible">
           <Value>
@@ -18326,12 +18336,12 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0.11" W="1" />
+        <RowT X="0" Y="0" Z="0.05" W="1" />
       </Transform>
     </Frame>
-    <Attachment ID="4509" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
+    <Attachment ID="4518" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
       <SourceObject ID="4405" />
-      <TargetObject ID="4506" />
+      <TargetObject ID="4515" />
       <OffsetTransform>
         <RowX X="0" Y="0" Z="-1" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
