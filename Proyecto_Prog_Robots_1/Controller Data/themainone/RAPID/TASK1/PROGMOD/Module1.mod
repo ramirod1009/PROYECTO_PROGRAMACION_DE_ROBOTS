@@ -21,7 +21,7 @@ MODULE Module1
     !
     !***********************************************************
     PROC main()
-        WHILE TRUE DO
+        WHILE TRUE DO !Viva hitler
             
         ENDWHILE 
     ENDPROC
