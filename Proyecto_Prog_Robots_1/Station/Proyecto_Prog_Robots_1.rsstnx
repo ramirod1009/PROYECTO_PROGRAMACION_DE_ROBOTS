@@ -25,7 +25,7 @@
       <SignalValues>
         <Element Key="empezar">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -3912,11 +3912,8 @@
       <Definition ID="-1" />
       <Instances>
         <ObjectRef ID="4398" />
-        <ObjectRef ID="4406" />
         <ObjectRef ID="4410" />
-        <ObjectRef ID="4418" />
         <ObjectRef ID="4422" />
-        <ObjectRef ID="4430" />
         <ObjectRef ID="4435" />
         <ObjectRef ID="4436" />
         <ObjectRef ID="4438" />
@@ -3926,6 +3923,7 @@
         <ObjectRef ID="4446" />
         <ObjectRef ID="4448" />
         <ObjectRef ID="4466" />
+        <ObjectRef ID="4506" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -3938,9 +3936,7 @@
       <ComponentType Value="AssemblyRoot" />
       <ClipPlane ID="-1" />
       <Attachments>
-        <ObjectRef ID="4409" />
-        <ObjectRef ID="4421" />
-        <ObjectRef ID="4433" />
+        <ObjectRef ID="4509" />
       </Attachments>
       <Definitions>
         <ObjectRef ID="4437" />
@@ -3949,6 +3945,8 @@
         <ObjectRef ID="4443" />
         <ObjectRef ID="4445" />
         <ObjectRef ID="4447" />
+        <ObjectRef ID="4503" />
+        <ObjectRef ID="4505" />
       </Definitions>
       <Textures />
     </AssemblyRoot>
@@ -3988,7 +3986,7 @@
         </Attribute>
       </Attributes>
       <UniqueId Value="{884b0db2-05cf-4c9c-9a6c-f282335f7a82}" />
-      <SystemIdentity Value="{4883E490-0BF4-4F5C-A3E6-65C57238CD35}" />
+      <SystemIdentity Value="{3B384317-26A0-412B-A828-245B030B21DB}" />
       <RAPIDData ID="1189" />
       <MechanicalUnits>
         <ObjectRef ID="2257" />
@@ -4053,11 +4051,16 @@
         <ObjectRef ID="4459" />
         <ObjectRef ID="4462" />
         <ObjectRef ID="4491" />
+        <ObjectRef ID="4495" />
+        <ObjectRef ID="4497" />
+        <ObjectRef ID="4500" />
       </Declarations>
       <Targets>
         <ObjectRef ID="4455" />
         <ObjectRef ID="4458" />
         <ObjectRef ID="4461" />
+        <ObjectRef ID="4499" />
+        <ObjectRef ID="4502" />
       </Targets>
       <DefinedRoutineDeclarations>
         <ObjectRef ID="1195" />
@@ -4109,7 +4112,7 @@
         <ObjectRef ID="2243" />
       </DefinedMoveInstructionGroups>
       <ActiveWObj ID="4462" />
-      <ActiveTool ID="2255" />
+      <ActiveTool ID="4495" />
       <ActivePath ID="4491" />
       <ActiveProcess ID="1964" />
       <Frame>
@@ -7557,7 +7560,7 @@
         </Attribute>
       </Attributes>
       <UniqueId Value="{33e37ace-1963-4616-9377-813d86c09ae7}" />
-      <SystemIdentity Value="{BAF9FB15-5E18-425B-927B-105B598F6498}" />
+      <SystemIdentity Value="{12052CAC-1AC0-4358-BAE8-D5D7B6A81D0D}" />
       <RAPIDData ID="2259" />
       <MechanicalUnits>
         <ObjectRef ID="3327" />
@@ -11116,7 +11119,7 @@
         </Attribute>
       </Attributes>
       <UniqueId Value="{0a88a564-1c32-4015-b961-a5348dc8b204}" />
-      <SystemIdentity Value="{0DFEFF96-3012-486F-B1D4-5E097398968B}" />
+      <SystemIdentity Value="{3EB46B90-D42C-455E-BA44-6691DF804734}" />
       <RAPIDData ID="3329" />
       <MechanicalUnits>
         <ObjectRef ID="4397" />
@@ -14692,10 +14695,10 @@
       <ClipPlane ID="-1" />
       <JointValues>
         <Double Value="0" />
-        <Double Value="0.454160302877426" />
-        <Double Value="-0.456616908311844" />
+        <Double Value="0.454160690307617" />
+        <Double Value="-0.456617504358292" />
         <Double Value="0" />
-        <Double Value="0.526055693626404" />
+        <Double Value="0.526055812835693" />
         <Double Value="0" />
       </JointValues>
       <CalibFrames />
@@ -14858,10 +14861,10 @@
     <MechanismLinkInstance ID="4401" Name="Link2" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="15" DocID="1" />
       <Transform>
-        <RowX X="0.898629726697597" Y="0" Z="-0.438707891763304" W="0" />
+        <RowX X="0.898629556728847" Y="0" Z="-0.438708239919558" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.438707891763304" Y="0" Z="0.898629726697597" W="0" />
-        <RowT X="-0.127225288611358" Y="0" Z="0.029397379257697" W="1" />
+        <RowZ X="0.438708239919558" Y="0" Z="0.898629556728847" W="0" />
+        <RowT X="-0.127225389576672" Y="0" Z="0.0293974285486344" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14887,10 +14890,10 @@
     <MechanismLinkInstance ID="4402" Name="Link3" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="16" DocID="1" />
       <Transform>
-        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351619" W="0" />
+        <RowX X="0.999996982033878" Y="0" Z="0.00245681157914324" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.00245660296351619" Y="0" Z="0.999996982546387" W="0" />
-        <RowT X="0.119826828435661" Y="0" Z="-0.0273682840176258" W="1" />
+        <RowZ X="-0.00245681157914324" Y="0" Z="0.999996982033878" W="0" />
+        <RowT X="0.119827039262601" Y="0" Z="-0.0273683296221833" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14916,10 +14919,10 @@
     <MechanismLinkInstance ID="4403" Name="Link4" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="17" DocID="1" />
       <Transform>
-        <RowX X="0.999996982546387" Y="0" Z="0.00245660296351619" W="0" />
+        <RowX X="0.999996982033878" Y="0" Z="0.00245681157914324" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.00245660296351619" Y="0" Z="0.999996982546387" W="0" />
-        <RowT X="0.119826828435661" Y="0" Z="-0.0273682840176258" W="1" />
+        <RowZ X="-0.00245681157914324" Y="0" Z="0.999996982033878" W="0" />
+        <RowT X="0.119827039262601" Y="0" Z="-0.0273683296221833" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14945,10 +14948,10 @@
     <MechanismLinkInstance ID="4404" Name="Link5" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="18" DocID="1" />
       <Transform>
-        <RowX X="0.866025247487549" Y="0" Z="-0.500000270714056" W="0" />
+        <RowX X="0.866025292191054" Y="0" Z="-0.500000193285363" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000270714056" Y="0" Z="0.866025247487549" W="0" />
-        <RowT X="-0.15626153799344" Y="0" Z="0.208775884920069" W="1" />
+        <RowZ X="0.500000193285363" Y="0" Z="0.866025292191054" W="0" />
+        <RowT X="-0.156261423469505" Y="0" Z="0.208775850447877" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14974,10 +14977,10 @@
     <MechanismLinkInstance ID="4405" Name="Link6" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="19" DocID="1" />
       <Transform>
-        <RowX X="0.866025247487549" Y="0" Z="-0.500000270714056" W="0" />
+        <RowX X="0.866025292191054" Y="0" Z="-0.500000193285363" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000270714056" Y="0" Z="0.866025247487549" W="0" />
-        <RowT X="-0.15626153799344" Y="0" Z="0.208775884920069" W="1" />
+        <RowZ X="0.500000193285363" Y="0" Z="0.866025292191054" W="0" />
+        <RowT X="-0.156261423469505" Y="0" Z="0.208775850447877" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -15000,94 +15003,6 @@
         <RowT X="0.63" Y="0" Z="-0.302" W="1" />
       </CorrectionTransform>
     </MechanismLinkInstance>
-    <MechanismInstance ID="4406" Name="MyTool" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
-      <Definition ID="9" DocID="2" />
-      <ChildInstances>
-        <ObjectRef ID="4407" />
-      </ChildInstances>
-      <Transform>
-        <RowX X="0.500000270714056" Y="0" Z="-0.866025247487549" W="0" />
-        <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-0.866025247487549" Y="0" Z="-0.500000270714056" W="0" />
-        <RowT X="-0.482632075116758" Y="0" Z="1.34237168959017" W="1" />
-      </Transform>
-      <Source Value="" />
-      <SourceFileTime HighPart="0" LowPart="0" />
-      <ComponentType Value="Mechanism" />
-      <ClipPlane ID="-1" />
-      <JointValues />
-      <CalibFrames />
-      <CalibFrameKnownValid />
-      <HomePos />
-      <UserDefinedPositions />
-      <TransitionTimes />
-      <JointLimitsMatrix />
-      <JointLimitsVector />
-      <JointModelOffset />
-    </MechanismInstance>
-    <MechanismLinkInstance ID="4407" Name="SpintecTool" Parent="4406" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
-      <Definition ID="6" DocID="2" />
-      <Transform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </Transform>
-      <AttachmentPoints>
-        <ObjectRef ID="4408" />
-      </AttachmentPoints>
-      <Source Value="" />
-      <SourceFileTime HighPart="0" LowPart="0" />
-      <ComponentType Value="PartMechanismLink" />
-      <ClipPlane ID="-1" />
-      <Skeleton>
-        <Bones />
-        <InverseBindMatrices />
-      </Skeleton>
-      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
-      <PhysicsGeometry UseOriginal="false" />
-      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
-        <Direction X="0" Y="0" Z="0" />
-        <ControlPoints />
-      </PhysicsSurfaceVelocity>
-      <CorrectionTransform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </CorrectionTransform>
-    </MechanismLinkInstance>
-    <Frame ID="4408" Name="MyTool" Parent="4407" FrameSize="0.05" ShowName="false" FrameType="0">
-      <Attributes>
-        <Attribute Key="GfxObject.Invisible">
-          <Value>
-            <Integer Value="1" />
-          </Value>
-        </Attribute>
-      </Attributes>
-      <Transform>
-        <RowX X="0.788010753606722" Y="0" Z="-0.615661475325658" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.615661475325658" Y="0" Z="0.788010753606722" W="0" />
-        <RowT X="0.0317926310186755" Y="0" Z="0.229638935148286" W="1" />
-      </Transform>
-    </Frame>
-    <Attachment ID="4409" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
-      <SourceObject ID="4405" />
-      <TargetObject ID="4406" />
-      <OffsetTransform>
-        <RowX X="0" Y="0" Z="-1" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="1" Y="0" Z="0" W="0" />
-        <RowT X="0.374" Y="0" Z="0.63" W="1" />
-      </OffsetTransform>
-      <OriginalTransform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </OriginalTransform>
-    </Attachment>
     <MechanismInstance ID="4410" Name="thesecondone" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="6" NumTransforms="7" TraceTCP="false">
       <Attributes>
         <Attribute Key="TcpTraceData">
@@ -15427,94 +15342,6 @@
         <RowT X="0.63" Y="0" Z="-0.302" W="1" />
       </CorrectionTransform>
     </MechanismLinkInstance>
-    <MechanismInstance ID="4418" Name="MyTool_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
-      <Definition ID="9" DocID="2" />
-      <ChildInstances>
-        <ObjectRef ID="4419" />
-      </ChildInstances>
-      <Transform>
-        <RowX X="0" Y="0.5" Z="-0.866025403784439" W="0" />
-        <RowY X="1" Y="0" Z="0" W="0" />
-        <RowZ X="0" Y="-0.866025403784439" Z="-0.5" W="0" />
-        <RowT X="1.997051" Y="0.636595170927522" Z="1.369" W="1" />
-      </Transform>
-      <Source Value="" />
-      <SourceFileTime HighPart="0" LowPart="0" />
-      <ComponentType Value="Mechanism" />
-      <ClipPlane ID="-1" />
-      <JointValues />
-      <CalibFrames />
-      <CalibFrameKnownValid />
-      <HomePos />
-      <UserDefinedPositions />
-      <TransitionTimes />
-      <JointLimitsMatrix />
-      <JointLimitsVector />
-      <JointModelOffset />
-    </MechanismInstance>
-    <MechanismLinkInstance ID="4419" Name="SpintecTool" Parent="4418" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
-      <Definition ID="6" DocID="2" />
-      <Transform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </Transform>
-      <AttachmentPoints>
-        <ObjectRef ID="4420" />
-      </AttachmentPoints>
-      <Source Value="" />
-      <SourceFileTime HighPart="0" LowPart="0" />
-      <ComponentType Value="PartMechanismLink" />
-      <ClipPlane ID="-1" />
-      <Skeleton>
-        <Bones />
-        <InverseBindMatrices />
-      </Skeleton>
-      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
-      <PhysicsGeometry UseOriginal="false" />
-      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
-        <Direction X="0" Y="0" Z="0" />
-        <ControlPoints />
-      </PhysicsSurfaceVelocity>
-      <CorrectionTransform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </CorrectionTransform>
-    </MechanismLinkInstance>
-    <Frame ID="4420" Name="MyTool" Parent="4419" FrameSize="0.05" ShowName="false" FrameType="0">
-      <Attributes>
-        <Attribute Key="GfxObject.Invisible">
-          <Value>
-            <Integer Value="1" />
-          </Value>
-        </Attribute>
-      </Attributes>
-      <Transform>
-        <RowX X="0.788010753606722" Y="0" Z="-0.615661475325658" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.615661475325658" Y="0" Z="0.788010753606722" W="0" />
-        <RowT X="0.0317926310186755" Y="0" Z="0.229638935148286" W="1" />
-      </Transform>
-    </Frame>
-    <Attachment ID="4421" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
-      <SourceObject ID="4417" />
-      <TargetObject ID="4418" />
-      <OffsetTransform>
-        <RowX X="0" Y="0" Z="-1" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="1" Y="0" Z="0" W="0" />
-        <RowT X="0.374" Y="0" Z="0.63" W="1" />
-      </OffsetTransform>
-      <OriginalTransform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </OriginalTransform>
-    </Attachment>
     <MechanismInstance ID="4422" Name="thethirdone" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="6" NumTransforms="7" TraceTCP="false">
       <Attributes>
         <Attribute Key="TcpTraceData">
@@ -15854,94 +15681,6 @@
         <RowT X="0.63" Y="0" Z="-0.302" W="1" />
       </CorrectionTransform>
     </MechanismLinkInstance>
-    <MechanismInstance ID="4430" Name="MyTool_3" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
-      <Definition ID="9" DocID="2" />
-      <ChildInstances>
-        <ObjectRef ID="4431" />
-      </ChildInstances>
-      <Transform>
-        <RowX X="0" Y="-0.5" Z="-0.866025403784439" W="0" />
-        <RowY X="-1" Y="0" Z="0" W="0" />
-        <RowZ X="0" Y="0.866025403784439" Z="-0.5" W="0" />
-        <RowT X="1.989617" Y="-0.629632170927521" Z="1.369" W="1" />
-      </Transform>
-      <Source Value="" />
-      <SourceFileTime HighPart="0" LowPart="0" />
-      <ComponentType Value="Mechanism" />
-      <ClipPlane ID="-1" />
-      <JointValues />
-      <CalibFrames />
-      <CalibFrameKnownValid />
-      <HomePos />
-      <UserDefinedPositions />
-      <TransitionTimes />
-      <JointLimitsMatrix />
-      <JointLimitsVector />
-      <JointModelOffset />
-    </MechanismInstance>
-    <MechanismLinkInstance ID="4431" Name="SpintecTool" Parent="4430" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
-      <Definition ID="6" DocID="2" />
-      <Transform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </Transform>
-      <AttachmentPoints>
-        <ObjectRef ID="4432" />
-      </AttachmentPoints>
-      <Source Value="" />
-      <SourceFileTime HighPart="0" LowPart="0" />
-      <ComponentType Value="PartMechanismLink" />
-      <ClipPlane ID="-1" />
-      <Skeleton>
-        <Bones />
-        <InverseBindMatrices />
-      </Skeleton>
-      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
-      <PhysicsGeometry UseOriginal="false" />
-      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
-        <Direction X="0" Y="0" Z="0" />
-        <ControlPoints />
-      </PhysicsSurfaceVelocity>
-      <CorrectionTransform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </CorrectionTransform>
-    </MechanismLinkInstance>
-    <Frame ID="4432" Name="MyTool" Parent="4431" FrameSize="0.05" ShowName="false" FrameType="0">
-      <Attributes>
-        <Attribute Key="GfxObject.Invisible">
-          <Value>
-            <Integer Value="1" />
-          </Value>
-        </Attribute>
-      </Attributes>
-      <Transform>
-        <RowX X="0.788010753606722" Y="0" Z="-0.615661475325658" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.615661475325658" Y="0" Z="0.788010753606722" W="0" />
-        <RowT X="0.0317926310186755" Y="0" Z="0.229638935148286" W="1" />
-      </Transform>
-    </Frame>
-    <Attachment ID="4433" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
-      <SourceObject ID="4429" />
-      <TargetObject ID="4430" />
-      <OffsetTransform>
-        <RowX X="0" Y="0" Z="-1" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="1" Y="0" Z="0" W="0" />
-        <RowT X="0.374" Y="0" Z="0.63" W="1" />
-      </OffsetTransform>
-      <OriginalTransform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </OriginalTransform>
-    </Attachment>
     <ComponentInstance ID="4434" Name="conveyor_1" Parent="4466" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="4" DocID="3" />
       <Transform>
@@ -16453,12 +16192,12 @@
       <SignalValues>
         <Element Key="EncenderMotor">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Headphones_Sensor">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Mouse_Sensor">
@@ -16681,7 +16420,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[0 0 0]" />
+            <String Value="[-0.482727294921875 0.0999999923706055 0.892429992675781]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -16763,7 +16502,7 @@
         </Element>
         <Element Key="SensorOut">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -16826,7 +16565,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[-0.48272705078125 0.0449999923706055 0.820429992675781]" />
+            <String Value="[-0.48272705078125 0.0999999923706055 0.820429992675781]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17189,7 +16928,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{1e6aee54-f395-4b89-9a05-3f394807901d};{aee7e50f-925c-4d3e-87d7-a7c90a6a1748};{8e1d4589-6840-484f-a004-c6bed2945c43};{7a2511a0-b313-4c27-8350-558098bd512b};{f66d8e9c-5093-45be-b09f-6b3b0d62b426};{9c7d8b5c-8cd0-4258-9191-b3f7719042cd};{c90534a8-b9ab-4a26-aad4-c9cbc3da761d};{f237d0e8-0cbc-4f26-8572-a070445edea6};{de8e546c-e611-4cda-87e4-61506a635f3b};{589750e4-5109-497a-9d4f-8124be507c6d};{5f7680bb-29e8-4ee5-b69e-f5a939f588ae};{2839d94e-1579-4ba7-8cfa-1476b3b1f7f1}" />
+            <String Value="{aee7e50f-925c-4d3e-87d7-a7c90a6a1748};{8e1d4589-6840-484f-a004-c6bed2945c43};{7a2511a0-b313-4c27-8350-558098bd512b};{f66d8e9c-5093-45be-b09f-6b3b0d62b426};{9c7d8b5c-8cd0-4258-9191-b3f7719042cd};{c90534a8-b9ab-4a26-aad4-c9cbc3da761d};{f237d0e8-0cbc-4f26-8572-a070445edea6};{de8e546c-e611-4cda-87e4-61506a635f3b};{589750e4-5109-497a-9d4f-8124be507c6d};{5f7680bb-29e8-4ee5-b69e-f5a939f588ae};{2839d94e-1579-4ba7-8cfa-1476b3b1f7f1};{4c8ab7d0-88a2-4b15-95e4-430f89045765};{d1d71d99-3718-4f0d-8165-52efcc9cc9b9};{66a939ef-5404-4ef1-afc6-8f43774fcb8d};{03e2a2c4-08e5-4075-b9a9-ae76a1d6444b}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
@@ -17302,12 +17041,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{b831864b-f9de-43b1-91a5-022f6de05fe0};{f3a0ed73-c5ef-4da6-bb95-fb250e7f1b73};{31273149-ae14-423e-84c0-355c8fdea836};{737e6fa1-8522-4432-b22c-7317b8a2976b};{6eb16a4c-d645-4b0a-8117-006fd1779021};{b77340ca-f306-4185-9969-e51a14106ca9};{f75f94ea-90b3-446b-bf3c-84ac15853fe3};{a8758f70-656a-4fba-8cf6-3ccb21e83852};{638d65b6-e999-4afe-b76f-ebdb0c215fd7};{d4131bf2-2ed5-42bf-bdf8-8c007b93c5de}" />
+            <String Value="{f3a0ed73-c5ef-4da6-bb95-fb250e7f1b73};{31273149-ae14-423e-84c0-355c8fdea836};{737e6fa1-8522-4432-b22c-7317b8a2976b};{6eb16a4c-d645-4b0a-8117-006fd1779021};{b77340ca-f306-4185-9969-e51a14106ca9};{f75f94ea-90b3-446b-bf3c-84ac15853fe3};{a8758f70-656a-4fba-8cf6-3ccb21e83852};{638d65b6-e999-4afe-b76f-ebdb0c215fd7};{d4131bf2-2ed5-42bf-bdf8-8c007b93c5de};{08628b1c-c996-40d9-a1a1-68630880aa0d};{80b0036d-adf4-4908-910e-6b2814eb02e4}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="2" />
+            <Integer Value="1" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17420,7 +17159,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;CurrentTime">
           <Value>
-            <Double Value="13.752" />
+            <Double Value="13.344" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17559,7 +17298,7 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="InputB">
@@ -17636,7 +17375,7 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="InputB">
@@ -17646,7 +17385,7 @@
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -17790,7 +17529,7 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="InputB">
@@ -17810,7 +17549,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Value">
           <Value>
-            <Double Value="0.965875340144092" />
+            <Double Value="0.46775904552441" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Min">
@@ -17889,7 +17628,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.965875340144092" />
+            <Double Value="0.46775904552441" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17950,7 +17689,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17960,7 +17699,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.965875340144092" />
+            <Double Value="0.46775904552441" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -18021,7 +17760,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -18093,7 +17832,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -18170,7 +17909,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -18378,19 +18117,246 @@
       <TaskName Value="" />
       <ModuleName Value="Module1" />
     </RAPIDDeclarationInfo>
+    <DataDeclaration ID="4495" Name="VacuumGripper" Parent="1190" StorageType="1" DataType="tooldata" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <DeclarationInfo ID="4496" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[TRUE,[[0,0,110],[1,0,0,0]],[1,[0,0,1],[1,0,0,0],0,0,0]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4496" Name="" Parent="4495" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="CalibData" />
+    </RAPIDDeclarationInfo>
+    <DataDeclaration ID="4497" Name="NewIni" Parent="1190" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0,0.454160690307617,-0.456617504358292,0,0.526055872440338,0" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="4498" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[577.89485234,0,512.371659812],[0.499999865,0,0.866025482,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4498" Name="" Parent="4497" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="4499" Name="NewIni" Parent="1190" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="false">
+      <Robtarget ID="4497" />
+      <Workobject ID="4462" />
+      <ReferenceFrame>
+        <RowX X="-0.500000270236639" Y="0" Z="-0.866025247763186" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.866025247763186" Y="0" Z="-0.500000270236639" W="0" />
+        <RowT X="0.57789485234" Y="0" Z="0.512371659812" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="4500" Name="NewAtaq" Parent="1190" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0,0.662956655025482,-0.212560370564461,0,0.231356665492058,0" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="4501" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[609.844394291,0,319.671174559],[0.430026102,0,0.902816455,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="4501" Name="" Parent="4500" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="4502" Name="NewAtaq" Parent="1190" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="false">
+      <Robtarget ID="4500" />
+      <Workobject ID="4462" />
+      <ReferenceFrame>
+        <RowX X="-0.630155103130829" Y="0" Z="-0.776469282069918" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0.776469282069918" Y="0" Z="-0.630155103130829" W="0" />
+        <RowT X="0.609844394291" Y="0" Z="0.319671174559" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <MechanismDef ID="4503" Name="" Parent="1183" MechanismType="1" UsingCustomFwdKin="false" KinFlags="0">
+      <ForwardKinematics ID="4504" />
+      <Flanges />
+      <ModelToolData>
+        <Element type="TModelToolData" LinkIndex="0">
+          <Name Value="VacuumGripper" />
+          <OffsetTransform>
+            <RowX X="1" Y="0" Z="0" W="0" />
+            <RowY X="0" Y="1" Z="0" W="0" />
+            <RowZ X="0" Y="0" Z="1" W="0" />
+            <RowT X="0" Y="0" Z="0.11" W="1" />
+          </OffsetTransform>
+          <CenterOfGravity X="0" Y="0" Z="0" />
+          <CenterOfInertia X="0" Y="0" Z="0" />
+        </Element>
+      </ModelToolData>
+      <ModelName Value="VacuumGripper" />
+      <ModelBaseFrame>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </ModelBaseFrame>
+      <HomePos />
+      <JointMask>
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+        <Integer Value="0" />
+      </JointMask>
+      <FwdKinInitData />
+      <KinematicsCLSID Value="" />
+      <LoadData Mass="1">
+        <CenterOfGravity X="0" Y="0" Z="0.001" />
+        <AxesOfMoment X="0" Y="0" Z="0" W="1" />
+        <Inertia X="0" Y="0" Z="0" />
+      </LoadData>
+    </MechanismDef>
+    <ForwardKinematicsDH ID="4504" Name="" Parent="4503" NumActiveKJoints="0" NumJoints="0" NumLinks="1">
+      <BaseJoints />
+      <JointDependency NumCols="0" NumRows="0">
+        <MatrixElements />
+      </JointDependency>
+      <JointLimitsMatrix NumCols="0" NumRows="0">
+        <MatrixElements />
+      </JointLimitsMatrix>
+      <JointLimitsVector NumCols="1" NumRows="0">
+        <MatrixElements />
+      </JointLimitsVector>
+      <JointZeroPosition />
+      <KinematicBaseFrames />
+      <JointInfos />
+      <UserDefinedKinBaseFrame />
+    </ForwardKinematicsDH>
+    <PartDef ID="4505" Name="VacuumGripperDefinitivo" Parent="1183">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="4c03233fdaee4ed3b4455bf420399fa7" StreamChangeRef="6b1c4129491b45e6a52ccad5a3ee71c5" />
+      <BoundingBox>
+        <Min X="-0.0788911209106445" Y="-0.097885627746582" Z="-0.0115354385375977" />
+        <Max X="0.0790765838623047" Y="0.0979447631835938" Z="0.103960334777832" />
+      </BoundingBox>
+    </PartDef>
+    <MechanismInstance ID="4506" Name="VacuumGripper" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
+      <Definition ID="4503" />
+      <ChildInstances>
+        <ObjectRef ID="4507" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="0.500000193285363" Y="0" Z="-0.866025292191054" W="0" />
+        <RowY X="0" Y="-1" Z="0" W="0" />
+        <RowZ X="-0.866025292191054" Y="0" Z="-0.500000193285363" W="0" />
+        <RowT X="-0.482632157579728" Y="0" Z="1.34237171223952" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Mechanism" />
+      <ClipPlane ID="-1" />
+      <JointValues />
+      <CalibFrames />
+      <CalibFrameKnownValid />
+      <HomePos />
+      <UserDefinedPositions />
+      <TransitionTimes />
+      <JointLimitsMatrix />
+      <JointLimitsVector />
+      <JointModelOffset />
+    </MechanismInstance>
+    <MechanismLinkInstance ID="4507" Name="VacuumGripperDefinitivo" Parent="4506" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="4505" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <AttachmentPoints>
+        <ObjectRef ID="4508" />
+      </AttachmentPoints>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="PartMechanismLink" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+      <CorrectionTransform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </CorrectionTransform>
+    </MechanismLinkInstance>
+    <Frame ID="4508" Name="VacuumGripper" Parent="4507" FrameSize="0.05" ShowName="false" FrameType="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0.11" W="1" />
+      </Transform>
+    </Frame>
+    <Attachment ID="4509" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
+      <SourceObject ID="4405" />
+      <TargetObject ID="4506" />
+      <OffsetTransform>
+        <RowX X="0" Y="0" Z="-1" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="1" Y="0" Z="0" W="0" />
+        <RowT X="0.374" Y="0" Z="0.63" W="1" />
+      </OffsetTransform>
+      <OriginalTransform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </OriginalTransform>
+    </Attachment>
   </Objects>
   <ReferencedDocuments>
-    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
-    <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Training Objects\myTool.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Training Objects\myTool.rslib" GUID="{A3CF06C6-9F5C-4B19-884C-6700EE8891A9}" />
-    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
-    <DocRef ID="4" DocumentType="ComponentLibrary" Location="C:\Users\nikos\OneDrive\Documentos\GitHub\PROYECTO_PROGRAMACION_DE_ROBOTS\Proyecto_Prog_Robots_1\Components\Cinta transportadora.rslib" RelativeLocation="..\Components\Cinta transportadora.rslib" GUID="{6727B49D-AE98-40EC-9330-6F55272C9F9C}" />
-    <DocRef ID="5" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LineSensor.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LineSensor.rslib" GUID="{7DC22A2D-18E4-45E6-95B3-87F458B51DC4}" />
-    <DocRef ID="6" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Source.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Source.rslib" GUID="{52EF547B-1441-4232-80BA-79F8CA5362D5}" />
-    <DocRef ID="7" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Queue.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Queue.rslib" GUID="{3EFE5D56-485A-4B4B-8331-1AA5FEEE95EA}" />
-    <DocRef ID="8" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Timer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Timer.rslib" GUID="{D8D84F33-D6E4-41DD-B88C-E45D8662C415}" />
-    <DocRef ID="9" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LogicGate.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LogicGate.rslib" GUID="{1421AB33-9F45-49AE-A995-F20D059581EF}" />
-    <DocRef ID="10" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Random.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Random.rslib" GUID="{65DBB3A7-241D-4947-8905-F5722E8E7BCC}" />
-    <DocRef ID="11" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Comparer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Comparer.rslib" GUID="{85CE3999-0243-42A3-8FAB-E88E3CA3B6A1}" />
-    <DocRef ID="12" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LinearMover.rslib" RelativeLocation="..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LinearMover.rslib" GUID="{6336703E-A316-45A7-88E8-D9ACFEDADA3D}" />
+    <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
+    <DocRef ID="3" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.Conveyors%\Conveyor Guide 400.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.Conveyors-1.1\RobotStudio\LibraryComponents\Conveyor Guide 400.rslib" GUID="{AB149017-136E-495F-BC8F-42B2E91CB325}" />
+    <DocRef ID="4" DocumentType="ComponentLibrary" Location="C:\Users\ramir\OneDrive\Documents\RobotStudio\Projects\PROYECTO_PROGRAMACION_DE_ROBOTS\Proyecto_Prog_Robots_1\Components\Cinta transportadora.rslib" RelativeLocation="..\Components\Cinta transportadora.rslib" GUID="{681F2711-CF49-43FF-86C1-DC0A58BB3C94}" />
+    <DocRef ID="5" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LineSensor.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LineSensor.rslib" GUID="{7DC22A2D-18E4-45E6-95B3-87F458B51DC4}" />
+    <DocRef ID="6" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Source.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Source.rslib" GUID="{52EF547B-1441-4232-80BA-79F8CA5362D5}" />
+    <DocRef ID="7" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Queue.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Queue.rslib" GUID="{3EFE5D56-485A-4B4B-8331-1AA5FEEE95EA}" />
+    <DocRef ID="8" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Timer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Timer.rslib" GUID="{D8D84F33-D6E4-41DD-B88C-E45D8662C415}" />
+    <DocRef ID="9" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LogicGate.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LogicGate.rslib" GUID="{1421AB33-9F45-49AE-A995-F20D059581EF}" />
+    <DocRef ID="10" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Random.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Random.rslib" GUID="{65DBB3A7-241D-4947-8905-F5722E8E7BCC}" />
+    <DocRef ID="11" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Comparer.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Comparer.rslib" GUID="{85CE3999-0243-42A3-8FAB-E88E3CA3B6A1}" />
+    <DocRef ID="12" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LinearMover.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LinearMover.rslib" GUID="{6336703E-A316-45A7-88E8-D9ACFEDADA3D}" />
   </ReferencedDocuments>
 </PIMDocument>
