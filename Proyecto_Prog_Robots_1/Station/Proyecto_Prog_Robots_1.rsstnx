@@ -57,7 +57,7 @@
         <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="1188" />
           <SourceSignal Value="Mouse_Outpu1" />
-          <TargetObject ID="4892" />
+          <TargetObject ID="-1" />
           <TargetSignal Value="Execute" />
           <SourceObjectName Value="themainone" />
           <TargetObjectName Value="Attacher_2" />
@@ -65,10 +65,42 @@
         <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="1188" />
           <SourceSignal Value="Mouse_Output2" />
-          <TargetObject ID="4935" />
+          <TargetObject ID="-1" />
           <TargetSignal Value="Execute" />
           <SourceObjectName Value="themainone" />
           <TargetObjectName Value="Detacher" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4466" />
+          <SourceSignal Value="Headphones_Sensor" />
+          <TargetObject ID="1188" />
+          <TargetSignal Value="Headphones_Input" />
+          <SourceObjectName Value="Cinta transportadora" />
+          <TargetObjectName Value="themainone" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4466" />
+          <SourceSignal Value="Mouse_Sensor" />
+          <TargetObject ID="1188" />
+          <TargetSignal Value="Mouse_Input" />
+          <SourceObjectName Value="Cinta transportadora" />
+          <TargetObjectName Value="themainone" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="1188" />
+          <SourceSignal Value="Mouse_Outpu1" />
+          <TargetObject ID="4938" />
+          <TargetSignal Value="COGER8" />
+          <SourceObjectName Value="themainone" />
+          <TargetObjectName Value="TOOL" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="1188" />
+          <SourceSignal Value="Mouse_Output2" />
+          <TargetObject ID="4938" />
+          <TargetSignal Value="SOLTAR" />
+          <SourceObjectName Value="themainone" />
+          <TargetObjectName Value="TOOL" />
         </Element>
       </IOConnections>
       <UserData Value="" />
@@ -95,6 +127,9 @@
         <ObjectRef ID="4486" />
         <ObjectRef ID="4489" />
         <ObjectRef ID="4490" />
+        <ObjectRef ID="4941" />
+        <ObjectRef ID="5173" />
+        <ObjectRef ID="5174" />
       </SimulatedObjects>
       <EventTable ID="4" />
       <ConnectedState Value="" />
@@ -3955,10 +3990,7 @@
         <ObjectRef ID="4446" />
         <ObjectRef ID="4448" />
         <ObjectRef ID="4466" />
-        <ObjectRef ID="4515" />
-        <ObjectRef ID="4891" />
-        <ObjectRef ID="4892" />
-        <ObjectRef ID="4935" />
+        <ObjectRef ID="4938" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -3972,6 +4004,7 @@
       <ClipPlane ID="-1" />
       <Attachments>
         <ObjectRef ID="4518" />
+        <ObjectRef ID="5176" />
       </Attachments>
       <Definitions>
         <ObjectRef ID="4437" />
@@ -3980,14 +4013,15 @@
         <ObjectRef ID="4443" />
         <ObjectRef ID="4445" />
         <ObjectRef ID="4447" />
-        <ObjectRef ID="4512" />
-        <ObjectRef ID="4514" />
         <ObjectRef ID="4525" />
         <ObjectRef ID="4526" />
         <ObjectRef ID="4527" />
         <ObjectRef ID="4528" />
         <ObjectRef ID="4529" />
-        <ObjectRef ID="4890" />
+        <ObjectRef ID="4936" />
+        <ObjectRef ID="4512" />
+        <ObjectRef ID="4514" />
+        <ObjectRef ID="5175" />
       </Definitions>
       <Textures />
     </AssemblyRoot>
@@ -4017,12 +4051,12 @@
       <Attributes>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="706" />
+            <Double Value="607" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="50" />
+            <Double Value="57" />
           </Value>
         </Attribute>
       </Attributes>
@@ -14739,10 +14773,10 @@
       <ClipPlane ID="-1" />
       <JointValues>
         <Double Value="0" />
-        <Double Value="0.6876540184021" />
-        <Double Value="-0.703354358673096" />
+        <Double Value="0.898711323738098" />
+        <Double Value="-0.471049815416336" />
         <Double Value="0" />
-        <Double Value="0.539299309253693" />
+        <Double Value="0.25409147143364" />
         <Double Value="0" />
       </JointValues>
       <CalibFrames />
@@ -14905,10 +14939,10 @@
     <MechanismLinkInstance ID="4401" Name="Link2" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="15" DocID="1" />
       <Transform>
-        <RowX X="0.772737195817964" Y="0" Z="-0.634726103291325" W="0" />
+        <RowX X="0.622618906635437" Y="0" Z="-0.782525205408805" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.634726103291325" Y="0" Z="0.772737195817964" W="0" />
-        <RowT X="-0.184070569954484" Y="0" Z="0.0659062132127906" W="1" />
+        <RowZ X="0.782525205408805" Y="0" Z="0.622618906635437" W="0" />
+        <RowT X="-0.226932309568553" Y="0" Z="0.109440517075723" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14934,10 +14968,10 @@
     <MechanismLinkInstance ID="4402" Name="Link3" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="16" DocID="1" />
       <Transform>
-        <RowX X="0.999876752189441" Y="0" Z="0.0156996952548382" W="0" />
+        <RowX X="0.909938112330604" Y="0" Z="-0.414744055687623" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.0156996952548382" Y="0" Z="0.999876752189441" W="0" />
-        <RowT X="0.180167877231367" Y="0" Z="-0.0612919383552369" W="1" />
+        <RowZ X="0.414744055687623" Y="0" Z="0.909938112330604" W="0" />
+        <RowT X="-0.0209748657246913" Y="0" Z="-0.0514582381135701" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14963,10 +14997,10 @@
     <MechanismLinkInstance ID="4403" Name="Link4" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="17" DocID="1" />
       <Transform>
-        <RowX X="0.999876752189441" Y="0" Z="0.0156996952548382" W="0" />
+        <RowX X="0.909938112330604" Y="0" Z="-0.414744055687623" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.0156996952548382" Y="0" Z="0.999876752189441" W="0" />
-        <RowT X="0.180167877231367" Y="0" Z="-0.0612919383552369" W="1" />
+        <RowZ X="0.414744055687623" Y="0" Z="0.909938112330604" W="0" />
+        <RowT X="-0.0209748657246912" Y="0" Z="-0.05145823811357" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -14992,10 +15026,10 @@
     <MechanismLinkInstance ID="4404" Name="Link5" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="18" DocID="1" />
       <Transform>
-        <RowX X="0.86602530709222" Y="0" Z="-0.500000167475798" W="0" />
+        <RowX X="0.776469263157931" Y="0" Z="-0.630155126433944" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000167475798" Y="0" Z="0.86602530709222" W="0" />
-        <RowT X="-0.104299899869573" Y="0" Z="0.178775830600664" W="1" />
+        <RowZ X="0.630155126433944" Y="0" Z="0.776469263157931" W="0" />
+        <RowT X="-0.116376247844726" Y="0" Z="0.0976812802306026" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -15021,10 +15055,10 @@
     <MechanismLinkInstance ID="4405" Name="Link6" Parent="4398" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
       <Definition ID="19" DocID="1" />
       <Transform>
-        <RowX X="0.86602530709222" Y="0" Z="-0.500000167475798" W="0" />
+        <RowX X="0.776469263157931" Y="0" Z="-0.630155126433944" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0.500000167475798" Y="0" Z="0.86602530709222" W="0" />
-        <RowT X="-0.104299899869573" Y="0" Z="0.178775830600664" W="1" />
+        <RowZ X="0.630155126433944" Y="0" Z="0.776469263157931" W="0" />
+        <RowT X="-0.116376247844726" Y="0" Z="0.0976812802306026" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -16162,7 +16196,7 @@
         </Element>
         <Element Key="Mouse_Sensor">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -16525,7 +16559,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[-0.48272705078125 0.0449999923706055 0.820429992675781]" />
+            <String Value="[0 0 0]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -16607,7 +16641,7 @@
         </Element>
         <Element Key="SensorOut">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -16888,12 +16922,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{f66d8e9c-5093-45be-b09f-6b3b0d62b426};{9c7d8b5c-8cd0-4258-9191-b3f7719042cd};{c90534a8-b9ab-4a26-aad4-c9cbc3da761d};{f237d0e8-0cbc-4f26-8572-a070445edea6};{de8e546c-e611-4cda-87e4-61506a635f3b};{589750e4-5109-497a-9d4f-8124be507c6d};{5f7680bb-29e8-4ee5-b69e-f5a939f588ae};{2839d94e-1579-4ba7-8cfa-1476b3b1f7f1};{4c8ab7d0-88a2-4b15-95e4-430f89045765};{d1d71d99-3718-4f0d-8165-52efcc9cc9b9};{66a939ef-5404-4ef1-afc6-8f43774fcb8d};{03e2a2c4-08e5-4075-b9a9-ae76a1d6444b};{926815a6-5fa8-4618-8bee-607cfe9b5384};{8c1b5c7d-916d-48ef-8778-514e4d0f287d};{66e38129-c496-4be2-ad04-edc24b118d4a};{986630cd-8d7c-497b-835f-3c5fc67cc21f};{7c6882b9-f051-4767-a359-e968a9221f25};{30578bb3-0eb2-425d-acb6-8b23693ebdb2};{d97f1cd3-a2f7-4bd6-92b9-76b3eb2b6e34};{c300db59-31d5-4efb-b1e8-bc170c6ecb60};{2232bca8-2d3f-4403-8a8e-013e99c0ff53};{23439bc7-5991-49e0-b46d-990f1ae2c20c};{cc20a378-5d0a-4886-9283-99e369d1a319};{0abf2617-e11c-4108-92e6-09a6a8a73df5};{eb6215ba-01f3-4f6a-af7b-b096765bc1a0};{f8c40b83-5b43-4230-a074-1abcf6cb5528};{ac9cfbe9-b626-40c0-a955-5efb1156dd65};{c17f1e12-160d-4a9a-bfbd-9d127e26952b};{87c1d730-25e3-4d95-bf46-2ce6953c0a7a};{471a3580-2351-4f02-b6d5-f27bd4d19176};{7185d0c9-903b-4160-b2c7-79e85702f161};{51bb0b32-e131-4b79-be13-244167ea6728};{fb374b99-278f-4042-80c8-4ff4606e81e9}" />
+            <String Value="{5f7680bb-29e8-4ee5-b69e-f5a939f588ae};{2839d94e-1579-4ba7-8cfa-1476b3b1f7f1};{4c8ab7d0-88a2-4b15-95e4-430f89045765};{d1d71d99-3718-4f0d-8165-52efcc9cc9b9};{66a939ef-5404-4ef1-afc6-8f43774fcb8d};{03e2a2c4-08e5-4075-b9a9-ae76a1d6444b};{926815a6-5fa8-4618-8bee-607cfe9b5384};{8c1b5c7d-916d-48ef-8778-514e4d0f287d};{66e38129-c496-4be2-ad04-edc24b118d4a};{986630cd-8d7c-497b-835f-3c5fc67cc21f};{7c6882b9-f051-4767-a359-e968a9221f25};{30578bb3-0eb2-425d-acb6-8b23693ebdb2};{d97f1cd3-a2f7-4bd6-92b9-76b3eb2b6e34};{c300db59-31d5-4efb-b1e8-bc170c6ecb60};{2232bca8-2d3f-4403-8a8e-013e99c0ff53};{23439bc7-5991-49e0-b46d-990f1ae2c20c};{cc20a378-5d0a-4886-9283-99e369d1a319};{0abf2617-e11c-4108-92e6-09a6a8a73df5};{eb6215ba-01f3-4f6a-af7b-b096765bc1a0};{f8c40b83-5b43-4230-a074-1abcf6cb5528};{ac9cfbe9-b626-40c0-a955-5efb1156dd65};{c17f1e12-160d-4a9a-bfbd-9d127e26952b};{87c1d730-25e3-4d95-bf46-2ce6953c0a7a};{471a3580-2351-4f02-b6d5-f27bd4d19176};{7185d0c9-903b-4160-b2c7-79e85702f161};{51bb0b32-e131-4b79-be13-244167ea6728};{fb374b99-278f-4042-80c8-4ff4606e81e9};{df820581-4cbe-4353-9d5d-33283584515e};{e00e34a4-f45f-47e8-8181-a3d50d1ac628};{78632a17-2a19-4edd-8847-f6b4c8d83460};{84a30c24-7c0b-4b65-ac37-99b44562191a};{8027a2b4-e236-4952-84fe-1eb643f80800};{5805a7cd-0d46-4e7d-bdc9-88d240ed65b7};{1f151e77-ded0-4d51-8fd4-a2fa48a39306};{03953787-ae18-43b5-a33f-45b4e9c5ab71};{21698db0-4a52-4c80-9362-9db08066e000};{5ade8c01-4537-4928-8a26-9fb68819b8f8};{99af3ad3-4df6-4c0d-a1be-ab3bdc90e27b};{f730e1e6-1a94-4632-ad1d-0bbe29b6e37b};{6e637696-44d8-4e58-afc3-34cedaf88940};{029cdd1a-de1e-43a0-bd3e-6ff29247f429};{aab67a26-d2d3-450b-9cb3-37c84193c221};{f524097d-fd21-48cc-9eff-77c752a61cb9}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="4" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17001,12 +17035,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{f75f94ea-90b3-446b-bf3c-84ac15853fe3};{a8758f70-656a-4fba-8cf6-3ccb21e83852};{638d65b6-e999-4afe-b76f-ebdb0c215fd7};{d4131bf2-2ed5-42bf-bdf8-8c007b93c5de};{08628b1c-c996-40d9-a1a1-68630880aa0d};{80b0036d-adf4-4908-910e-6b2814eb02e4};{ca467141-762e-47a4-b3aa-411f2bb6a43c};{2bc0d594-8b02-4535-8eaf-ef309acf5d0d};{4425a497-470f-4484-9e44-a49444427d1c};{4f854f38-6757-4bdb-a794-2720b2e942f1};{ab299754-0bab-4e74-a6e0-f51d23dc4042};{1d1f31f6-2752-4536-a917-a34b4aafc2c2};{7b89a755-c297-40fe-a86d-70527f0e735d};{2a77bf86-7f59-4f60-80f0-11e5e1ec7272};{2ad1b207-7767-4cce-82fe-b3beec4cbdeb};{38d118cc-fcd9-49f9-8120-592feee6e198};{a09d3f3b-b7d9-4611-8c21-3ee0d82e9068};{7c9914af-ff92-403a-a22d-fa99080d89fb};{50fe2287-bae3-4772-bde2-cc3bb1b51162}" />
+            <String Value="{4f854f38-6757-4bdb-a794-2720b2e942f1};{ab299754-0bab-4e74-a6e0-f51d23dc4042};{1d1f31f6-2752-4536-a917-a34b4aafc2c2};{7b89a755-c297-40fe-a86d-70527f0e735d};{2a77bf86-7f59-4f60-80f0-11e5e1ec7272};{2ad1b207-7767-4cce-82fe-b3beec4cbdeb};{38d118cc-fcd9-49f9-8120-592feee6e198};{a09d3f3b-b7d9-4611-8c21-3ee0d82e9068};{7c9914af-ff92-403a-a22d-fa99080d89fb};{50fe2287-bae3-4772-bde2-cc3bb1b51162};{bcd22465-5ef7-4eed-b025-bc7cd4342d7f};{063cde4b-ed14-411f-bd42-8a64cd2e39be};{c088b828-cfff-490b-8ee5-c63f94035929};{77e8c259-785c-4da3-81f7-99f189588a4e};{88174d8b-5cbc-4e98-a8c8-33c04d38a2ca};{8fc0be2f-e7d4-4778-88a7-7b118e6c2de8};{063506f1-bc05-49a7-9625-d5d7a89d171e};{869f6169-061b-4734-9e82-ad43ebfc7cbb};{ab2e570f-081e-414b-94ac-799cb4d5ae27};{c8719fd6-a68d-4bef-9b8f-32e14a0136bd};{9576c5fc-04e1-4edb-bc16-ea3777c66d84};{45c6b65e-216b-46af-ab0d-a6dfd0885c98};{e4294346-dce0-461f-bcca-a4ba9626d776};{c14c9ae6-2907-44f7-951c-852e0194cc7b};{2cb446c1-1b7b-4658-a6bd-c61ebc6e28cd};{a1c44c06-ea4d-4e31-9fce-db6260c64e39};{a0218873-9d05-425c-98a9-0bd4798d8de8};{771bfe29-d0b6-4166-8e45-5891340f6edd};{0dcca1ab-4586-4d6f-af1c-3ef883d51e9e};{c3df0daa-855e-4adc-8387-4830794cc92a}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="4" />
+            <Integer Value="2" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17119,7 +17153,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;CurrentTime">
           <Value>
-            <Double Value="13.752" />
+            <Double Value="16.752" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17181,7 +17215,7 @@
       <SignalValues>
         <Element Key="Active">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -17263,12 +17297,12 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17412,7 +17446,7 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="InputB">
@@ -17422,7 +17456,7 @@
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17494,12 +17528,12 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17509,7 +17543,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Value">
           <Value>
-            <Double Value="0.857628721211864" />
+            <Double Value="0.8403622274475" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Min">
@@ -17588,7 +17622,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.857628721211864" />
+            <Double Value="0.8403622274475" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17659,7 +17693,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.857628721211864" />
+            <Double Value="0.8403622274475" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17973,7 +18007,7 @@
       <SignalValues>
         <Element Key="Execute">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -18064,7 +18098,7 @@
       <SignalValues>
         <Element Key="Execute">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -18075,9 +18109,25 @@
       <RoutineCalls>
         <ObjectRef ID="4893" />
         <ObjectRef ID="4899" />
-        <ObjectRef ID="4725" />
-        <ObjectRef ID="4905" />
-        <ObjectRef ID="4920" />
+        <ObjectRef ID="5007" />
+        <ObjectRef ID="5022" />
+        <ObjectRef ID="4944" />
+        <ObjectRef ID="5037" />
+        <ObjectRef ID="4959" />
+        <ObjectRef ID="4965" />
+        <ObjectRef ID="5052" />
+        <ObjectRef ID="5067" />
+        <ObjectRef ID="4971" />
+        <ObjectRef ID="4977" />
+        <ObjectRef ID="5082" />
+        <ObjectRef ID="5097" />
+        <ObjectRef ID="4983" />
+        <ObjectRef ID="4989" />
+        <ObjectRef ID="5112" />
+        <ObjectRef ID="5127" />
+        <ObjectRef ID="4995" />
+        <ObjectRef ID="5001" />
+        <ObjectRef ID="5157" />
       </RoutineCalls>
     </PathProcedureDeclaration>
     <RAPIDDeclarationInfo ID="4492" Name="" Parent="4491" Local="false" EnableSync="true">
@@ -18234,16 +18284,16 @@
         <Max X="0.0395382919311523" Y="0.0489723815917969" Z="0.051980167388916" />
       </BoundingBox>
     </PartDef>
-    <MechanismInstance ID="4515" Name="Gripper" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
+    <MechanismInstance ID="4515" Name="Gripper" Parent="4938" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="0" NumTransforms="1" TraceTCP="false">
       <Definition ID="4512" />
       <ChildInstances>
         <ObjectRef ID="4516" />
       </ChildInstances>
       <Transform>
-        <RowX X="0.500000167475798" Y="0" Z="-0.86602530709222" W="0" />
+        <RowX X="0.630155126433944" Y="0" Z="-0.776469263157931" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-0.86602530709222" Y="0" Z="-0.500000167475798" W="0" />
-        <RowT X="-0.53459367049267" Y="0" Z="1.31237171143281" W="1" />
+        <RowZ X="-0.776469263157931" Y="0" Z="-0.630155126433944" W="0" />
+        <RowT X="-0.571020986229724" Y="0" Z="1.1261788987338" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -18425,7 +18475,7 @@
       <CodeBehindLocation Value="" />
     </SmartComponentDef>
     <Asset ID="4530" Name="Resources.en.xml" Parent="4529" AllowSave="true">
-      <Blob StreamType="BlobStream" StreamID="b5b6b70b0b43400fbc1ece4961a4d0a2" StreamChangeRef="b3cefca60ef04be19a8c3410f36d399a" />
+      <Blob StreamType="BlobStream" StreamID="17b3c3c14295450f8e51333275809d9f" StreamChangeRef="63a8605250a34de5a9cdf4c7da0f67b2" />
       <OriginalSource Value="" />
     </Asset>
     <DataDeclaration ID="4531" Name="Soltar_Cascos" Parent="1190" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
@@ -18492,71 +18542,172 @@
       </ReferenceFrame>
       <Color Red="0" Green="0" Blue="0" Alpha="0" />
     </Target>
-    <MoveInstructionCall ID="4725" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="4726" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="4726" Name="" Parent="4725">
+    <ActionInstructionCall ID="4893" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4894" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4894" Name="" Parent="4893">
       <RoutineArguments>
-        <ObjectRef ID="4727" />
-        <ObjectRef ID="4728" />
-        <ObjectRef ID="4729" />
-        <ObjectRef ID="4730" />
-        <ObjectRef ID="4731" />
-        <ObjectRef ID="4732" />
-        <ObjectRef ID="4733" />
-        <ObjectRef ID="4734" />
-        <ObjectRef ID="4735" />
-        <ObjectRef ID="4736" />
-        <ObjectRef ID="4737" />
-        <ObjectRef ID="4738" />
-        <ObjectRef ID="4739" />
+        <ObjectRef ID="4895" />
+        <ObjectRef ID="4896" />
+        <ObjectRef ID="4897" />
+        <ObjectRef ID="4898" />
       </RoutineArguments>
     </RoutineArgumentList>
-    <RoutineArgument ID="4727" Name="Conc" Parent="4726" Enabled="false" />
-    <RoutineArgument ID="4728" Name="ToPoint" Parent="4726" Value="NewIni" />
-    <RoutineArgument ID="4729" Name="ID" Parent="4726" Enabled="false" />
-    <RoutineArgument ID="4730" Name="Speed" Parent="4726" Value="v1000" />
-    <RoutineArgument ID="4731" Name="V" Parent="4726" Enabled="false" />
-    <RoutineArgument ID="4732" Name="T" Parent="4726" Enabled="false" />
-    <RoutineArgument ID="4733" Name="Zone" Parent="4726" Value="z100" />
-    <RoutineArgument ID="4734" Name="Z" Parent="4726" Enabled="false" />
-    <RoutineArgument ID="4735" Name="Inpos" Parent="4726" Enabled="false" />
-    <RoutineArgument ID="4736" Name="Tool" Parent="4726" Value="Gripper" />
-    <RoutineArgument ID="4737" Name="WObj" Parent="4726" Value="WO_themainone" />
-    <RoutineArgument ID="4738" Name="Corr" Parent="4726" Enabled="false" />
-    <RoutineArgument ID="4739" Name="TLoad" Parent="4726" Enabled="false" />
-    <PartDef ID="4890" Name="" Parent="1183">
-      <GeoPart StreamType="GeoDataStream" StreamID="6cc2214595684faf92905f501e572e4c" StreamChangeRef="dad3bafe55c643bf8201e408425d0f4f" />
-      <GfxData StreamType="GfxDataStream" StreamID="ad44b05be8f34b848384c075fc807379" StreamChangeRef="a769d4bebdf546048b1ff106eb2b38cc" />
-      <BoundingBox>
-        <Min X="0" Y="0" Z="0" />
-        <Max X="0.06" Y="0.06" Z="0.06" />
-      </BoundingBox>
-    </PartDef>
-    <ComponentInstance ID="4891" Name="Prueba_ELiminar" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
-      <Definition ID="4890" />
+    <RoutineArgument ID="4895" Name="SDelay" Parent="4894" Enabled="false" />
+    <RoutineArgument ID="4896" Name="Sync" Parent="4894" Enabled="false" />
+    <RoutineArgument ID="4897" Name="Signal" Parent="4894" Value="Mouse_Outpu1" />
+    <RoutineArgument ID="4898" Name="Value" Parent="4894" Value="0" />
+    <ActionInstructionCall ID="4899" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4900" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4900" Name="" Parent="4899">
+      <RoutineArguments>
+        <ObjectRef ID="4901" />
+        <ObjectRef ID="4902" />
+        <ObjectRef ID="4903" />
+        <ObjectRef ID="4904" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4901" Name="SDelay" Parent="4900" Enabled="false" />
+    <RoutineArgument ID="4902" Name="Sync" Parent="4900" Enabled="false" />
+    <RoutineArgument ID="4903" Name="Signal" Parent="4900" Value="Mouse_Output2" />
+    <RoutineArgument ID="4904" Name="Value" Parent="4900" Value="1" />
+    <SmartComponentDef ID="4936" Name="" Parent="1183" PerInstanceCodeBehind="false">
+      <Assets>
+        <ObjectRef ID="4937" />
+      </Assets>
+      <CodeBehindLocation Value="" />
+    </SmartComponentDef>
+    <Asset ID="4937" Name="Resources.en.xml" Parent="4936" AllowSave="true">
+      <Blob StreamType="BlobStream" StreamID="9618328e6e664d969d253b1cc0247677" StreamChangeRef="9bcbe5d9979846ff8e9069eb11f823be" />
+      <OriginalSource Value="" />
+    </Asset>
+    <SmartComponentInstance ID="4938" Name="TOOL" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="948" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="121" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{c75fc45d-0be7-4763-a898-46db3552636d}" />
+      <Definition ID="4936" />
+      <ChildInstances>
+        <ObjectRef ID="4515" />
+        <ObjectRef ID="4939" />
+        <ObjectRef ID="4940" />
+        <ObjectRef ID="4941" />
+        <ObjectRef ID="5173" />
+        <ObjectRef ID="5174" />
+      </ChildInstances>
       <Transform>
-        <RowX X="0.521677503354425" Y="-1.70453325394613E-05" Z="0.853142767772986" W="0" />
-        <RowY X="3.76039215033215E-05" Y="0.999999999288429" Z="-3.01448650331936E-06" W="0" />
-        <RowZ X="-0.853142767114531" Y="3.3654103463409E-05" Z="0.521677503624185" W="0" />
-        <RowT X="-0.877538628832042" Y="0.409956130951583" Z="0.925243262090769" W="1" />
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
-      <ComponentType Value="Part" />
+      <ComponentType Value="SmartComponent" />
       <ClipPlane ID="-1" />
-      <Skeleton />
-      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
-      <PhysicsGeometry UseOriginal="false" />
-      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
-        <Direction X="0" Y="0" Z="0" />
-        <ControlPoints />
-      </PhysicsSurfaceVelocity>
-    </ComponentInstance>
-    <SmartComponentInstance ID="4892" Name="Attacher_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Bindings>
+        <Element type="TPropertyBinding" AllowCycle="false">
+          <SourceObject ID="4941" />
+          <SourceProperty Value="SensedPart" />
+          <TargetObject ID="4939" />
+          <TargetProperty Value="Child" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Attacher" />
+        </Element>
+        <Element type="TPropertyBinding" AllowCycle="false">
+          <SourceObject ID="4941" />
+          <SourceProperty Value="SensedPart" />
+          <TargetObject ID="4940" />
+          <TargetProperty Value="Child" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Detacher" />
+        </Element>
+      </Bindings>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="COGER8" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SOLTAR" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="COGER8">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="SOLTAR">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <IOConnections>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4941" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="4939" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Attacher" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4938" />
+          <SourceSignal Value="COGER8" />
+          <TargetObject ID="4941" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="TOOL" />
+          <TargetObjectName Value="LineSensor" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4938" />
+          <SourceSignal Value="COGER8" />
+          <TargetObject ID="5173" />
+          <TargetSignal Value="InputA" />
+          <SourceObjectName Value="TOOL" />
+          <TargetObjectName Value="LogicGate" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4938" />
+          <SourceSignal Value="SOLTAR" />
+          <TargetObject ID="5174" />
+          <TargetSignal Value="InputB" />
+          <SourceObjectName Value="TOOL" />
+          <TargetObjectName Value="LogicGate_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="5173" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="5174" />
+          <TargetSignal Value="InputA" />
+          <SourceObjectName Value="LogicGate" />
+          <TargetObjectName Value="LogicGate_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="5174" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4940" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="LogicGate_2" />
+          <TargetObjectName Value="Detacher" />
+        </Element>
+      </IOConnections>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="4939" Name="Attacher" Parent="4938" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Parent">
           <Value>
@@ -18570,7 +18721,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Child">
           <Value>
-            <ObjectRef ID="4891" />
+            <ObjectRef ID="-1" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Mount">
@@ -18590,16 +18741,16 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1055.14893617021" />
+            <Double Value="685" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="180.63829787234" />
+            <Double Value="23" />
           </Value>
         </Attribute>
       </Attributes>
-      <UniqueId Value="{0babad31-330f-4d47-a6bd-92064485384c}" />
+      <UniqueId Value="{f24ae6f0-4fc8-4760-88b0-e429e6c588e4}" />
       <Definition ID="4" DocID="2" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -18665,115 +18816,11 @@
       </SignalValues>
       <RoleObject ID="-1" />
     </SmartComponentInstance>
-    <ActionInstructionCall ID="4893" Name="SetDO" Parent="4491" TrigValidity="0">
-      <ArgumentList ID="4894" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="4894" Name="" Parent="4893">
-      <RoutineArguments>
-        <ObjectRef ID="4895" />
-        <ObjectRef ID="4896" />
-        <ObjectRef ID="4897" />
-        <ObjectRef ID="4898" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="4895" Name="SDelay" Parent="4894" Enabled="false" />
-    <RoutineArgument ID="4896" Name="Sync" Parent="4894" Enabled="false" />
-    <RoutineArgument ID="4897" Name="Signal" Parent="4894" Value="Mouse_Outpu1" />
-    <RoutineArgument ID="4898" Name="Value" Parent="4894" Value="0" />
-    <ActionInstructionCall ID="4899" Name="SetDO" Parent="4491" TrigValidity="0">
-      <ArgumentList ID="4900" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="4900" Name="" Parent="4899">
-      <RoutineArguments>
-        <ObjectRef ID="4901" />
-        <ObjectRef ID="4902" />
-        <ObjectRef ID="4903" />
-        <ObjectRef ID="4904" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="4901" Name="SDelay" Parent="4900" Enabled="false" />
-    <RoutineArgument ID="4902" Name="Sync" Parent="4900" Enabled="false" />
-    <RoutineArgument ID="4903" Name="Signal" Parent="4900" Value="Mouse_Output2" />
-    <RoutineArgument ID="4904" Name="Value" Parent="4900" Value="1" />
-    <MoveInstructionCall ID="4905" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="4906" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="4906" Name="" Parent="4905">
-      <RoutineArguments>
-        <ObjectRef ID="4907" />
-        <ObjectRef ID="4908" />
-        <ObjectRef ID="4909" />
-        <ObjectRef ID="4910" />
-        <ObjectRef ID="4911" />
-        <ObjectRef ID="4912" />
-        <ObjectRef ID="4913" />
-        <ObjectRef ID="4914" />
-        <ObjectRef ID="4915" />
-        <ObjectRef ID="4916" />
-        <ObjectRef ID="4917" />
-        <ObjectRef ID="4918" />
-        <ObjectRef ID="4919" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="4907" Name="Conc" Parent="4906" Enabled="false" />
-    <RoutineArgument ID="4908" Name="ToPoint" Parent="4906" Value="NewAtaq" />
-    <RoutineArgument ID="4909" Name="ID" Parent="4906" Enabled="false" />
-    <RoutineArgument ID="4910" Name="Speed" Parent="4906" Value="v1000" />
-    <RoutineArgument ID="4911" Name="V" Parent="4906" Enabled="false" />
-    <RoutineArgument ID="4912" Name="T" Parent="4906" Enabled="false" />
-    <RoutineArgument ID="4913" Name="Zone" Parent="4906" Value="z100" />
-    <RoutineArgument ID="4914" Name="Z" Parent="4906" Enabled="false" />
-    <RoutineArgument ID="4915" Name="Inpos" Parent="4906" Enabled="false" />
-    <RoutineArgument ID="4916" Name="Tool" Parent="4906" Value="Gripper" />
-    <RoutineArgument ID="4917" Name="WObj" Parent="4906" Value="WO_themainone" />
-    <RoutineArgument ID="4918" Name="Corr" Parent="4906" Enabled="false" />
-    <RoutineArgument ID="4919" Name="TLoad" Parent="4906" Enabled="false" />
-    <MoveInstructionCall ID="4920" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="4921" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="4921" Name="" Parent="4920">
-      <RoutineArguments>
-        <ObjectRef ID="4922" />
-        <ObjectRef ID="4923" />
-        <ObjectRef ID="4924" />
-        <ObjectRef ID="4925" />
-        <ObjectRef ID="4926" />
-        <ObjectRef ID="4927" />
-        <ObjectRef ID="4928" />
-        <ObjectRef ID="4929" />
-        <ObjectRef ID="4930" />
-        <ObjectRef ID="4931" />
-        <ObjectRef ID="4932" />
-        <ObjectRef ID="4933" />
-        <ObjectRef ID="4934" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="4922" Name="Conc" Parent="4921" Enabled="false" />
-    <RoutineArgument ID="4923" Name="ToPoint" Parent="4921" Value="NewIni" />
-    <RoutineArgument ID="4924" Name="ID" Parent="4921" Enabled="false" />
-    <RoutineArgument ID="4925" Name="Speed" Parent="4921" Value="v1000" />
-    <RoutineArgument ID="4926" Name="V" Parent="4921" Enabled="false" />
-    <RoutineArgument ID="4927" Name="T" Parent="4921" Enabled="false" />
-    <RoutineArgument ID="4928" Name="Zone" Parent="4921" Value="z100" />
-    <RoutineArgument ID="4929" Name="Z" Parent="4921" Enabled="false" />
-    <RoutineArgument ID="4930" Name="Inpos" Parent="4921" Enabled="false" />
-    <RoutineArgument ID="4931" Name="Tool" Parent="4921" Value="Gripper" />
-    <RoutineArgument ID="4932" Name="WObj" Parent="4921" Value="WO_themainone" />
-    <RoutineArgument ID="4933" Name="Corr" Parent="4921" Enabled="false" />
-    <RoutineArgument ID="4934" Name="TLoad" Parent="4921" Enabled="false" />
-    <SmartComponentInstance ID="4935" Name="Detacher" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+    <SmartComponentInstance ID="4940" Name="Detacher" Parent="4938" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Child">
           <Value>
-            <ObjectRef ID="4891" />
+            <ObjectRef ID="-1" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;KeepPosition">
@@ -18783,16 +18830,16 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1033.82978723404" />
+            <Double Value="676.5" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="388.574468085106" />
+            <Double Value="234" />
           </Value>
         </Attribute>
       </Attributes>
-      <UniqueId Value="{822455c4-4a5c-4df8-b794-50dd28d7a490}" />
+      <UniqueId Value="{6dcb6908-a9d4-4d43-9216-716d8ace56df}" />
       <Definition ID="4" DocID="4" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -18838,6 +18885,848 @@
       </SignalValues>
       <RoleObject ID="-1" />
     </SmartComponentInstance>
+    <SmartComponentInstance ID="4941" Name="LineSensor" Parent="4938" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Start">
+          <Value>
+            <String Value="[0 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;End">
+          <Value>
+            <String Value="[0 0 0.015]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Length">
+          <Value>
+            <Double Value="0.015" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Radius">
+          <Value>
+            <Double Value="0.00135135135135135" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Tag">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPart">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
+          <Value>
+            <String Value="[-0.025527099609375 0.4493935546875 0.894687805175781]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="331" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="10" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{fc95d405-46ee-4e3c-b5c5-2cd57c9ba4fa}" />
+      <Definition ID="5" DocID="5" />
+      <ChildInstances>
+        <ObjectRef ID="5172" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="-0.630154976276886" Y="0" Z="0.776469385020091" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="-0.776469385020091" Y="0" Z="-0.630154976276886" W="0" />
+        <RowT X="-0.610856371855094" Y="-6.99999999934991E-06" Z="1.09356931495625" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Start" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="End" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Length" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Length|MinValue=0|AutoApply=True|NoDefaultInitialization=True|CustomValidation=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Radius" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Length|MinValue=0|MaxValue=0.1|Slider=True|AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Tag" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.ProjectObjectTag" />
+          <Attributes Value="AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPart" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.Part" />
+          <Attributes Value="" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPoint" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Active" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SensorOut" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Active">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Element>
+        <Element Key="SensorOut">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <ActionInstructionCall ID="4944" Name="WaitDI" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4945" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4945" Name="" Parent="4944">
+      <RoutineArguments>
+        <ObjectRef ID="4946" />
+        <ObjectRef ID="4947" />
+        <ObjectRef ID="4948" />
+        <ObjectRef ID="4949" />
+        <ObjectRef ID="4950" />
+        <ObjectRef ID="4951" />
+        <ObjectRef ID="4952" />
+        <ObjectRef ID="4953" />
+        <ObjectRef ID="4954" />
+        <ObjectRef ID="4955" />
+        <ObjectRef ID="4956" />
+        <ObjectRef ID="4957" />
+        <ObjectRef ID="4958" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4946" Name="Signal" Parent="4945" Value="Mouse_Input" />
+    <RoutineArgument ID="4947" Name="Value" Parent="4945" Value="1" />
+    <RoutineArgument ID="4948" Name="MaxTime" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4949" Name="TimeFlag" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4950" Name="Visualize" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4951" Name="Header" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4952" Name="Message" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4953" Name="MsgArray" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4954" Name="Wrap" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4955" Name="Icon" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4956" Name="Image" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4957" Name="VisualizeTime" Parent="4945" Enabled="false" />
+    <RoutineArgument ID="4958" Name="UIActiveSignal" Parent="4945" Enabled="false" />
+    <ActionInstructionCall ID="4959" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4960" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4960" Name="" Parent="4959">
+      <RoutineArguments>
+        <ObjectRef ID="4961" />
+        <ObjectRef ID="4962" />
+        <ObjectRef ID="4963" />
+        <ObjectRef ID="4964" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4961" Name="SDelay" Parent="4960" Enabled="false" />
+    <RoutineArgument ID="4962" Name="Sync" Parent="4960" Enabled="false" />
+    <RoutineArgument ID="4963" Name="Signal" Parent="4960" Value="Mouse_Output2" />
+    <RoutineArgument ID="4964" Name="Value" Parent="4960" Value="0" />
+    <ActionInstructionCall ID="4965" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4966" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4966" Name="" Parent="4965">
+      <RoutineArguments>
+        <ObjectRef ID="4967" />
+        <ObjectRef ID="4968" />
+        <ObjectRef ID="4969" />
+        <ObjectRef ID="4970" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4967" Name="SDelay" Parent="4966" Enabled="false" />
+    <RoutineArgument ID="4968" Name="Sync" Parent="4966" Enabled="false" />
+    <RoutineArgument ID="4969" Name="Signal" Parent="4966" Value="Mouse_Outpu1" />
+    <RoutineArgument ID="4970" Name="Value" Parent="4966" Value="1" />
+    <ActionInstructionCall ID="4971" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4972" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4972" Name="" Parent="4971">
+      <RoutineArguments>
+        <ObjectRef ID="4973" />
+        <ObjectRef ID="4974" />
+        <ObjectRef ID="4975" />
+        <ObjectRef ID="4976" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4973" Name="SDelay" Parent="4972" Enabled="false" />
+    <RoutineArgument ID="4974" Name="Sync" Parent="4972" Enabled="false" />
+    <RoutineArgument ID="4975" Name="Signal" Parent="4972" Value="Mouse_Outpu1" />
+    <RoutineArgument ID="4976" Name="Value" Parent="4972" Value="0" />
+    <ActionInstructionCall ID="4977" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4978" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4978" Name="" Parent="4977">
+      <RoutineArguments>
+        <ObjectRef ID="4979" />
+        <ObjectRef ID="4980" />
+        <ObjectRef ID="4981" />
+        <ObjectRef ID="4982" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4979" Name="SDelay" Parent="4978" Enabled="false" />
+    <RoutineArgument ID="4980" Name="Sync" Parent="4978" Enabled="false" />
+    <RoutineArgument ID="4981" Name="Signal" Parent="4978" Value="Mouse_Output2" />
+    <RoutineArgument ID="4982" Name="Value" Parent="4978" Value="1" />
+    <ActionInstructionCall ID="4983" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4984" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4984" Name="" Parent="4983">
+      <RoutineArguments>
+        <ObjectRef ID="4985" />
+        <ObjectRef ID="4986" />
+        <ObjectRef ID="4987" />
+        <ObjectRef ID="4988" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4985" Name="SDelay" Parent="4984" Enabled="false" />
+    <RoutineArgument ID="4986" Name="Sync" Parent="4984" Enabled="false" />
+    <RoutineArgument ID="4987" Name="Signal" Parent="4984" Value="Mouse_Output2" />
+    <RoutineArgument ID="4988" Name="Value" Parent="4984" Value="0" />
+    <ActionInstructionCall ID="4989" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4990" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4990" Name="" Parent="4989">
+      <RoutineArguments>
+        <ObjectRef ID="4991" />
+        <ObjectRef ID="4992" />
+        <ObjectRef ID="4993" />
+        <ObjectRef ID="4994" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4991" Name="SDelay" Parent="4990" Enabled="false" />
+    <RoutineArgument ID="4992" Name="Sync" Parent="4990" Enabled="false" />
+    <RoutineArgument ID="4993" Name="Signal" Parent="4990" Value="Mouse_Outpu1" />
+    <RoutineArgument ID="4994" Name="Value" Parent="4990" Value="1" />
+    <ActionInstructionCall ID="4995" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="4996" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="4996" Name="" Parent="4995">
+      <RoutineArguments>
+        <ObjectRef ID="4997" />
+        <ObjectRef ID="4998" />
+        <ObjectRef ID="4999" />
+        <ObjectRef ID="5000" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="4997" Name="SDelay" Parent="4996" Enabled="false" />
+    <RoutineArgument ID="4998" Name="Sync" Parent="4996" Enabled="false" />
+    <RoutineArgument ID="4999" Name="Signal" Parent="4996" Value="Mouse_Outpu1" />
+    <RoutineArgument ID="5000" Name="Value" Parent="4996" Value="0" />
+    <ActionInstructionCall ID="5001" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5002" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5002" Name="" Parent="5001">
+      <RoutineArguments>
+        <ObjectRef ID="5003" />
+        <ObjectRef ID="5004" />
+        <ObjectRef ID="5005" />
+        <ObjectRef ID="5006" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5003" Name="SDelay" Parent="5002" Enabled="false" />
+    <RoutineArgument ID="5004" Name="Sync" Parent="5002" Enabled="false" />
+    <RoutineArgument ID="5005" Name="Signal" Parent="5002" Value="Mouse_Output2" />
+    <RoutineArgument ID="5006" Name="Value" Parent="5002" Value="1" />
+    <MoveInstructionCall ID="5007" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5008" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5008" Name="" Parent="5007">
+      <RoutineArguments>
+        <ObjectRef ID="5009" />
+        <ObjectRef ID="5010" />
+        <ObjectRef ID="5011" />
+        <ObjectRef ID="5012" />
+        <ObjectRef ID="5013" />
+        <ObjectRef ID="5014" />
+        <ObjectRef ID="5015" />
+        <ObjectRef ID="5016" />
+        <ObjectRef ID="5017" />
+        <ObjectRef ID="5018" />
+        <ObjectRef ID="5019" />
+        <ObjectRef ID="5020" />
+        <ObjectRef ID="5021" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5009" Name="Conc" Parent="5008" Enabled="false" />
+    <RoutineArgument ID="5010" Name="ToPoint" Parent="5008" Value="NewIni" />
+    <RoutineArgument ID="5011" Name="ID" Parent="5008" Enabled="false" />
+    <RoutineArgument ID="5012" Name="Speed" Parent="5008" Value="v1000" />
+    <RoutineArgument ID="5013" Name="V" Parent="5008" Enabled="false" />
+    <RoutineArgument ID="5014" Name="T" Parent="5008" Enabled="false" />
+    <RoutineArgument ID="5015" Name="Zone" Parent="5008" Value="fine" />
+    <RoutineArgument ID="5016" Name="Z" Parent="5008" Enabled="false" />
+    <RoutineArgument ID="5017" Name="Inpos" Parent="5008" Enabled="false" />
+    <RoutineArgument ID="5018" Name="Tool" Parent="5008" Value="Gripper" />
+    <RoutineArgument ID="5019" Name="WObj" Parent="5008" Value="WO_themainone" />
+    <RoutineArgument ID="5020" Name="Corr" Parent="5008" Enabled="false" />
+    <RoutineArgument ID="5021" Name="TLoad" Parent="5008" Enabled="false" />
+    <MoveInstructionCall ID="5022" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5023" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5023" Name="" Parent="5022">
+      <RoutineArguments>
+        <ObjectRef ID="5024" />
+        <ObjectRef ID="5025" />
+        <ObjectRef ID="5026" />
+        <ObjectRef ID="5027" />
+        <ObjectRef ID="5028" />
+        <ObjectRef ID="5029" />
+        <ObjectRef ID="5030" />
+        <ObjectRef ID="5031" />
+        <ObjectRef ID="5032" />
+        <ObjectRef ID="5033" />
+        <ObjectRef ID="5034" />
+        <ObjectRef ID="5035" />
+        <ObjectRef ID="5036" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5024" Name="Conc" Parent="5023" Enabled="false" />
+    <RoutineArgument ID="5025" Name="ToPoint" Parent="5023" Value="NewAtaq" />
+    <RoutineArgument ID="5026" Name="ID" Parent="5023" Enabled="false" />
+    <RoutineArgument ID="5027" Name="Speed" Parent="5023" Value="v1000" />
+    <RoutineArgument ID="5028" Name="V" Parent="5023" Enabled="false" />
+    <RoutineArgument ID="5029" Name="T" Parent="5023" Enabled="false" />
+    <RoutineArgument ID="5030" Name="Zone" Parent="5023" Value="fine" />
+    <RoutineArgument ID="5031" Name="Z" Parent="5023" Enabled="false" />
+    <RoutineArgument ID="5032" Name="Inpos" Parent="5023" Enabled="false" />
+    <RoutineArgument ID="5033" Name="Tool" Parent="5023" Value="Gripper" />
+    <RoutineArgument ID="5034" Name="WObj" Parent="5023" Value="WO_themainone" />
+    <RoutineArgument ID="5035" Name="Corr" Parent="5023" Enabled="false" />
+    <RoutineArgument ID="5036" Name="TLoad" Parent="5023" Enabled="false" />
+    <MoveInstructionCall ID="5037" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5038" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5038" Name="" Parent="5037">
+      <RoutineArguments>
+        <ObjectRef ID="5039" />
+        <ObjectRef ID="5040" />
+        <ObjectRef ID="5041" />
+        <ObjectRef ID="5042" />
+        <ObjectRef ID="5043" />
+        <ObjectRef ID="5044" />
+        <ObjectRef ID="5045" />
+        <ObjectRef ID="5046" />
+        <ObjectRef ID="5047" />
+        <ObjectRef ID="5048" />
+        <ObjectRef ID="5049" />
+        <ObjectRef ID="5050" />
+        <ObjectRef ID="5051" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5039" Name="Conc" Parent="5038" Enabled="false" />
+    <RoutineArgument ID="5040" Name="ToPoint" Parent="5038" Value="Cogerte_Raton" />
+    <RoutineArgument ID="5041" Name="ID" Parent="5038" Enabled="false" />
+    <RoutineArgument ID="5042" Name="Speed" Parent="5038" Value="v1000" />
+    <RoutineArgument ID="5043" Name="V" Parent="5038" Enabled="false" />
+    <RoutineArgument ID="5044" Name="T" Parent="5038" Enabled="false" />
+    <RoutineArgument ID="5045" Name="Zone" Parent="5038" Value="fine" />
+    <RoutineArgument ID="5046" Name="Z" Parent="5038" Enabled="false" />
+    <RoutineArgument ID="5047" Name="Inpos" Parent="5038" Enabled="false" />
+    <RoutineArgument ID="5048" Name="Tool" Parent="5038" Value="Gripper" />
+    <RoutineArgument ID="5049" Name="WObj" Parent="5038" Value="WO_themainone" />
+    <RoutineArgument ID="5050" Name="Corr" Parent="5038" Enabled="false" />
+    <RoutineArgument ID="5051" Name="TLoad" Parent="5038" Enabled="false" />
+    <MoveInstructionCall ID="5052" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5053" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5053" Name="" Parent="5052">
+      <RoutineArguments>
+        <ObjectRef ID="5054" />
+        <ObjectRef ID="5055" />
+        <ObjectRef ID="5056" />
+        <ObjectRef ID="5057" />
+        <ObjectRef ID="5058" />
+        <ObjectRef ID="5059" />
+        <ObjectRef ID="5060" />
+        <ObjectRef ID="5061" />
+        <ObjectRef ID="5062" />
+        <ObjectRef ID="5063" />
+        <ObjectRef ID="5064" />
+        <ObjectRef ID="5065" />
+        <ObjectRef ID="5066" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5054" Name="Conc" Parent="5053" Enabled="false" />
+    <RoutineArgument ID="5055" Name="ToPoint" Parent="5053" Value="NewIni" />
+    <RoutineArgument ID="5056" Name="ID" Parent="5053" Enabled="false" />
+    <RoutineArgument ID="5057" Name="Speed" Parent="5053" Value="v1000" />
+    <RoutineArgument ID="5058" Name="V" Parent="5053" Enabled="false" />
+    <RoutineArgument ID="5059" Name="T" Parent="5053" Enabled="false" />
+    <RoutineArgument ID="5060" Name="Zone" Parent="5053" Value="fine" />
+    <RoutineArgument ID="5061" Name="Z" Parent="5053" Enabled="false" />
+    <RoutineArgument ID="5062" Name="Inpos" Parent="5053" Enabled="false" />
+    <RoutineArgument ID="5063" Name="Tool" Parent="5053" Value="Gripper" />
+    <RoutineArgument ID="5064" Name="WObj" Parent="5053" Value="WO_themainone" />
+    <RoutineArgument ID="5065" Name="Corr" Parent="5053" Enabled="false" />
+    <RoutineArgument ID="5066" Name="TLoad" Parent="5053" Enabled="false" />
+    <MoveInstructionCall ID="5067" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5068" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5068" Name="" Parent="5067">
+      <RoutineArguments>
+        <ObjectRef ID="5069" />
+        <ObjectRef ID="5070" />
+        <ObjectRef ID="5071" />
+        <ObjectRef ID="5072" />
+        <ObjectRef ID="5073" />
+        <ObjectRef ID="5074" />
+        <ObjectRef ID="5075" />
+        <ObjectRef ID="5076" />
+        <ObjectRef ID="5077" />
+        <ObjectRef ID="5078" />
+        <ObjectRef ID="5079" />
+        <ObjectRef ID="5080" />
+        <ObjectRef ID="5081" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5069" Name="Conc" Parent="5068" Enabled="false" />
+    <RoutineArgument ID="5070" Name="ToPoint" Parent="5068" Value="Soltar_Mouse" />
+    <RoutineArgument ID="5071" Name="ID" Parent="5068" Enabled="false" />
+    <RoutineArgument ID="5072" Name="Speed" Parent="5068" Value="v1000" />
+    <RoutineArgument ID="5073" Name="V" Parent="5068" Enabled="false" />
+    <RoutineArgument ID="5074" Name="T" Parent="5068" Enabled="false" />
+    <RoutineArgument ID="5075" Name="Zone" Parent="5068" Value="fine" />
+    <RoutineArgument ID="5076" Name="Z" Parent="5068" Enabled="false" />
+    <RoutineArgument ID="5077" Name="Inpos" Parent="5068" Enabled="false" />
+    <RoutineArgument ID="5078" Name="Tool" Parent="5068" Value="Gripper" />
+    <RoutineArgument ID="5079" Name="WObj" Parent="5068" Value="WO_themainone" />
+    <RoutineArgument ID="5080" Name="Corr" Parent="5068" Enabled="false" />
+    <RoutineArgument ID="5081" Name="TLoad" Parent="5068" Enabled="false" />
+    <MoveInstructionCall ID="5082" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5083" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5083" Name="" Parent="5082">
+      <RoutineArguments>
+        <ObjectRef ID="5084" />
+        <ObjectRef ID="5085" />
+        <ObjectRef ID="5086" />
+        <ObjectRef ID="5087" />
+        <ObjectRef ID="5088" />
+        <ObjectRef ID="5089" />
+        <ObjectRef ID="5090" />
+        <ObjectRef ID="5091" />
+        <ObjectRef ID="5092" />
+        <ObjectRef ID="5093" />
+        <ObjectRef ID="5094" />
+        <ObjectRef ID="5095" />
+        <ObjectRef ID="5096" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5084" Name="Conc" Parent="5083" Enabled="false" />
+    <RoutineArgument ID="5085" Name="ToPoint" Parent="5083" Value="NewIni" />
+    <RoutineArgument ID="5086" Name="ID" Parent="5083" Enabled="false" />
+    <RoutineArgument ID="5087" Name="Speed" Parent="5083" Value="v1000" />
+    <RoutineArgument ID="5088" Name="V" Parent="5083" Enabled="false" />
+    <RoutineArgument ID="5089" Name="T" Parent="5083" Enabled="false" />
+    <RoutineArgument ID="5090" Name="Zone" Parent="5083" Value="fine" />
+    <RoutineArgument ID="5091" Name="Z" Parent="5083" Enabled="false" />
+    <RoutineArgument ID="5092" Name="Inpos" Parent="5083" Enabled="false" />
+    <RoutineArgument ID="5093" Name="Tool" Parent="5083" Value="Gripper" />
+    <RoutineArgument ID="5094" Name="WObj" Parent="5083" Value="WO_themainone" />
+    <RoutineArgument ID="5095" Name="Corr" Parent="5083" Enabled="false" />
+    <RoutineArgument ID="5096" Name="TLoad" Parent="5083" Enabled="false" />
+    <MoveInstructionCall ID="5097" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5098" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5098" Name="" Parent="5097">
+      <RoutineArguments>
+        <ObjectRef ID="5099" />
+        <ObjectRef ID="5100" />
+        <ObjectRef ID="5101" />
+        <ObjectRef ID="5102" />
+        <ObjectRef ID="5103" />
+        <ObjectRef ID="5104" />
+        <ObjectRef ID="5105" />
+        <ObjectRef ID="5106" />
+        <ObjectRef ID="5107" />
+        <ObjectRef ID="5108" />
+        <ObjectRef ID="5109" />
+        <ObjectRef ID="5110" />
+        <ObjectRef ID="5111" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5099" Name="Conc" Parent="5098" Enabled="false" />
+    <RoutineArgument ID="5100" Name="ToPoint" Parent="5098" Value="Cogerte_Cascos" />
+    <RoutineArgument ID="5101" Name="ID" Parent="5098" Enabled="false" />
+    <RoutineArgument ID="5102" Name="Speed" Parent="5098" Value="v1000" />
+    <RoutineArgument ID="5103" Name="V" Parent="5098" Enabled="false" />
+    <RoutineArgument ID="5104" Name="T" Parent="5098" Enabled="false" />
+    <RoutineArgument ID="5105" Name="Zone" Parent="5098" Value="fine" />
+    <RoutineArgument ID="5106" Name="Z" Parent="5098" Enabled="false" />
+    <RoutineArgument ID="5107" Name="Inpos" Parent="5098" Enabled="false" />
+    <RoutineArgument ID="5108" Name="Tool" Parent="5098" Value="Gripper" />
+    <RoutineArgument ID="5109" Name="WObj" Parent="5098" Value="WO_themainone" />
+    <RoutineArgument ID="5110" Name="Corr" Parent="5098" Enabled="false" />
+    <RoutineArgument ID="5111" Name="TLoad" Parent="5098" Enabled="false" />
+    <MoveInstructionCall ID="5112" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5113" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5113" Name="" Parent="5112">
+      <RoutineArguments>
+        <ObjectRef ID="5114" />
+        <ObjectRef ID="5115" />
+        <ObjectRef ID="5116" />
+        <ObjectRef ID="5117" />
+        <ObjectRef ID="5118" />
+        <ObjectRef ID="5119" />
+        <ObjectRef ID="5120" />
+        <ObjectRef ID="5121" />
+        <ObjectRef ID="5122" />
+        <ObjectRef ID="5123" />
+        <ObjectRef ID="5124" />
+        <ObjectRef ID="5125" />
+        <ObjectRef ID="5126" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5114" Name="Conc" Parent="5113" Enabled="false" />
+    <RoutineArgument ID="5115" Name="ToPoint" Parent="5113" Value="NewIni" />
+    <RoutineArgument ID="5116" Name="ID" Parent="5113" Enabled="false" />
+    <RoutineArgument ID="5117" Name="Speed" Parent="5113" Value="v1000" />
+    <RoutineArgument ID="5118" Name="V" Parent="5113" Enabled="false" />
+    <RoutineArgument ID="5119" Name="T" Parent="5113" Enabled="false" />
+    <RoutineArgument ID="5120" Name="Zone" Parent="5113" Value="fine" />
+    <RoutineArgument ID="5121" Name="Z" Parent="5113" Enabled="false" />
+    <RoutineArgument ID="5122" Name="Inpos" Parent="5113" Enabled="false" />
+    <RoutineArgument ID="5123" Name="Tool" Parent="5113" Value="Gripper" />
+    <RoutineArgument ID="5124" Name="WObj" Parent="5113" Value="WO_themainone" />
+    <RoutineArgument ID="5125" Name="Corr" Parent="5113" Enabled="false" />
+    <RoutineArgument ID="5126" Name="TLoad" Parent="5113" Enabled="false" />
+    <MoveInstructionCall ID="5127" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5128" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5128" Name="" Parent="5127">
+      <RoutineArguments>
+        <ObjectRef ID="5129" />
+        <ObjectRef ID="5130" />
+        <ObjectRef ID="5131" />
+        <ObjectRef ID="5132" />
+        <ObjectRef ID="5133" />
+        <ObjectRef ID="5134" />
+        <ObjectRef ID="5135" />
+        <ObjectRef ID="5136" />
+        <ObjectRef ID="5137" />
+        <ObjectRef ID="5138" />
+        <ObjectRef ID="5139" />
+        <ObjectRef ID="5140" />
+        <ObjectRef ID="5141" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5129" Name="Conc" Parent="5128" Enabled="false" />
+    <RoutineArgument ID="5130" Name="ToPoint" Parent="5128" Value="Soltar_Cascos" />
+    <RoutineArgument ID="5131" Name="ID" Parent="5128" Enabled="false" />
+    <RoutineArgument ID="5132" Name="Speed" Parent="5128" Value="v1000" />
+    <RoutineArgument ID="5133" Name="V" Parent="5128" Enabled="false" />
+    <RoutineArgument ID="5134" Name="T" Parent="5128" Enabled="false" />
+    <RoutineArgument ID="5135" Name="Zone" Parent="5128" Value="fine" />
+    <RoutineArgument ID="5136" Name="Z" Parent="5128" Enabled="false" />
+    <RoutineArgument ID="5137" Name="Inpos" Parent="5128" Enabled="false" />
+    <RoutineArgument ID="5138" Name="Tool" Parent="5128" Value="Gripper" />
+    <RoutineArgument ID="5139" Name="WObj" Parent="5128" Value="WO_themainone" />
+    <RoutineArgument ID="5140" Name="Corr" Parent="5128" Enabled="false" />
+    <RoutineArgument ID="5141" Name="TLoad" Parent="5128" Enabled="false" />
+    <MoveInstructionCall ID="5157" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5158" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5158" Name="" Parent="5157">
+      <RoutineArguments>
+        <ObjectRef ID="5159" />
+        <ObjectRef ID="5160" />
+        <ObjectRef ID="5161" />
+        <ObjectRef ID="5162" />
+        <ObjectRef ID="5163" />
+        <ObjectRef ID="5164" />
+        <ObjectRef ID="5165" />
+        <ObjectRef ID="5166" />
+        <ObjectRef ID="5167" />
+        <ObjectRef ID="5168" />
+        <ObjectRef ID="5169" />
+        <ObjectRef ID="5170" />
+        <ObjectRef ID="5171" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5159" Name="Conc" Parent="5158" Enabled="false" />
+    <RoutineArgument ID="5160" Name="ToPoint" Parent="5158" Value="NewIni" />
+    <RoutineArgument ID="5161" Name="ID" Parent="5158" Enabled="false" />
+    <RoutineArgument ID="5162" Name="Speed" Parent="5158" Value="v1000" />
+    <RoutineArgument ID="5163" Name="V" Parent="5158" Enabled="false" />
+    <RoutineArgument ID="5164" Name="T" Parent="5158" Enabled="false" />
+    <RoutineArgument ID="5165" Name="Zone" Parent="5158" Value="fine" />
+    <RoutineArgument ID="5166" Name="Z" Parent="5158" Enabled="false" />
+    <RoutineArgument ID="5167" Name="Inpos" Parent="5158" Enabled="false" />
+    <RoutineArgument ID="5168" Name="Tool" Parent="5158" Value="Gripper" />
+    <RoutineArgument ID="5169" Name="WObj" Parent="5158" Value="WO_themainone" />
+    <RoutineArgument ID="5170" Name="Corr" Parent="5158" Enabled="false" />
+    <RoutineArgument ID="5171" Name="TLoad" Parent="5158" Enabled="false" />
+    <ComponentInstance ID="5172" Name="_sensorPart_" Parent="4941" UIVisible="false" PickingEnabled="false" Detectable="false" PhysicsMotionControl="0">
+      <Definition ID="5175" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <SmartComponentInstance ID="5173" Name="LogicGate" Parent="4938" UIVisible="false" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
+          <Value>
+            <String Value="NOT" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Delay">
+          <Value>
+            <Double Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="164" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="285" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{db462bf3-0302-443a-9060-9d44fc35a0c8}" />
+      <Definition ID="4" DocID="9" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Operator" />
+          <Type Value="System.String" />
+          <Attributes Value="AllowedValues=AND;OR;XOR;NOT;NOP|AutoApply=true|AddToDisplayName=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Delay" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Time|MinValue=0|MaxValue=1000" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="InputA" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="false" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="InputB" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Output" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="InputA">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Element>
+        <Element Key="InputB">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Output">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="5174" Name="LogicGate_2" Parent="4938" UIVisible="false" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
+          <Value>
+            <String Value="AND" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Delay">
+          <Value>
+            <Double Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="418" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="348" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{6589e86b-2102-473f-b924-834ea7176d67}" />
+      <Definition ID="4" DocID="9" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Operator" />
+          <Type Value="System.String" />
+          <Attributes Value="AllowedValues=AND;OR;XOR;NOT;NOP|AutoApply=true|AddToDisplayName=true" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Delay" />
+          <Type Value="System.Double" />
+          <Attributes Value="Quantity=Time|MinValue=0|MaxValue=1000" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="InputA" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="InputB" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Output" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="InputA">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="InputB">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Output">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <PartDef ID="5175" Name="" Parent="1183">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="d43e834809474e5aa560dddb6a9b97ce" StreamChangeRef="f9427bbd0ebd4de180bdd7ebbda2aa0e" />
+      <BoundingBox>
+        <Min X="-0.00135135138034821" Y="-0.00135135138034821" Z="0" />
+        <Max X="0.00135135138034821" Y="0.00135135138034821" Z="0.015" />
+      </BoundingBox>
+    </PartDef>
+    <Attachment ID="5176" Name="" Parent="1183" PhysicsRestoreMotionControl="0">
+      <SourceObject ID="4516" />
+      <TargetObject ID="4941" />
+      <OffsetTransform>
+        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711946E-07" W="0" />
+        <RowY X="0" Y="-1" Z="0" W="0" />
+        <RowZ X="-1.93384404711946E-07" Y="0" Z="0.999999999999981" W="0" />
+        <RowT X="0.000217867022343166" Y="7.00000000044212E-06" Z="0.0514800489124443" W="1" />
+      </OffsetTransform>
+      <OriginalTransform>
+        <RowX X="-0.5" Y="0" Z="0.866025403784439" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="-0.866025403784439" Y="0" Z="-0.5" W="0" />
+        <RowT X="-0.579067762113533" Y="-7E-06" Z="1.286443" W="1" />
+      </OriginalTransform>
+    </Attachment>
   </Objects>
   <ReferencedDocuments>
     <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
