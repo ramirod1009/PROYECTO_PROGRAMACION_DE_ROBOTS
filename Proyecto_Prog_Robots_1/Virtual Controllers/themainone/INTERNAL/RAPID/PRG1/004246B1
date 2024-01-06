@@ -37,7 +37,7 @@ MODULE Module1
         
             SetDO doResetMouse, 0;
             MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
-            MoveL NewAtaq,v1000,fine,Gripper\WObj:=WO_themainone;
+            MoveJ NewAtaq,v1000,fine,Gripper\WObj:=WO_themainone;
             WaitDI Mouse_Input, 1;
         
         !WaitDI (Mouse_Input OR Headphones_Input);
@@ -47,20 +47,20 @@ MODULE Module1
                 SetDO Mouse_Output2, 0;
                 SetDO Mouse_Outpu1, 1;
                 SetDO doResetMouse, 1;
-                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
                 MoveL Soltar_Mouse,v1000,fine,Gripper\WObj:=WO_themainone;
                 SetDO Mouse_Outpu1, 0;
                 SetDO Mouse_Output2, 1;
-                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
             ELSE 
                 MoveL Cogerte_Cascos,v1000,fine,Gripper\WObj:=WO_themainone;
                 SetDO Mouse_Output2, 0;
                 SetDO Mouse_Outpu1, 1;
-                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
                 MoveL Soltar_Cascos,v1000,fine,Gripper\WObj:=WO_themainone;
                 SetDO Mouse_Outpu1, 0;
                 SetDO Mouse_Output2, 1;
-                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
             ENDIF
         GOTO INI;
         
