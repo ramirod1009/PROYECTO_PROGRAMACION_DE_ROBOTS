@@ -172,8 +172,6 @@
     <SimulationConfiguration ID="3" Name="" Parent="2" VirtualTimeMode="1" DataRecordingEnabled="true">
       <SimulatedObjects>
         <ObjectRef ID="1188" />
-        <ObjectRef ID="2258" />
-        <ObjectRef ID="3328" />
         <ObjectRef ID="4467" />
         <ObjectRef ID="4469" />
         <ObjectRef ID="4477" />
@@ -4119,12 +4117,12 @@
       <Attributes>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="607" />
+            <Double Value="589" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="57" />
+            <Double Value="49" />
           </Value>
         </Attribute>
       </Attributes>
@@ -15156,6 +15154,11 @@
             <String Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;TcpTraceData xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xD;&#xA;  &lt;TraceStopTCP&gt;false&lt;/TraceStopTCP&gt;&#xD;&#xA;  &lt;StopCategory&gt;0&lt;/StopCategory&gt;&#xD;&#xA;  &lt;FollowWorkobject&gt;true&lt;/FollowWorkobject&gt;&#xD;&#xA;  &lt;ClearTraceAtStart&gt;true&lt;/ClearTraceAtStart&gt;&#xD;&#xA;  &lt;PrimaryColor&gt;-1&lt;/PrimaryColor&gt;&#xD;&#xA;  &lt;ColorBySignal&gt;false&lt;/ColorBySignal&gt;&#xD;&#xA;  &lt;SignalDisplayName /&gt;&#xD;&#xA;  &lt;UseColorScale&gt;false&lt;/UseColorScale&gt;&#xD;&#xA;  &lt;ColorMin&gt;0&lt;/ColorMin&gt;&#xD;&#xA;  &lt;ColorMax&gt;1&lt;/ColorMax&gt;&#xD;&#xA;  &lt;UseSecondaryColor&gt;false&lt;/UseSecondaryColor&gt;&#xD;&#xA;  &lt;SecondaryColor&gt;-65536&lt;/SecondaryColor&gt;&#xD;&#xA;  &lt;ConditionType&gt;None&lt;/ConditionType&gt;&#xD;&#xA;  &lt;ConditionValue1&gt;0&lt;/ConditionValue1&gt;&#xD;&#xA;  &lt;ConditionValue2&gt;0&lt;/ConditionValue2&gt;&#xD;&#xA;  &lt;ShowEvents&gt;false&lt;/ShowEvents&gt;&#xD;&#xA;  &lt;StopPositionColor&gt;-16711681&lt;/StopPositionColor&gt;&#xD;&#xA;&lt;/TcpTraceData&gt;" />
           </Value>
         </Attribute>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
       </Attributes>
       <UniqueId Value="{ac2f5179-a32b-4706-beac-08f2fa4ea948}" />
       <Definition ID="11" DocID="1" />
@@ -15493,6 +15496,11 @@
         <Attribute Key="TcpTraceData">
           <Value>
             <String Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;TcpTraceData xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xD;&#xA;  &lt;TraceStopTCP&gt;false&lt;/TraceStopTCP&gt;&#xD;&#xA;  &lt;StopCategory&gt;0&lt;/StopCategory&gt;&#xD;&#xA;  &lt;FollowWorkobject&gt;true&lt;/FollowWorkobject&gt;&#xD;&#xA;  &lt;ClearTraceAtStart&gt;true&lt;/ClearTraceAtStart&gt;&#xD;&#xA;  &lt;PrimaryColor&gt;-1&lt;/PrimaryColor&gt;&#xD;&#xA;  &lt;ColorBySignal&gt;false&lt;/ColorBySignal&gt;&#xD;&#xA;  &lt;SignalDisplayName /&gt;&#xD;&#xA;  &lt;UseColorScale&gt;false&lt;/UseColorScale&gt;&#xD;&#xA;  &lt;ColorMin&gt;0&lt;/ColorMin&gt;&#xD;&#xA;  &lt;ColorMax&gt;1&lt;/ColorMax&gt;&#xD;&#xA;  &lt;UseSecondaryColor&gt;false&lt;/UseSecondaryColor&gt;&#xD;&#xA;  &lt;SecondaryColor&gt;-65536&lt;/SecondaryColor&gt;&#xD;&#xA;  &lt;ConditionType&gt;None&lt;/ConditionType&gt;&#xD;&#xA;  &lt;ConditionValue1&gt;0&lt;/ConditionValue1&gt;&#xD;&#xA;  &lt;ConditionValue2&gt;0&lt;/ConditionValue2&gt;&#xD;&#xA;  &lt;ShowEvents&gt;false&lt;/ShowEvents&gt;&#xD;&#xA;  &lt;StopPositionColor&gt;-16711681&lt;/StopPositionColor&gt;&#xD;&#xA;&lt;/TcpTraceData&gt;" />
+          </Value>
+        </Attribute>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
           </Value>
         </Attribute>
       </Attributes>
@@ -15967,6 +15975,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4442" Name="soport_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4441" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -15998,6 +16013,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4444" Name="sop_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4443" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -16029,6 +16051,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4446" Name="soport_3" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4445" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -16060,6 +16089,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4448" Name="sop_3" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4447" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -16167,7 +16203,7 @@
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="59" />
+            <Double Value="58" />
           </Value>
         </Attribute>
       </Attributes>
@@ -16265,12 +16301,12 @@
         </Element>
         <Element Key="Headphones_Sensor">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Mouse_Sensor">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="ResetMouse">
@@ -16371,14 +16407,6 @@
         <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="4477" />
           <SourceSignal Value="Output" />
-          <TargetObject ID="4482" />
-          <TargetSignal Value="Execute" />
-          <SourceObjectName Value="Timer" />
-          <TargetObjectName Value="Random" />
-        </Element>
-        <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="4477" />
-          <SourceSignal Value="Output" />
           <TargetObject ID="4485" />
           <TargetSignal Value="InputA" />
           <SourceObjectName Value="Timer" />
@@ -16457,14 +16485,6 @@
           <TargetObjectName Value="LogicSRLatch" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="5530" />
-          <SourceSignal Value="Output" />
-          <TargetObject ID="4475" />
-          <TargetSignal Value="Dequeue" />
-          <SourceObjectName Value="LogicGate_8" />
-          <TargetObjectName Value="Qeue_Headphones" />
-        </Element>
-        <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="4467" />
           <SourceSignal Value="SensorOut" />
           <TargetObject ID="5530" />
@@ -16489,19 +16509,27 @@
           <TargetObjectName Value="LogicGate_7" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="5531" />
+          <SourceObject ID="-1" />
           <SourceSignal Value="Output" />
-          <TargetObject ID="5530" />
-          <TargetSignal Value="InputB" />
-          <SourceObjectName Value="LogicSRLatch" />
-          <TargetObjectName Value="LogicGate_8" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="InputA" />
+          <SourceObjectName Value="LogicGate_9" />
+          <TargetObjectName Value="LogicGate_10" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="5531" />
-          <SourceSignal Value="InvOutput" />
+          <SourceObject ID="5530" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4475" />
+          <TargetSignal Value="Dequeue" />
+          <SourceObjectName Value="LogicGate_8" />
+          <TargetObjectName Value="Qeue_Headphones" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4469" />
+          <SourceSignal Value="SensorOut" />
           <TargetObject ID="4476" />
           <TargetSignal Value="Dequeue" />
-          <SourceObjectName Value="LogicSRLatch" />
+          <SourceObjectName Value="Mouse_Sensor" />
           <TargetObjectName Value="Queue_Mouse" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
@@ -16513,12 +16541,28 @@
           <TargetObjectName Value="Qeue_Headphones" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="4469" />
-          <SourceSignal Value="SensorOut" />
+          <SourceObject ID="5531" />
+          <SourceSignal Value="InvOutput" />
+          <TargetObject ID="5530" />
+          <TargetSignal Value="InputB" />
+          <SourceObjectName Value="LogicSRLatch" />
+          <TargetObjectName Value="LogicGate_8" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="5531" />
+          <SourceSignal Value="Output" />
           <TargetObject ID="4476" />
           <TargetSignal Value="Dequeue" />
-          <SourceObjectName Value="Mouse_Sensor" />
+          <SourceObjectName Value="LogicSRLatch" />
           <TargetObjectName Value="Queue_Mouse" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4477" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4482" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="Timer" />
+          <TargetObjectName Value="Random" />
         </Element>
       </IOConnections>
       <RoleObject ID="-1" />
@@ -16557,7 +16601,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[0 0 0]" />
+            <String Value="[-0.482727294921875 0.0999999923706055 0.892429992675781]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -16639,7 +16683,7 @@
         </Element>
         <Element Key="SensorOut">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -16679,17 +16723,17 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[0 0 0]" />
+            <String Value="[-0.48272705078125 0.0999999923706055 0.820429992675781]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1303.18816889329" />
+            <Double Value="1317.473883179" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="285.39662956297" />
+            <Double Value="286.825200991541" />
           </Value>
         </Attribute>
       </Attributes>
@@ -16761,7 +16805,7 @@
         </Element>
         <Element Key="SensorOut">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -16829,12 +16873,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="905.309218950064" />
+            <Double Value="903.880647521493" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="282" />
+            <Double Value="273.428571428572" />
           </Value>
         </Attribute>
       </Attributes>
@@ -16948,12 +16992,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="908.934885868848" />
+            <Double Value="914.156560745696" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="10" />
+            <Double Value="13.1527093596059" />
           </Value>
         </Attribute>
       </Attributes>
@@ -17042,17 +17086,17 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{066d29f2-bce6-407b-8917-cc186e036ef9};{2f953a84-c082-4a05-960a-d452f836b217};{71707707-dbf1-4f4a-9388-0f565623da9f};{dec82805-0302-4230-87fa-94a22ccbae29};{880f91ca-2f46-4113-81d0-bbc39953e493};{d02d055e-a6ba-475b-af1c-83331e4dedc1};{99b5a3e3-7a6c-48da-8866-6e647fd07945};{9a50e3e9-ac08-4621-99e9-684d3d6765f5};{5fc793a3-fea9-458d-b1af-71b1c9d84d32};{afeeb1ac-db38-4335-b172-5b2b89455333};{5a5e2437-f38c-4d7c-ba16-9d202043621b};{8fd2e782-5c4e-41dd-a92b-5774187c1e5c};{3c6cd2ef-78b0-4fcd-a60a-9b3ea98c168e};{8409dcf6-5fc3-4784-9abe-60b3ab3cd924};{07007ee0-bd65-4c97-95a0-bd80bfe6b5c9};{ce9b3313-a1e7-4c87-b375-b35dd9c060ad};{63d32f13-6051-45bc-99b3-e4052e3c3cf0};{28857d76-17f9-4229-a6d4-f5629b6e3072};{33a4277d-6cef-430a-aea1-d16d6e7fabed};{e6370e39-53a7-4554-b9e3-1a5d02deed4d};{9c80c4e9-f34b-45cb-8355-b2a5a93fc01f};{32b6e92b-897f-4fb8-bc71-8e1bc8566235};{45e0461c-23a1-4a71-b3d8-2b7fe5b6d534};{1a76620d-4be2-4d8b-af9a-e3a54e68fadd};{de7df945-7745-4eff-adf0-e3ee1b2c9626};{135697e1-e2f2-4359-9214-17e95e17f271};{4d4ccbb5-1098-4a05-8347-e3aab35233ad};{227c198e-91cf-4e9b-86b0-269606592f8f};{9e0b7a7b-6bcc-47ab-9dab-e441b44ad190};{39aae0f7-b90a-41d3-9c37-d213c3befd98};{930f4beb-71b4-4cf9-a760-78d524a11256};{926812ab-e09b-4c07-bdf5-e533bf35190f};{8aa3397c-7110-404e-a83d-f89271a1f52a};{c6160486-8ee5-4e78-b816-d9a4fe56e44f};{442d313c-60b8-4694-bff5-9b4124de29db};{5b2bb5d4-6d9e-4836-b2c5-9d427f2f317a};{e250edec-0323-4c5f-b4ae-40daebf02898};{106e965e-2009-4c03-8463-d70849af6263};{ee59b56c-2e09-40fc-a7fe-524f6a929904};{2adf4d96-785e-4535-b440-a2feb4ee8842};{efcef28a-22d5-4c1d-b9b4-137b9456f1b7};{130e5db9-1021-468d-9c1f-cb0850354b80};{847015d2-b0a7-46e3-8340-1cf45fcbff09};{c59e2fa1-68dc-4c52-b3ed-172db6535d02};{e1ce3938-32e9-4a7b-80e8-7f00f52831c5};{78528c6b-f6d4-49a7-99ad-bb2ff0f6e95c};{e840e18a-63ef-4135-bc06-9f66fce81c32};{9376ffc4-5f21-4261-8a99-e1c73787509c};{5dfe944f-03ae-4eaf-9ed3-9d754c2ef17d};{bb08ade7-f425-4962-819b-1a3a2b519d67};{20b4e4e9-b994-49b5-808a-07d2fdb9cd31};{8a79f747-cb93-4f66-95b5-75c01ac188b1};{c25f0c23-e3cf-4dbd-9c33-01d3a50bb42e};{b6a16069-e560-4a7e-aef1-ab6c8d6847af};{adacab50-375e-4e68-ac5f-d04de9e01c96};{9d85cfad-9ae6-4b9e-a3db-14a80adb6ab7};{4025747e-91f4-4161-bdcb-7968b015e3af};{8d2ab9fb-d164-4cae-ac89-9399970845d2};{51b38e86-7e00-4358-9d2a-466000338307};{b2b2be11-442b-4353-9536-868cea0e5968};{d699a5f1-2644-48d4-aff8-90ed331078fc};{ab2a9ed7-924f-4ece-870f-d53fc8a852dc};{70628dfc-21b2-464f-b749-1521cf574389};{b158e05f-b49d-4197-9a09-d11bdc4ac631};{892ca467-3368-480a-b5e5-495d331f6632};{01480439-fe61-4f16-936b-a42418b87503};{6e89cd73-961a-4d56-8c19-0e4c5e1c7b66};{17e0fb9b-26f0-4ef4-9421-4b74a6fc92fd};{3804b05c-01f9-4fe2-a15e-ed764451f515};{2dc2a202-e60f-49ae-815f-feba948842f1};{5a02037c-afd2-4385-8f7b-c17655b7cd76};{829d5dca-a00c-4691-8b70-3a912c902233};{f56b8fdb-a495-4544-b2eb-214ccaaaab2c};{ab7977a7-a984-42fa-98dc-b9f6706e33da};{a378e876-4160-4942-816c-628a18f2f7d7};{31f17c10-19de-4c09-a694-10441bc556c8};{9c191694-0f34-47f6-877d-073abc6d0a43};{ca1c092b-fdd3-410d-8344-547e3fbe4699};{50d1bdff-866b-4306-8556-d55065836078};{659cfb90-caca-4221-8dcb-8f7cde28a6ca};{d48eeb5e-838e-4aa3-b8d1-a1bb643f19c7};{d75f0e00-f603-420e-ac4b-c47d1b3fed63};{7b293166-36e6-4b3f-835f-3a7ff4c1de07};{8310f44e-d2ce-4403-bf21-f1bd2b3d0809};{4468e497-0789-441e-bf7c-c434244e40cd};{bec6c490-9565-4773-8fbf-5d3a55cae051};{99ce4323-e6d8-4bca-9bae-2c51c94b29ea};{495cc432-4a8c-4416-b9ec-11ceb4503ffb};{ce8bf5e6-ba76-4e34-a870-8d3d7dcdc6de};{7ea794f2-e9b0-43b5-815d-2401aca3f915};{864c6b1a-83fb-4ad8-ab10-97c0b6c9e353};{5a77a960-1f82-4682-a8cf-9dfacc20d1a8};{1ad91d96-d820-4142-96ca-caa7ba078503};{6f09adc9-6ae5-489f-9991-92f53ed63993};{e410814d-e910-4325-ac9c-a9f8f5d9c566};{ff475dc5-17c2-459c-8f4d-1810006a8935};{83499fe9-577b-40e8-ac1b-343fc007abad};{54a5b616-c039-43dc-8640-c0a322fc2c9e};{5661972c-bf54-47d1-8a5f-c4e614ec6c6a};{9b358bcc-f2e5-4cfc-bab4-55a641a61658};{542042fc-6370-4fe0-bb5f-f981dcf692e5};{1b95232c-554e-434c-b3ad-dbb2577adb50};{bdd4fdde-27d1-48cf-8f63-87638b65630d};{180207cc-f905-448b-b83f-63a533ef9b6b};{99c5a8ae-175c-4756-ba1d-c1b1f0bb7cfd};{a73e453c-4f6c-449e-85b0-c9d213807355};{9ccf8f0d-3362-4918-a1a7-0ef6108b3dbb};{1d4162e3-376a-4ba1-8691-ff0646d56c3c};{e9a7de36-5399-4aea-9d29-b6371b560220};{f348511e-f45d-41e3-b39f-aad6c920f953};{428ef8b0-3174-40be-b6c3-ec3fd486e475};{49eecd12-e1e2-4ce0-9738-505ee74b6867};{5d239d1e-9192-471e-be24-12698f6ca155};{6967ce97-a392-4fd6-a48f-68de5f3aa69f};{625b52bf-4a20-4e63-9367-699731899f39}" />
+            <String Value="{2b583155-3c88-4082-9b97-8185dacfd6fe};{f42e2de5-17ea-400d-b8a1-3286ae0cbf76};{ab219feb-8522-4dab-9415-1353a4a848f1};{fecb5571-378a-4c38-be30-9eeaa5b555ca};{d795a93a-4a73-492a-9146-8405aeadee81};{5c132b6a-5dac-4308-8d32-884511a64836};{6a59ae3f-0681-4fe6-bfbb-00c1b874b384};{d7414ac1-abba-4df0-b78e-cb3b17975de4};{6ef29384-f004-4428-a672-1b20d57933a3};{a5a1f2db-39c2-47a9-a4e4-fb2199da6981};{588d62d6-1e2e-4faa-a1ae-e4cdb1911aa5};{bace81f6-151d-4cf5-adac-91302ca5345a};{8ac67449-b927-45d9-809a-1c8738c39c32};{213688c1-edcd-4f5e-bcca-7ec250077f10};{df773796-1df9-4d0c-9c14-4189ec4f2fb9};{12ae695b-8724-43f6-8ddf-89efb1778151};{f30d96ae-a9c7-46b0-a04c-9f3be5836b16};{1242a075-b948-40b7-899e-cbf654fa771b};{71956454-edba-4449-9ca6-73586a198ee8};{baf0aa45-4ef3-4b27-a3b8-b456f9d67aef};{f45e1f4e-3211-4891-9d0b-3047fc8d5519};{be0accdd-02d5-4fb6-b02c-a926e01e9961};{25d82aa2-cfcd-4c11-9c61-b3385848bfe0};{9ea09d19-d27b-45e6-956e-d3c95c0f05df};{755674fb-b7c2-4b78-9b91-5f480ac04487};{8f367d49-fb43-4861-8814-a63c3b4adb8b};{e162971d-8bff-4915-b535-12fa39b94159};{7952df38-187b-4ae8-80e3-57b2c4c43069};{2162979e-2a20-4c7c-aaf3-3b4df211c085};{9140abe6-7ec9-471d-981d-96f79468389a};{1d8d60e3-3457-4fb9-b322-36bc971e273c};{98bd558a-f3dd-4b53-b9d7-652958d98b72};{e7476c52-3aa2-45d6-ab41-c0714ed32dd2};{0a949fc6-4be8-45c5-8e30-cf415b31726c};{45fac3f6-3981-4edf-86b5-158fd9f7b779};{4e9ad28a-bb5f-4cd6-8240-414bde8829f3};{c4a2f974-d328-494e-a872-ed6c194ad235};{e11fcbed-3de8-4778-9696-706ea2860826};{e05255ce-5509-4ddb-9218-8961d8285a3f};{8c3d989f-917e-4c69-afb2-8ce230d5e279};{edac61b7-70e0-40c4-9bf4-86287d32332a};{c3d4c9f0-4b9e-44ac-aecc-f0296616d920};{d4d1b475-01f7-4831-b743-b9765053eeea};{3644db1a-d282-4a6a-b4eb-bc39b79b4af0};{bd3c7f59-f970-4b64-8c3f-338323a19e93};{e8cb32c9-f2ed-4680-bce2-454fc93d807f};{348bd900-3119-49a4-bd4f-d5b9f0178ec5};{6ecd83f0-4aa5-4b6e-8173-e141f049b070};{05853238-1d91-4d25-b24a-f6994d5647c0};{37d7176d-8da8-4fc0-b780-15ebbcb1b468};{95e67204-bab1-4f1b-934a-9caf4eddef30};{5113b8cd-f1a4-410c-b297-a43cf2c86b01};{21349661-07e4-40a6-9776-3fccde3d009a};{15ddbb5f-e584-4475-ac0d-9e1840be0eb9};{6769a861-7a36-4982-8049-97329ee605bc};{7de7cd11-996b-4bca-9383-18b71823a59c};{a6b56e19-a53d-4ec7-a89a-bec831b3cb98};{bb883765-0dd1-4062-9143-8b4a17dbb448};{f50503a1-6eac-49ca-87a3-1b6de6d27e8a};{71d8a154-9f08-4e6f-8441-3c159307ca63};{34968ae1-c5dc-4bfd-9789-fbf929653d05};{43074e54-dcdd-4244-b185-e9e24df62fe4};{b3718977-8560-4467-b5dc-b70599e6c6dc};{902ddd9f-ccd9-4511-afcb-91f2e109751f};{9deef6c5-8c7e-4ee2-8b61-e0b6d4235177};{a4061ccd-f609-4498-8ab4-92012c2ddba9};{083811c1-78e2-4814-bd77-bf565707a791};{1f003459-8997-439c-b7b5-c0998b65e0be};{58e2553a-5092-4ab5-a468-6cbbd7d0b694};{5420e068-6f56-4523-b15e-2f7cfad23c95};{380b65f7-6ba6-4ae3-91d1-3fbcb0bf4914};{61afe6ab-7463-4d7c-87dc-0b4e5d5dfa82};{9956bece-18ef-44ec-8939-e06010716aa1};{63472b7f-f477-42e6-a4b5-19ca0dbd4743};{6611bd9d-bf99-448b-bb42-9509881cdec1};{e3114824-1606-4a24-8f7d-03a8e27e7581};{8c06e932-b64a-4a06-862a-779d0dc4c0fc};{ce965ac8-36e5-41ca-b86c-f0af5887de61};{feb91258-30f7-4d23-af91-3a82e21f11d1};{19ab0d17-0185-4501-a30c-8413724113fb};{cb14f5ee-e3f1-48a6-abbc-a0acbb15146f};{2ff9496f-9572-4e2f-adbb-90b14659456e};{5ad8de5e-6db3-45ca-9a6f-e90688f10efc};{15d25905-0d0c-40f5-b317-6c438a68a97e};{53b53d8f-1cac-4c9e-b3ba-39c69192f779};{f2e603db-495d-4333-a5c6-2c28f54e755c};{dbd402b9-e30e-4d62-8a23-1aaf1eb429d6};{dfd6aa99-7cca-4ba1-8595-406f68f4e5c0};{c12c25f3-923c-4a16-9446-1362ea8e1ed0};{066853e1-f11b-43f1-b777-d4f5275c8d8a};{b0148b58-b183-4800-8799-544c77134013};{7c558c8c-b2cb-48ec-85eb-46ca98c0aad4};{ddf7f312-e40e-4145-8318-f933ae414de3};{9acc52d4-75b5-47a4-8a75-0e4ec035bdbc};{7ed33e75-86c4-489c-b6a4-0427b12e3f8f};{7bcecb68-fcc8-4dbb-9033-8bd3d3f8638a};{0fc64dc6-d110-4a6d-9b78-c334fc321395};{6dc255e3-adbe-4d17-bd0a-64bd986b964a};{767f7b49-72a8-42da-a702-739240ef4f64};{48a05604-8767-4da7-a722-cc11105f6656};{c4e16a0f-605b-42b6-9209-b1f769f365c1};{d51fa9ef-6bb7-4e51-b331-1a21097cb1fe};{ab14cc9f-f8c5-47d5-99b2-2bffd5711d5c};{c4e9294c-e743-4e1b-95af-8c2b88217ffb};{568407d1-628b-4f03-acca-c89be9b0539e};{90e68d6c-4793-4dd0-aca2-35ade42e6efb};{1f9d7c44-2c34-4ae7-911a-8e86d93c2fc0};{a099d87b-07c6-4605-85bd-df1ffa102796};{b7fb6b50-b674-447c-87ea-5aa00ffe3f1a};{5d79c1db-baa8-46e0-a8fc-9f9706efba2f};{1951e935-ddd2-4c36-9e1c-ecbecd515333};{f1dd3054-8a5e-4887-82d5-32cc371f8bf1};{84db48cf-1cef-4bb5-9092-8a7df95cf1b1};{19dc91be-4977-432e-bab1-245a9c14f777};{5b7e0e4d-47e9-4354-ae06-54574c2c35ed};{55bba9b1-39f1-46a4-9816-bb43b1e7b2d6};{9a23ceba-f6de-4a70-87e9-9bb2cda178c3};{9a2c480a-8e39-4351-8fb0-afa7365920bf};{173d6496-29dd-4a99-853a-7a7c66b690fb};{3ad0b62f-a485-487d-96bb-fe8303e07bb7};{7266da2c-eabf-4293-937e-b4d5a7b055fe};{8098eaf3-8fde-4d14-aa34-272e6a61203d};{7f3df5c4-a6eb-495a-b32a-e00d81b9f621};{e209df74-7df7-4112-a474-87e876f87426};{86cb2903-5f5a-4d96-82dd-1e103f1b2c08};{bd15831f-f17d-4ecf-92e7-fe14cf0f832a};{2ebc0300-e42a-4ec5-9354-a93e895309fa};{f0e962d7-f756-43a1-a871-92aeb2a1f4ae};{1191701e-24c3-4902-8460-ced96d0d1cb3};{bfab4d5d-9044-43aa-9503-44b5e1fd3236};{7803719b-3720-4de6-ad7e-8e75644d0dd0};{a9e23151-735b-4b5d-bc7c-5bb1359ae684};{19740c90-564d-4a7a-9bee-261086293bae};{ed568935-8b76-4a10-bf25-70c36f15a7e5};{9a6451d2-cfc2-4641-b854-ff48399f7a81};{86b14079-32c2-482d-8969-a12124525f06};{f5123743-e75a-4740-83b7-5d04b8541f4f};{01dfa1d5-e6de-4b57-8125-c637bfe6200a};{75813b47-c15e-47a0-979b-8c59331bdc58};{6c58b841-80a6-4d3c-bb4b-78de1536bb45};{14cbab67-786b-4a4b-8f72-f26d6df052bd};{b1c9d598-d5fd-411a-85fa-a918b79ace2a};{c719822e-201d-401b-b994-7429e3d37fa8};{81f1ba17-fdd5-48e8-8a13-ee73433d43f7};{9a45cd76-bffa-4391-96fc-4855481b379c};{d64e9451-aef3-4385-927b-0c4736313bfd};{191e2eec-102c-4461-a1a2-263184a27606};{d4b44e3f-06ac-4b39-9eb0-f86af5bd7a07};{377d39eb-7030-49b4-9254-d614305a79c4};{c5c454f2-804a-477a-a7fb-233da0ada319};{a0d55c0d-4629-486a-a15a-b9d9923bd2ce};{403ff885-779a-46fb-84b1-9c105231e6a2};{e8837aea-6ddd-41b6-8aea-52da709627c3};{47d9fb73-1997-406f-b238-efbe1d814fc5};{3b9f103b-d7f3-41d4-a402-98a442a6b2dd};{c58ef3aa-28b8-444b-adca-295817d0f003};{eba5675d-801d-44e0-818f-9c8f479df15f};{92002561-cab5-4182-8198-d6efea231e13};{c8b0641f-38e3-4b21-8ddc-d166e6f9a662};{acfdfc0e-ac6e-4c5b-a10d-bbbee53df1f2};{3af81e81-511f-4d86-b127-650fec8aa953};{783a9363-d1bf-44d8-a283-ce33fc221218};{8d44e760-dcdf-42c9-b768-60b9a128d822};{643e94c0-de17-4fad-884b-8de9ea412f53};{1442699b-5cfd-4980-9c00-7b7499f49170};{7a624f04-f00b-4d1d-9e6c-e89c4dd761f7};{2681917a-78cf-4a8b-bb04-e7e5dfd64441};{3ec8d55c-752b-44c6-86c9-b6cd229e737e};{9db97ffd-d730-49c6-8796-138dc2102ff9};{77995285-b7dd-4065-8f95-2a284df02e7d};{19fa96f0-251b-4ead-beb6-f09b1cd85be5};{33f61958-fcea-40aa-a8c2-2adc87c4b22e};{92e052ff-db35-4bc5-8594-4fe84d3e165a};{a5741daa-6b80-4c0b-8721-6955561cdedb};{d1b84d29-3cea-42ee-a3e4-760b0c1740ed};{f2c0689d-6761-4241-9dec-1e2746a21215};{811894c3-2765-4f8b-b574-b3f85a74bf99};{626d749d-d49c-4dae-ae8b-3d7020f51f88};{2d9061fd-bbba-40c6-8f92-3e440a99db10};{ffa6ed1e-c128-4e2a-93f7-a90b1a826d58};{bbd39330-7938-401c-aa09-a75d123bea36};{1445d80f-d155-465a-8f78-9c342988490e};{e215ba85-a3f0-4b01-8a43-e2f41e325375};{807c3b41-48dc-476e-a8c7-d27d445e3b7b};{321973ef-50b5-47a7-bfa9-0ab936c58945};{58571dfe-13b0-4978-a1e9-d70405bc749e};{f61c8969-ab18-4352-ae8f-0ecbac7f2549};{31b5a9bc-e2f8-4a3b-8143-292c709c77f1};{3c4b3c21-91ce-401f-b251-dbf312323dd6};{956f176a-1336-4d90-ac7e-bd35ba398812};{4b3aede7-1f94-4d88-a175-5705e364f08a};{20fbaf66-eaf8-4498-87a3-a85ea0480b4e};{95493c04-0dda-462f-a5f5-a0b96fcfc76d};{6250de7b-e945-4879-8fbf-b4290d12edde};{9567dcea-6b3d-49ee-b741-06d0ddc6a58d};{843dbc94-2ad9-4766-8ba4-8bee507b01c8};{22bfb6af-2b5d-4015-8717-f4e194cbb432};{a94a95ad-1d59-4a73-93c2-11db0ece602e};{2dda1d10-1ad2-42ce-abe5-b577fd43dab4};{a2e4bd48-4dea-42fd-b437-89df3b8fcb82};{8037f2d4-57ce-4862-bd96-6aff7ea749dc};{0d719bf3-5aef-4ff8-8464-e7668ba34e5b};{9f65ffdf-8486-4c8d-bb39-09113b9ebfbc};{cf34d249-25e9-47a4-afc3-62a69e4446d1};{6b9ca6be-fd31-4b33-a7ca-944139aca43a};{8fa27e0b-1c7c-4a54-bf52-13378c3fe213};{e2b37cf8-64d8-473e-9f8f-1e4458505315};{1ef5e2bd-05d7-446a-bbdf-947bda52d502};{23064ff7-96f2-4230-918f-aea8e1fa7fb8};{0fff2eb2-f108-4dcb-b8eb-a79bfe4a9dec};{f1bc33df-01b8-4a52-a39f-478095e85346};{a478fc05-8c9d-4309-8ba6-3a155a67db1f};{b14a256d-6a2a-4d75-80f1-f6852e6a6c16};{951f74d3-f096-48ed-b96a-57e8bc0a76b9};{5e2821b0-ee02-4291-a693-f24670c2e4c8};{6cb376a1-3481-4cc2-8561-7e0862b2f7d1}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="4" />
+            <Integer Value="2" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1123.18833289352" />
+            <Double Value="1141.75976146495" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
@@ -17155,17 +17199,17 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{e3739628-7396-40e5-8998-00e0b00dee72};{005af4c6-2f96-4108-9a45-07127857d062};{a00e7c51-8d0b-41e1-a15f-00a37bba66bf};{b8d3ca27-3a8d-4c05-b473-19b0dae81b80};{4bad2485-0b3f-428e-90e3-e8882f599799};{e62e00f6-34f9-4b44-9e1d-2f763c2e4a61};{4c1fb4ff-0025-4dab-bfd8-ddc310f98ec9};{3cd4b211-c3a8-4198-a083-3404353579be};{ca14e492-22f4-4ca6-9bd5-67c1efe0e174};{fe798093-3d55-4aaa-b534-6574a6ba7490};{ddbfa934-7dc7-466f-9f98-95d8a9e6ea33};{d8e8354d-c83d-4d1c-a94e-6b77ffa059b5};{61faab7e-7cca-4032-8b47-920762d824a3};{9b252353-445b-4b6c-92e3-b9c4ca83953d};{4310d670-6e68-4223-9d8b-17de883cd769};{9e98d9b2-fed0-4e22-a58b-4b9e3a3a064d};{2af9f4d0-f4f6-465b-a2d0-2d5e8fd86603};{08ddc994-d9e3-4bd4-9f93-f240c1a13a60};{4ca46330-1454-4e68-91c3-04de209fa3fb};{1b72deef-5d60-4417-8686-4add8035fd2a};{a0d186eb-1b06-42c4-9245-842cfdee843e};{163334be-3c57-474a-b3a1-85c194973ecc};{b69b2e62-f8aa-47a9-8962-e220b95ff647};{fe42c51f-28b9-4382-9ace-2ddcc1fb4e47};{a312faf1-acc3-4061-a7ba-611d34b02999};{a7d94637-d9fd-48d2-8bd6-25734833ea48};{be686c79-9e39-4b3a-b4b0-c3e29afb9d4f};{494a13c9-a9d3-4658-bc79-bbe35eb418d5};{3a28e50e-575f-4da2-99a2-a634c5ccbacc};{fd3126bc-2525-4f4c-a880-1d1fa092657c};{e7604ad0-97c6-4def-bdea-8e34d270cca5};{84276a0e-7f0b-4ffe-b179-2f7b4c6375b7};{fc90524f-c195-4061-a17a-d7b5b21913dd};{876ba0e0-b657-4b67-82df-ee6313c9aae3};{2cc7e540-f1b8-49f0-8fe7-1565c19d7cb4};{ef0c6636-76fd-4456-96c7-4d2a24b9819d};{0423ca10-c23d-4f5a-99d1-dd3ed74b4296};{8c592b7f-6e0b-43bf-b1c2-16fc007226e3};{d4c0505a-2241-48db-b24d-06c9d8a3d72b};{dfbe5c64-9da8-4ebb-b240-b433a2b96bf1};{ca04ee4f-7585-4a37-b164-28d94e1d2050};{e7f4a2f0-711d-4db3-8a3a-4a3e344bb16e};{c4a2f90b-896b-4004-9c86-03718069eba0};{2ff21e1b-be59-4d2a-b8eb-56e6ac5d166a};{39209e16-8865-40c7-906b-1a8e12ce72c9};{3f7fe40f-3bdd-4f5c-a495-5bbcd2c0a726};{3e3c5541-b45d-44f9-b255-1f178a878f3b};{a2d0e952-6ecb-4a0b-9349-6da2b8461252};{ac5b810e-188e-4a3a-b01d-e880059d0f1b};{ee703d98-f619-45dd-bb3b-808320c26d09};{82fc1c0b-0a81-40e4-bce6-70b5317824e5};{55cdfddf-9d24-4aae-a96a-05d660cac74e};{c64544ea-ec98-409f-933c-09164becb3a6};{b57abcaa-8789-40eb-b189-f6cfb825f85d};{5e8df26b-278a-4a9d-972b-bc9d723174db};{d494d04c-ff33-486b-870a-436d328b3a48};{7002e2f1-7227-4174-b0b5-ff9ad9f75885};{210ae4fc-15dd-42d1-8d6b-585713ac2708};{b5335509-370d-4c60-b96c-3704b5572a69};{9bc00bd4-f1d3-4f68-b4dd-b299e8c81bae};{3021e815-482d-49de-a224-59987f4c8bc0};{eb920dd6-b7c7-41d6-a0ab-612c4b391012};{ee53a2c1-955c-4698-af83-ff96cba167ec};{16df037e-e136-469b-808a-46adef1a97a0};{6193d4de-c495-4fd5-8ae5-00d333506d8e};{9d8f9971-1497-4e16-97e0-a92dee3f3f99};{3b54e8a0-11cf-4994-af01-0a3bbe37f11b};{05259471-8f0a-43fe-814b-17d8395d5ef7};{ea98318a-b7c9-4d3e-9c95-bd8f68f30653};{f8d5403a-5af4-476b-85b6-e91236f48b6b};{e2f1cbcd-b5a6-4d66-85cf-1070f93ae024};{020f0db4-8d29-48d6-a842-2e67be138ec9};{00e645e8-8a9c-4128-8bed-332e404dc21f};{28cb885c-f36b-45ca-ac03-8faae82870e3};{5fce26cc-8cfb-421a-8aca-e876eebb06d8};{883c2174-335f-4b6b-b5bc-fe89527d7e5b};{e18670db-3b8d-471a-82a9-fba27a9b69fe};{5b416db0-0960-49a9-9470-78bb89e88f0a};{5922b55e-2265-4b67-a053-28822834666a};{38809a3a-6fba-44c9-8d0d-8437062b1d13};{af1d9bd7-c4b4-4dff-987e-c80e1d2c0b19};{74bca361-9846-489d-9cee-a63f559c3033};{a9c07fc2-0465-4659-b4fe-e8b906b666d8};{5ec0cdf4-9674-4491-8e2e-cc3ce79b452e};{1ef67140-d326-43df-bbaa-a8355439b3d0};{81651f15-6273-4ecb-a0cf-67906745d7d8};{8bd8c840-f992-4b82-8c9c-7452d6517df8};{37c63a2f-1a3e-490a-a3cb-bd6dc05d66d2};{7856cdb0-372a-4efb-8aa0-c44ee7f1a531};{6531cf84-5bac-4885-9032-0c90605b461c};{59e6207d-ec33-49d6-ba76-508da2ef6c3b};{052962fb-bc2d-4029-9801-30d3db61b6d6};{03bf9eeb-d15e-418b-bece-baa7c4f4ad4f}" />
+            <String Value="{b03b24aa-5b6c-46a7-b630-db624ffaf91e};{9ea87579-f520-41ae-8790-7933cb55a314};{7886a174-f87c-49a0-ac91-8364105e5d04};{9202ec08-88ae-40aa-93ca-caa023845c06};{aabbf420-e311-463e-88e6-9577f2ef5d67};{1953c8a1-6dfe-438d-a366-4b12a62a3b49};{15dc1d60-44bb-4a29-a739-4eebfcdb235d};{598c371f-125f-4669-b608-c733d3b5281c};{4f5ed2ac-342d-45f9-a6d8-cdd39539353f};{1dbda49e-b729-4f4f-9239-e13611bb6761};{c1c48c30-22ef-45f7-a789-ba06ed03a3c4};{06298633-fb53-472b-b4fd-62dd961569a6};{f84ee7cc-93cc-40ba-b229-7faa7cfcddd1};{606ee8c0-038d-4202-b3b5-62aab7319820};{dd5fd196-0a9c-4468-bf45-22987a0cbe7d};{18e75f1d-98b1-4d40-95ed-a064d093f391};{c9ee81d8-3f36-483a-8743-e449b7bf3569};{10a562fd-91fe-4c24-bd82-65647fa72a39};{8f704345-0fef-42f4-8fb3-0a96a6a38d27};{3878fad3-a1fe-448f-bfc9-ad190c8214b5};{412d6b61-a9c2-4d01-ae2d-5575563b1696};{a7258fbd-5bfd-47d2-8d5c-5762d30664ed};{cf60c161-ef95-4551-8ab9-36f0c9d33210};{f102a67f-a8fb-4195-a66f-f0a11727373b};{fb351127-d61e-4a29-b8f5-048fd130879b};{bd9d95c3-f25a-4007-a012-39a226f2504e};{28cd8b5d-a1ea-439b-9e4c-d29a4537d121};{1b438c9a-e69d-41b2-8784-565a6ca786f5};{52f97978-1caf-4236-b494-45a043da6728};{5fd8107c-28e3-4445-a50c-9e65ac3bb043};{b2115803-1bbc-4632-b42e-c9892de604c2};{09063e18-1fa8-4f8d-ab52-d9a0cced15cd};{3ebd0b1c-3be6-4c32-b7aa-7cf1bb44d9c6};{95193b0f-eb4d-4285-98a7-032cc2fc7f05};{ff88f2a1-4728-491b-ae55-1d548278e16f};{5ab7caf2-d22a-4f2d-a025-36236f9e97c0};{6cd6aad2-66a2-46bf-85eb-99a7e2c625e9};{8083aa41-de7d-4498-906d-b9201bd9e3a9};{697efe77-5532-4cc8-8194-b1cc74842564};{b1928f8a-921b-40c3-822d-1b26c6d32a61};{947ee8e4-4d89-4efe-ad0c-2c7a12ddafbb};{d057e9bf-792c-4b65-8dfc-2672c12738de};{3c551434-5ef6-4846-870c-ae2b1738bbc3};{4a254c5c-44df-4abd-886d-4d3c7ca25bb4};{8ba764fa-9b34-4ce8-8c06-acca59fcd39d};{7df0d27e-75c5-42b0-b6ba-42683e79dc74};{d02202da-ba24-4368-96dd-d0df14f7ec30};{65097779-ad8f-4ac8-a3bf-2384815eeebd};{fafea1d9-20ee-4078-b625-2a0d002e601a};{80693cea-258f-4390-9725-f7e97ccab896};{51ee020b-8c40-4da8-a529-db5b45438fe8};{06a9fdf8-df17-4c94-a3f6-31b6dc569156};{74d22f5a-e5fd-4c53-9896-38aeea94b6a8};{29ef3d4c-a344-48f0-b2ec-bd280a87f2cb};{fa91e71a-6b93-4e7c-afe6-5b3bb9997ce6};{57e7f421-fc33-4c95-9c2c-39a612095e56};{409ab7d4-78f2-495b-9f5f-549ea3c231d1};{18a8b09b-1ba4-4a37-98de-36dbf2a56fce};{ad92c247-552e-4d4c-862e-4a5524f88bf8};{1ef735e6-05a2-4ccf-8194-af9616e46c19};{7f38f03b-e223-4caf-a528-989fe2d95510};{36627d2f-bdf1-46da-bce2-2b88ca9bd552};{ada57e49-f6d4-467c-a6fa-3876a9488acf};{b9fb894e-c6a7-4bd9-85ef-fa7ffa549037};{16004992-a2ae-4b10-a91c-bb59e8db3db8};{eea63138-a0e9-498e-a58f-b8417ac8a9e2};{83adcb5f-eb8f-42f2-a999-c1b0a2cc04be};{14248dfe-d903-4be3-ae0c-bd997d34cfcd};{c4cc1ebd-b5c0-40a6-9b31-0517ef45a9b4};{5b24ed4f-d9bb-4041-83f9-b20eee6bcf99};{d0c6f38f-5000-4006-b2e7-84b0e1e081ca};{1e28484e-2063-465b-bde4-008a5dbd837b};{27963854-d7ee-4ca7-a640-9b0d25593b68};{27b9fc67-732d-4066-9f55-d530eea9746a};{3371a17f-a65a-438d-8f48-ecfb07ee2b2d};{3be8a42d-6927-4ce5-a23b-c68600de89bb};{2502c8da-c800-4943-aa29-a083dce15b91};{17b0356c-64f9-435f-ae1c-85197e5d114a};{04542376-8df8-4ad1-9426-067c1b7e1b22};{ffec001f-6538-4ddd-8ac9-db453e528993};{473f27b8-0462-434b-ade4-841b59df73d2};{9cbacbba-fc72-4666-bba7-4c6ce13e11bd};{f43a55df-a652-429a-abbc-3b6dc77976f0};{2e69666a-82a0-4956-8ab1-1d378c0a6075};{c821327e-472c-4fb3-9744-13584065aed6};{5dfdc315-0d9c-477f-aafd-10b9b8be1f35};{8919f8d0-b65e-4fbb-83cd-9abf9ce51fce};{c7d04b74-569b-4a12-b4ef-2247cf8e3522};{cd047de5-4760-4f56-9233-f530a0d81e14};{86aeb584-08d9-4c06-b8bd-7639144f3d48};{41789c44-edfb-4c7c-a441-73b4159e86c8};{f783f0df-ae82-4179-b1c2-9ea48f961722};{ee1e66ea-f475-44f5-9e94-01a1e67ed0e7};{431b5f2d-16ca-4f1e-811a-5188b86fd63c};{1a37fa0c-2cb3-436c-82d0-8982d66d5f2a};{497b0612-348d-44a1-8bd4-2b80a4eee813};{c23a638f-57a4-4250-8531-971bacf13bf5};{243526d2-2ffe-4751-a2ec-64179e2fc1f1};{936acab3-f950-48cc-9732-829218698825};{03d15958-61aa-4527-94e6-7d3ea73ee7d2};{7a792194-d129-44c1-a953-da676fd359c7};{e066728d-d788-4b20-a0fc-68ac44a801f7};{74486c11-8268-41d4-8651-b0dd98416eea};{c82ff130-9edd-444d-9a21-976c5920516e};{394eaafc-724f-4f67-a1d6-e212064b3199};{4745193f-3ef7-4497-81cf-6bccd4fbbf55};{7921ac26-ac14-4841-b1b5-d6c1a6ce4a53};{50f9d295-c261-439d-b82f-e895bc2bf855};{827501b2-fbb3-4950-a5ab-08fc20bdecd8};{644ef727-49a0-4651-ad67-37d3e2ddc34f};{5118852e-158c-4aba-8e19-b417d86d7d8e};{260c3dc3-1421-436f-a763-ad203fe2a04d};{c067d7b2-ced3-47cc-b785-d2579f511502};{4bb663fb-b85f-43c1-a695-59cb79b86a74};{41be85d5-dfdb-4855-80da-b39a4bb4b03e};{695862cc-911c-4202-856b-435fb5e3cdae};{04708f98-84e5-4f23-a80e-c87df74945de};{65500969-7121-4320-8cf4-98c7db7505ec};{5191fed5-cafc-433c-ab28-4497dfdf491e};{48136c9d-96bd-4173-afce-50868c9154f7};{525609df-f3a2-40a8-9cdf-5e9c67c46e89};{971de40d-adb3-4f08-86b9-66e916e15419};{b8078ce9-0b75-4c0c-a740-209d19f22380};{7e851f91-caa0-4a12-abf1-a6611018f82a};{b9505a7f-9593-4ccc-8b53-2910d9727fff};{464ead97-dbfd-4afd-94db-1838fc0a93a7};{5672b714-78fc-4bca-ae07-e713a9083b94};{d1527fd4-6df2-4935-8294-664d531ca250};{0d03834e-3cba-4ec3-b224-743741d0731d};{22d196af-d6d4-4ea7-85ec-a99075497b51};{18d64385-4718-4868-a01f-7989a40f6ab2};{b3660e42-a33f-4c4c-8697-f2781aa90301};{74d06e39-012a-4ac4-b147-f4e2e37c6a5c};{33e13eba-3f3c-4291-8654-e608f1b94ec7};{bc68a058-4e78-41be-96f1-9d9608f3df9c};{f05e1ec0-8073-404f-80c4-e0e99043e70d};{dc4b71f0-8480-4c37-ac83-3c1b5f4eed53};{965d5e66-6427-4dc3-8cc4-ddc99986fa36};{404d2d08-5234-4abb-a0da-703488861bad};{f8098e99-2b71-4ca7-8f34-41161b54d601};{3011ff8d-3aea-4e3e-bd34-26871f506e42};{abb93706-4ce2-416e-aa6f-2e852dc54adc};{652439ff-7309-4944-80b6-1e89087c6113};{988d6b3f-1c97-4718-a232-704c468502a4};{244db045-76ab-446b-9a88-b90317ea62ae};{f0d2c23c-75b3-4368-92d3-7db249817016};{603911f0-5122-44c6-8ff0-e5789994dc48};{542a4d75-5e8c-461a-98f5-2a65efd0289d};{c59f5085-ebf0-4cf6-a4ad-295ed6a46afc};{18405279-b742-4cd6-96ab-9c70a61504e7};{d6b49ddd-f084-4814-8136-6380a35ccf02};{e52caebe-cc11-4d5c-b3d9-d65443c1efca};{c69b7f69-0646-4874-a577-c31ea1ce9b44};{ff6e08ec-12a9-4cb9-aa4f-a87144fce52d};{f4037e69-648f-4876-abf6-e0fe257560b8};{376eab0a-42dc-40c7-ac27-a29c975aec43};{c652c7a7-5421-46be-ba9a-0bc57a06233a};{51e8d67c-fd2d-474c-a06a-826ca57b140b};{ceff68ad-3df2-4cac-a98d-2c8fbb2c4854};{f7d77203-a679-49c5-8159-fe2acf5b1896};{70e298cd-38a6-43c9-804b-b309dfdf1fd9};{edf8c57b-5594-4f31-9262-637c6a7762d1};{bae1908b-0721-432b-a3ca-6c0f1d7a0f2e}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="2" />
+            <Integer Value="0" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1121.78166296234" />
+            <Double Value="1135.87033291308" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
@@ -17273,7 +17317,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;CurrentTime">
           <Value>
-            <Double Value="19.08" />
+            <Double Value="59.352" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17335,7 +17379,7 @@
       <SignalValues>
         <Element Key="Active">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -17412,17 +17456,17 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -17489,7 +17533,7 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="InputB">
@@ -17499,7 +17543,7 @@
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -17566,7 +17610,7 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="InputB">
@@ -17576,7 +17620,7 @@
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -17648,12 +17692,12 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -17663,7 +17707,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Value">
           <Value>
-            <Double Value="0.261591569642346" />
+            <Double Value="0.677153540159181" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Min">
@@ -17678,12 +17722,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="219.727636127917" />
+            <Double Value="228.299064699346" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="65.463483146067" />
+            <Double Value="58.3206260032099" />
           </Value>
         </Attribute>
       </Attributes>
@@ -17742,7 +17786,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.261591569642346" />
+            <Double Value="0.677153540159181" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17803,7 +17847,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -17813,7 +17857,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.261591569642346" />
+            <Double Value="0.677153540159181" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17828,7 +17872,7 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="468.339091150678" />
+            <Double Value="466.910519722107" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
@@ -17874,7 +17918,7 @@
       <SignalValues>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -17946,7 +17990,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -18023,7 +18067,7 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -18127,7 +18171,7 @@
       <SignalValues>
         <Element Key="Execute">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -18218,7 +18262,7 @@
       <SignalValues>
         <Element Key="Execute">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -18227,31 +18271,36 @@
     <PathProcedureDeclaration ID="4491" Name="main" Parent="1190" ShowName="false" ZoneVisualization="0" ShowSpeeds="false">
       <DeclarationInfo ID="4492" />
       <RoutineCalls>
-        <ObjectRef ID="5554" />
-        <ObjectRef ID="5568" />
+        <ObjectRef ID="5594" />
+        <ObjectRef ID="5600" />
+        <ObjectRef ID="5672" />
+        <ObjectRef ID="5678" />
         <ObjectRef ID="4893" />
         <ObjectRef ID="4899" />
+        <ObjectRef ID="5582" />
+        <ObjectRef ID="5588" />
         <ObjectRef ID="5007" />
         <ObjectRef ID="5201" />
         <ObjectRef ID="4944" />
-        <ObjectRef ID="5532" />
+        <ObjectRef ID="5666" />
         <ObjectRef ID="5457" />
         <ObjectRef ID="5316" />
-        <ObjectRef ID="5322" />
-        <ObjectRef ID="5273" />
-        <ObjectRef ID="5517" />
+        <ObjectRef ID="5709" />
+        <ObjectRef ID="5688" />
+        <ObjectRef ID="5703" />
         <ObjectRef ID="5472" />
         <ObjectRef ID="5536" />
         <ObjectRef ID="5542" />
-        <ObjectRef ID="5243" />
+        <ObjectRef ID="5621" />
         <ObjectRef ID="5487" />
         <ObjectRef ID="5370" />
         <ObjectRef ID="5376" />
-        <ObjectRef ID="5257" />
+        <ObjectRef ID="5636" />
         <ObjectRef ID="5502" />
         <ObjectRef ID="5189" />
         <ObjectRef ID="5548" />
-        <ObjectRef ID="5302" />
+        <ObjectRef ID="5651" />
+        <ObjectRef ID="5684" />
         <ObjectRef ID="5574" />
       </RoutineCalls>
     </PathProcedureDeclaration>
@@ -18571,7 +18620,7 @@
     </PartDef>
     <PartDef ID="4526" Name="" Parent="1183">
       <GeoPart StreamType="GeoDataStream" StreamID="81a17abdf10c47cb8a740b6c7b60dea3" StreamChangeRef="df41999bcf564ff3bfefa02840b7100b" />
-      <GfxData StreamType="GfxDataStream" StreamID="607ffc7d41df4beca671537424c6b2f1" StreamChangeRef="d69d452fc9bd4b75902b87fdadde4387" />
+      <GfxData StreamType="GfxDataStream" StreamID="607ffc7d41df4beca671537424c6b2f1" StreamChangeRef="d573daff3ef445689da0f163b5307c62" />
       <BoundingBox>
         <Min X="-3" Y="-0.075" Z="0.775" />
         <Max X="-2.83" Y="0.045" Z="0.85" />
@@ -19036,7 +19085,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[-0.0252177734375 0.449643737792969 0.892505065917969]" />
+            <String Value="[-0.025094482421875 0.449739929199219 0.898207458496094]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -19383,9 +19432,9 @@
       <SourceObject ID="4516" />
       <TargetObject ID="4941" />
       <OffsetTransform>
-        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711934E-07" W="0" />
+        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711922E-07" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-1.93384404711934E-07" Y="0" Z="0.999999999999981" W="0" />
+        <RowZ X="-1.93384404711922E-07" Y="0" Z="0.999999999999981" W="0" />
         <RowT X="0.000217867022343166" Y="7.00000000044212E-06" Z="0.0514800489124443" W="1" />
       </OffsetTransform>
       <OriginalTransform>
@@ -19445,74 +19494,6 @@
     <RoutineArgument ID="5212" Name="Tool" Parent="5202" Value="Gripper" />
     <RoutineArgument ID="5213" Name="WObj" Parent="5202" Value="WO_themainone" />
     <RoutineArgument ID="5214" Name="TLoad" Parent="5202" Enabled="false" />
-    <MoveInstructionCall ID="5243" Name="MoveJ" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="5244" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="5244" Name="" Parent="5243">
-      <RoutineArguments>
-        <ObjectRef ID="5245" />
-        <ObjectRef ID="5246" />
-        <ObjectRef ID="5247" />
-        <ObjectRef ID="5248" />
-        <ObjectRef ID="5249" />
-        <ObjectRef ID="5250" />
-        <ObjectRef ID="5251" />
-        <ObjectRef ID="5252" />
-        <ObjectRef ID="5253" />
-        <ObjectRef ID="5254" />
-        <ObjectRef ID="5255" />
-        <ObjectRef ID="5256" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5245" Name="Conc" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5246" Name="ToPoint" Parent="5244" Value="NewIni" />
-    <RoutineArgument ID="5247" Name="ID" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5248" Name="Speed" Parent="5244" Value="v1000" />
-    <RoutineArgument ID="5249" Name="V" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5250" Name="T" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5251" Name="Zone" Parent="5244" Value="fine" />
-    <RoutineArgument ID="5252" Name="Z" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5253" Name="Inpos" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5254" Name="Tool" Parent="5244" Value="Gripper" />
-    <RoutineArgument ID="5255" Name="WObj" Parent="5244" Value="WO_themainone" />
-    <RoutineArgument ID="5256" Name="TLoad" Parent="5244" Enabled="false" />
-    <MoveInstructionCall ID="5257" Name="MoveJ" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="5258" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="5258" Name="" Parent="5257">
-      <RoutineArguments>
-        <ObjectRef ID="5259" />
-        <ObjectRef ID="5260" />
-        <ObjectRef ID="5261" />
-        <ObjectRef ID="5262" />
-        <ObjectRef ID="5263" />
-        <ObjectRef ID="5264" />
-        <ObjectRef ID="5265" />
-        <ObjectRef ID="5266" />
-        <ObjectRef ID="5267" />
-        <ObjectRef ID="5268" />
-        <ObjectRef ID="5269" />
-        <ObjectRef ID="5270" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5259" Name="Conc" Parent="5258" Enabled="false" />
-    <RoutineArgument ID="5260" Name="ToPoint" Parent="5258" Value="NewIni" />
-    <RoutineArgument ID="5261" Name="ID" Parent="5258" Enabled="false" />
-    <RoutineArgument ID="5262" Name="Speed" Parent="5258" Value="v1000" />
-    <RoutineArgument ID="5263" Name="V" Parent="5258" Enabled="false" />
-    <RoutineArgument ID="5264" Name="T" Parent="5258" Enabled="false" />
-    <RoutineArgument ID="5265" Name="Zone" Parent="5258" Value="fine" />
-    <RoutineArgument ID="5266" Name="Z" Parent="5258" Enabled="false" />
-    <RoutineArgument ID="5267" Name="Inpos" Parent="5258" Enabled="false" />
-    <RoutineArgument ID="5268" Name="Tool" Parent="5258" Value="Gripper" />
-    <RoutineArgument ID="5269" Name="WObj" Parent="5258" Value="WO_themainone" />
-    <RoutineArgument ID="5270" Name="TLoad" Parent="5258" Enabled="false" />
     <ComponentInstance ID="5271" Name="_sensorPart_" Parent="4467" UIVisible="false" PickingEnabled="false" Detectable="false" PhysicsMotionControl="0">
       <Definition ID="5272" />
       <Transform>
@@ -19544,74 +19525,6 @@
         <Max X="0" Y="0" Z="0.3" />
       </BoundingBox>
     </PartDef>
-    <MoveInstructionCall ID="5273" Name="MoveJ" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="5274" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="5274" Name="" Parent="5273">
-      <RoutineArguments>
-        <ObjectRef ID="5275" />
-        <ObjectRef ID="5276" />
-        <ObjectRef ID="5277" />
-        <ObjectRef ID="5278" />
-        <ObjectRef ID="5279" />
-        <ObjectRef ID="5280" />
-        <ObjectRef ID="5281" />
-        <ObjectRef ID="5282" />
-        <ObjectRef ID="5283" />
-        <ObjectRef ID="5284" />
-        <ObjectRef ID="5285" />
-        <ObjectRef ID="5286" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5275" Name="Conc" Parent="5274" Enabled="false" />
-    <RoutineArgument ID="5276" Name="ToPoint" Parent="5274" Value="NewIni" />
-    <RoutineArgument ID="5277" Name="ID" Parent="5274" Enabled="false" />
-    <RoutineArgument ID="5278" Name="Speed" Parent="5274" Value="v1000" />
-    <RoutineArgument ID="5279" Name="V" Parent="5274" Enabled="false" />
-    <RoutineArgument ID="5280" Name="T" Parent="5274" Enabled="false" />
-    <RoutineArgument ID="5281" Name="Zone" Parent="5274" Value="fine" />
-    <RoutineArgument ID="5282" Name="Z" Parent="5274" Enabled="false" />
-    <RoutineArgument ID="5283" Name="Inpos" Parent="5274" Enabled="false" />
-    <RoutineArgument ID="5284" Name="Tool" Parent="5274" Value="Gripper" />
-    <RoutineArgument ID="5285" Name="WObj" Parent="5274" Value="WO_themainone" />
-    <RoutineArgument ID="5286" Name="TLoad" Parent="5274" Enabled="false" />
-    <MoveInstructionCall ID="5302" Name="MoveJ" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="5303" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="5303" Name="" Parent="5302">
-      <RoutineArguments>
-        <ObjectRef ID="5304" />
-        <ObjectRef ID="5305" />
-        <ObjectRef ID="5306" />
-        <ObjectRef ID="5307" />
-        <ObjectRef ID="5308" />
-        <ObjectRef ID="5309" />
-        <ObjectRef ID="5310" />
-        <ObjectRef ID="5311" />
-        <ObjectRef ID="5312" />
-        <ObjectRef ID="5313" />
-        <ObjectRef ID="5314" />
-        <ObjectRef ID="5315" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5304" Name="Conc" Parent="5303" Enabled="false" />
-    <RoutineArgument ID="5305" Name="ToPoint" Parent="5303" Value="NewIni" />
-    <RoutineArgument ID="5306" Name="ID" Parent="5303" Enabled="false" />
-    <RoutineArgument ID="5307" Name="Speed" Parent="5303" Value="v1000" />
-    <RoutineArgument ID="5308" Name="V" Parent="5303" Enabled="false" />
-    <RoutineArgument ID="5309" Name="T" Parent="5303" Enabled="false" />
-    <RoutineArgument ID="5310" Name="Zone" Parent="5303" Value="fine" />
-    <RoutineArgument ID="5311" Name="Z" Parent="5303" Enabled="false" />
-    <RoutineArgument ID="5312" Name="Inpos" Parent="5303" Enabled="false" />
-    <RoutineArgument ID="5313" Name="Tool" Parent="5303" Value="Gripper" />
-    <RoutineArgument ID="5314" Name="WObj" Parent="5303" Value="WO_themainone" />
-    <RoutineArgument ID="5315" Name="TLoad" Parent="5303" Enabled="false" />
     <ActionInstructionCall ID="5316" Name="SetDO" Parent="4491" TrigValidity="0">
       <ArgumentList ID="5317" />
       <InstructionTemplateName Value="Default" />
@@ -19628,22 +19541,6 @@
     <RoutineArgument ID="5319" Name="Sync" Parent="5317" Enabled="false" />
     <RoutineArgument ID="5320" Name="Signal" Parent="5317" Value="Mouse_Output2" />
     <RoutineArgument ID="5321" Name="Value" Parent="5317" Value="0" />
-    <ActionInstructionCall ID="5322" Name="SetDO" Parent="4491" TrigValidity="0">
-      <ArgumentList ID="5323" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5323" Name="" Parent="5322">
-      <RoutineArguments>
-        <ObjectRef ID="5324" />
-        <ObjectRef ID="5325" />
-        <ObjectRef ID="5326" />
-        <ObjectRef ID="5327" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5324" Name="SDelay" Parent="5323" Enabled="false" />
-    <RoutineArgument ID="5325" Name="Sync" Parent="5323" Enabled="false" />
-    <RoutineArgument ID="5326" Name="Signal" Parent="5323" Value="Mouse_Outpu1" />
-    <RoutineArgument ID="5327" Name="Value" Parent="5323" Value="1" />
     <ActionInstructionCall ID="5370" Name="SetDO" Parent="4491" TrigValidity="0">
       <ArgumentList ID="5371" />
       <InstructionTemplateName Value="Default" />
@@ -19820,22 +19717,6 @@
     <RoutineArgument ID="5514" Name="WObj" Parent="5503" Value="WO_themainone" />
     <RoutineArgument ID="5515" Name="Corr" Parent="5503" Enabled="false" />
     <RoutineArgument ID="5516" Name="TLoad" Parent="5503" Enabled="false" />
-    <ActionInstructionCall ID="5517" Name="SetDO" Parent="4491" TrigValidity="0">
-      <ArgumentList ID="5518" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5518" Name="" Parent="5517">
-      <RoutineArguments>
-        <ObjectRef ID="5519" />
-        <ObjectRef ID="5520" />
-        <ObjectRef ID="5521" />
-        <ObjectRef ID="5522" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5519" Name="SDelay" Parent="5518" Enabled="false" />
-    <RoutineArgument ID="5520" Name="Sync" Parent="5518" Enabled="false" />
-    <RoutineArgument ID="5521" Name="Signal" Parent="5518" Value="doReset" />
-    <RoutineArgument ID="5522" Name="Value" Parent="5518" Value="1" />
     <SmartComponentInstance ID="5529" Name="LogicGate_7" Parent="4466" UIVisible="false" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -19850,7 +19731,7 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="595.884504608295" />
+            <Double Value="599.332780470364" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
@@ -19897,12 +19778,12 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -19927,12 +19808,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1186.9809609884" />
+            <Double Value="1189.94432305737" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="636.411531785516" />
+            <Double Value="637.974031785516" />
           </Value>
         </Attribute>
       </Attributes>
@@ -19974,12 +19855,12 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
@@ -19994,12 +19875,12 @@
       <Attributes>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="779.69111512792" />
+            <Double Value="781.415253058954" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="790.689655172414" />
+            <Double Value="792.413793103448" />
           </Value>
         </Attribute>
       </Attributes>
@@ -20053,18 +19934,6 @@
       </SignalValues>
       <RoleObject ID="-1" />
     </SmartComponentInstance>
-    <ActionInstructionCall ID="5532" Name="WaitTime" Parent="4491" TrigValidity="0">
-      <ArgumentList ID="5533" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5533" Name="" Parent="5532">
-      <RoutineArguments>
-        <ObjectRef ID="5534" />
-        <ObjectRef ID="5535" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5534" Name="InPos" Parent="5533" Enabled="false" />
-    <RoutineArgument ID="5535" Name="Time" Parent="5533" Value="0.5" />
     <ActionInstructionCall ID="5536" Name="SetDO" Parent="4491" TrigValidity="0">
       <ArgumentList ID="5537" />
       <InstructionTemplateName Value="Default" />
@@ -20113,22 +19982,6 @@
     <RoutineArgument ID="5551" Name="Sync" Parent="5549" Enabled="false" />
     <RoutineArgument ID="5552" Name="Signal" Parent="5549" Value="Mouse_Output2" />
     <RoutineArgument ID="5553" Name="Value" Parent="5549" Value="1" />
-    <ActionInstructionCall ID="5554" Name="SetDO" Parent="4491" TrigValidity="0">
-      <ArgumentList ID="5555" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5555" Name="" Parent="5554">
-      <RoutineArguments>
-        <ObjectRef ID="5556" />
-        <ObjectRef ID="5557" />
-        <ObjectRef ID="5558" />
-        <ObjectRef ID="5559" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5556" Name="SDelay" Parent="5555" Enabled="false" />
-    <RoutineArgument ID="5557" Name="Sync" Parent="5555" Enabled="false" />
-    <RoutineArgument ID="5558" Name="Signal" Parent="5555" Value="doReset" />
-    <RoutineArgument ID="5559" Name="Value" Parent="5555" Value="0" />
     <SmartComponentInstance ID="5560" Name="PlaneSensorMouse" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Origin">
@@ -20164,6 +20017,11 @@
         <Attribute Key="DesignerY">
           <Value>
             <Double Value="232.727272727273" />
+          </Value>
+        </Attribute>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
           </Value>
         </Attribute>
       </Attributes>
@@ -20291,6 +20149,11 @@
             <Double Value="447.363636363636" />
           </Value>
         </Attribute>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
       </Attributes>
       <UniqueId Value="{4a5fc395-87f2-488f-906c-9d780ad7ef5c}" />
       <Definition ID="5" DocID="14" />
@@ -20373,12 +20236,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="634.772727272727" />
+            <Double Value="639.155705996131" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="269.909090909091" />
+            <Double Value="278.483558994197" />
           </Value>
         </Attribute>
       </Attributes>
@@ -20441,6 +20304,7 @@
           </Value>
         </Attribute>
       </Attributes>
+      <UniqueId Value="{ac66fb7d-0ada-4dff-ae59-5c6e3b8816f3}" />
       <Definition ID="4" DocID="15" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -20481,22 +20345,6 @@
       </SignalValues>
       <RoleObject ID="-1" />
     </SmartComponentInstance>
-    <ActionInstructionCall ID="5568" Name="SetDO" Parent="4491" TrigValidity="0">
-      <ArgumentList ID="5569" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5569" Name="" Parent="5568">
-      <RoutineArguments>
-        <ObjectRef ID="5570" />
-        <ObjectRef ID="5571" />
-        <ObjectRef ID="5572" />
-        <ObjectRef ID="5573" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5570" Name="SDelay" Parent="5569" Enabled="false" />
-    <RoutineArgument ID="5571" Name="Sync" Parent="5569" Enabled="false" />
-    <RoutineArgument ID="5572" Name="Signal" Parent="5569" Value="doRemove" />
-    <RoutineArgument ID="5573" Name="Value" Parent="5569" Value="0" />
     <ActionInstructionCall ID="5574" Name="SetDO" Parent="4491" TrigValidity="0">
       <ArgumentList ID="5575" />
       <InstructionTemplateName Value="Default" />
@@ -20544,6 +20392,302 @@
         <Max X="0.075" Y="0.55" Z="0.775" />
       </BoundingBox>
     </PartDef>
+    <ActionInstructionCall ID="5582" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5583" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5583" Name="" Parent="5582">
+      <RoutineArguments>
+        <ObjectRef ID="5584" />
+        <ObjectRef ID="5585" />
+        <ObjectRef ID="5586" />
+        <ObjectRef ID="5587" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5584" Name="SDelay" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5585" Name="Sync" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5586" Name="Signal" Parent="5583" Value="doReset" />
+    <RoutineArgument ID="5587" Name="Value" Parent="5583" Value="0" />
+    <ActionInstructionCall ID="5588" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5589" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5589" Name="" Parent="5588">
+      <RoutineArguments>
+        <ObjectRef ID="5590" />
+        <ObjectRef ID="5591" />
+        <ObjectRef ID="5592" />
+        <ObjectRef ID="5593" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5590" Name="SDelay" Parent="5589" Enabled="false" />
+    <RoutineArgument ID="5591" Name="Sync" Parent="5589" Enabled="false" />
+    <RoutineArgument ID="5592" Name="Signal" Parent="5589" Value="doRemove" />
+    <RoutineArgument ID="5593" Name="Value" Parent="5589" Value="0" />
+    <ActionInstructionCall ID="5594" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5595" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5595" Name="" Parent="5594">
+      <RoutineArguments>
+        <ObjectRef ID="5596" />
+        <ObjectRef ID="5597" />
+        <ObjectRef ID="5598" />
+        <ObjectRef ID="5599" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5596" Name="SDelay" Parent="5595" Enabled="false" />
+    <RoutineArgument ID="5597" Name="Sync" Parent="5595" Enabled="false" />
+    <RoutineArgument ID="5598" Name="Signal" Parent="5595" Value="doReset" />
+    <RoutineArgument ID="5599" Name="Value" Parent="5595" Value="1" />
+    <ActionInstructionCall ID="5600" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5601" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5601" Name="" Parent="5600">
+      <RoutineArguments>
+        <ObjectRef ID="5602" />
+        <ObjectRef ID="5603" />
+        <ObjectRef ID="5604" />
+        <ObjectRef ID="5605" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5602" Name="SDelay" Parent="5601" Enabled="false" />
+    <RoutineArgument ID="5603" Name="Sync" Parent="5601" Enabled="false" />
+    <RoutineArgument ID="5604" Name="Signal" Parent="5601" Value="doReset" />
+    <RoutineArgument ID="5605" Name="Value" Parent="5601" Value="0" />
+    <MoveInstructionCall ID="5621" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5622" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5622" Name="" Parent="5621">
+      <RoutineArguments>
+        <ObjectRef ID="5623" />
+        <ObjectRef ID="5624" />
+        <ObjectRef ID="5625" />
+        <ObjectRef ID="5626" />
+        <ObjectRef ID="5627" />
+        <ObjectRef ID="5628" />
+        <ObjectRef ID="5629" />
+        <ObjectRef ID="5630" />
+        <ObjectRef ID="5631" />
+        <ObjectRef ID="5632" />
+        <ObjectRef ID="5633" />
+        <ObjectRef ID="5634" />
+        <ObjectRef ID="5635" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5623" Name="Conc" Parent="5622" Enabled="false" />
+    <RoutineArgument ID="5624" Name="ToPoint" Parent="5622" Value="NewIni" />
+    <RoutineArgument ID="5625" Name="ID" Parent="5622" Enabled="false" />
+    <RoutineArgument ID="5626" Name="Speed" Parent="5622" Value="v1000" />
+    <RoutineArgument ID="5627" Name="V" Parent="5622" Enabled="false" />
+    <RoutineArgument ID="5628" Name="T" Parent="5622" Enabled="false" />
+    <RoutineArgument ID="5629" Name="Zone" Parent="5622" Value="fine" />
+    <RoutineArgument ID="5630" Name="Z" Parent="5622" Enabled="false" />
+    <RoutineArgument ID="5631" Name="Inpos" Parent="5622" Enabled="false" />
+    <RoutineArgument ID="5632" Name="Tool" Parent="5622" Value="Gripper" />
+    <RoutineArgument ID="5633" Name="WObj" Parent="5622" Value="WO_themainone" />
+    <RoutineArgument ID="5634" Name="Corr" Parent="5622" Enabled="false" />
+    <RoutineArgument ID="5635" Name="TLoad" Parent="5622" Enabled="false" />
+    <MoveInstructionCall ID="5636" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5637" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5637" Name="" Parent="5636">
+      <RoutineArguments>
+        <ObjectRef ID="5638" />
+        <ObjectRef ID="5639" />
+        <ObjectRef ID="5640" />
+        <ObjectRef ID="5641" />
+        <ObjectRef ID="5642" />
+        <ObjectRef ID="5643" />
+        <ObjectRef ID="5644" />
+        <ObjectRef ID="5645" />
+        <ObjectRef ID="5646" />
+        <ObjectRef ID="5647" />
+        <ObjectRef ID="5648" />
+        <ObjectRef ID="5649" />
+        <ObjectRef ID="5650" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5638" Name="Conc" Parent="5637" Enabled="false" />
+    <RoutineArgument ID="5639" Name="ToPoint" Parent="5637" Value="NewIni" />
+    <RoutineArgument ID="5640" Name="ID" Parent="5637" Enabled="false" />
+    <RoutineArgument ID="5641" Name="Speed" Parent="5637" Value="v1000" />
+    <RoutineArgument ID="5642" Name="V" Parent="5637" Enabled="false" />
+    <RoutineArgument ID="5643" Name="T" Parent="5637" Enabled="false" />
+    <RoutineArgument ID="5644" Name="Zone" Parent="5637" Value="fine" />
+    <RoutineArgument ID="5645" Name="Z" Parent="5637" Enabled="false" />
+    <RoutineArgument ID="5646" Name="Inpos" Parent="5637" Enabled="false" />
+    <RoutineArgument ID="5647" Name="Tool" Parent="5637" Value="Gripper" />
+    <RoutineArgument ID="5648" Name="WObj" Parent="5637" Value="WO_themainone" />
+    <RoutineArgument ID="5649" Name="Corr" Parent="5637" Enabled="false" />
+    <RoutineArgument ID="5650" Name="TLoad" Parent="5637" Enabled="false" />
+    <MoveInstructionCall ID="5651" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5652" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5652" Name="" Parent="5651">
+      <RoutineArguments>
+        <ObjectRef ID="5653" />
+        <ObjectRef ID="5654" />
+        <ObjectRef ID="5655" />
+        <ObjectRef ID="5656" />
+        <ObjectRef ID="5657" />
+        <ObjectRef ID="5658" />
+        <ObjectRef ID="5659" />
+        <ObjectRef ID="5660" />
+        <ObjectRef ID="5661" />
+        <ObjectRef ID="5662" />
+        <ObjectRef ID="5663" />
+        <ObjectRef ID="5664" />
+        <ObjectRef ID="5665" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5653" Name="Conc" Parent="5652" Enabled="false" />
+    <RoutineArgument ID="5654" Name="ToPoint" Parent="5652" Value="NewIni" />
+    <RoutineArgument ID="5655" Name="ID" Parent="5652" Enabled="false" />
+    <RoutineArgument ID="5656" Name="Speed" Parent="5652" Value="v1000" />
+    <RoutineArgument ID="5657" Name="V" Parent="5652" Enabled="false" />
+    <RoutineArgument ID="5658" Name="T" Parent="5652" Enabled="false" />
+    <RoutineArgument ID="5659" Name="Zone" Parent="5652" Value="fine" />
+    <RoutineArgument ID="5660" Name="Z" Parent="5652" Enabled="false" />
+    <RoutineArgument ID="5661" Name="Inpos" Parent="5652" Enabled="false" />
+    <RoutineArgument ID="5662" Name="Tool" Parent="5652" Value="Gripper" />
+    <RoutineArgument ID="5663" Name="WObj" Parent="5652" Value="WO_themainone" />
+    <RoutineArgument ID="5664" Name="Corr" Parent="5652" Enabled="false" />
+    <RoutineArgument ID="5665" Name="TLoad" Parent="5652" Enabled="false" />
+    <ActionInstructionCall ID="5666" Name="WaitTime" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5667" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5667" Name="" Parent="5666">
+      <RoutineArguments>
+        <ObjectRef ID="5668" />
+        <ObjectRef ID="5669" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5668" Name="InPos" Parent="5667" Enabled="false" />
+    <RoutineArgument ID="5669" Name="Time" Parent="5667" Value="0.5" />
+    <ActionInstructionCall ID="5672" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5673" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5673" Name="" Parent="5672">
+      <RoutineArguments>
+        <ObjectRef ID="5674" />
+        <ObjectRef ID="5675" />
+        <ObjectRef ID="5676" />
+        <ObjectRef ID="5677" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5674" Name="SDelay" Parent="5673" Enabled="false" />
+    <RoutineArgument ID="5675" Name="Sync" Parent="5673" Enabled="false" />
+    <RoutineArgument ID="5676" Name="Signal" Parent="5673" Value="doRemove" />
+    <RoutineArgument ID="5677" Name="Value" Parent="5673" Value="1" />
+    <ActionInstructionCall ID="5678" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5679" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5679" Name="" Parent="5678">
+      <RoutineArguments>
+        <ObjectRef ID="5680" />
+        <ObjectRef ID="5681" />
+        <ObjectRef ID="5682" />
+        <ObjectRef ID="5683" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5680" Name="SDelay" Parent="5679" Enabled="false" />
+    <RoutineArgument ID="5681" Name="Sync" Parent="5679" Enabled="false" />
+    <RoutineArgument ID="5682" Name="Signal" Parent="5679" Value="doRemove" />
+    <RoutineArgument ID="5683" Name="Value" Parent="5679" Value="0" />
+    <ActionInstructionCall ID="5684" Name="WaitTime" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5685" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5685" Name="" Parent="5684">
+      <RoutineArguments>
+        <ObjectRef ID="5686" />
+        <ObjectRef ID="5687" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5686" Name="InPos" Parent="5685" Enabled="false" />
+    <RoutineArgument ID="5687" Name="Time" Parent="5685" Value="0.5" />
+    <MoveInstructionCall ID="5688" Name="MoveL" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5689" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5689" Name="" Parent="5688">
+      <RoutineArguments>
+        <ObjectRef ID="5690" />
+        <ObjectRef ID="5691" />
+        <ObjectRef ID="5692" />
+        <ObjectRef ID="5693" />
+        <ObjectRef ID="5694" />
+        <ObjectRef ID="5695" />
+        <ObjectRef ID="5696" />
+        <ObjectRef ID="5697" />
+        <ObjectRef ID="5698" />
+        <ObjectRef ID="5699" />
+        <ObjectRef ID="5700" />
+        <ObjectRef ID="5701" />
+        <ObjectRef ID="5702" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5690" Name="Conc" Parent="5689" Enabled="false" />
+    <RoutineArgument ID="5691" Name="ToPoint" Parent="5689" Value="NewIni" />
+    <RoutineArgument ID="5692" Name="ID" Parent="5689" Enabled="false" />
+    <RoutineArgument ID="5693" Name="Speed" Parent="5689" Value="v1000" />
+    <RoutineArgument ID="5694" Name="V" Parent="5689" Enabled="false" />
+    <RoutineArgument ID="5695" Name="T" Parent="5689" Enabled="false" />
+    <RoutineArgument ID="5696" Name="Zone" Parent="5689" Value="fine" />
+    <RoutineArgument ID="5697" Name="Z" Parent="5689" Enabled="false" />
+    <RoutineArgument ID="5698" Name="Inpos" Parent="5689" Enabled="false" />
+    <RoutineArgument ID="5699" Name="Tool" Parent="5689" Value="Gripper" />
+    <RoutineArgument ID="5700" Name="WObj" Parent="5689" Value="WO_themainone" />
+    <RoutineArgument ID="5701" Name="Corr" Parent="5689" Enabled="false" />
+    <RoutineArgument ID="5702" Name="TLoad" Parent="5689" Enabled="false" />
+    <ActionInstructionCall ID="5703" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5704" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5704" Name="" Parent="5703">
+      <RoutineArguments>
+        <ObjectRef ID="5705" />
+        <ObjectRef ID="5706" />
+        <ObjectRef ID="5707" />
+        <ObjectRef ID="5708" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5705" Name="SDelay" Parent="5704" Enabled="false" />
+    <RoutineArgument ID="5706" Name="Sync" Parent="5704" Enabled="false" />
+    <RoutineArgument ID="5707" Name="Signal" Parent="5704" Value="doReset" />
+    <RoutineArgument ID="5708" Name="Value" Parent="5704" Value="1" />
+    <ActionInstructionCall ID="5709" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5710" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5710" Name="" Parent="5709">
+      <RoutineArguments>
+        <ObjectRef ID="5711" />
+        <ObjectRef ID="5712" />
+        <ObjectRef ID="5713" />
+        <ObjectRef ID="5714" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5711" Name="SDelay" Parent="5710" Enabled="false" />
+    <RoutineArgument ID="5712" Name="Sync" Parent="5710" Enabled="false" />
+    <RoutineArgument ID="5713" Name="Signal" Parent="5710" Value="Mouse_Outpu1" />
+    <RoutineArgument ID="5714" Name="Value" Parent="5710" Value="1" />
   </Objects>
   <ReferencedDocuments>
     <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />

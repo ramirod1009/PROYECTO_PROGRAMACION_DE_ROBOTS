@@ -26,42 +26,47 @@ MODULE Module1
     !   Este es el punto de entrada de su programa
     !
     !***********************************************************
-    PROC main()
-        WHILE TRUE DO 
-            SetDO doReset, 0;
-            SetDO doRemove, 0;
-            SetDO Mouse_Outpu1, 0;
-            SetDO Mouse_Output2, 1;
+    PROC main() 
         
+        SetDO doReset,1;
+        SetDO doReset,0;
+        SetDO doRemove,1;
+        SetDO doRemove,0;
+        SetDO Mouse_Outpu1,0;
+        SetDO Mouse_Output2,1;
+        
+        INI:
+            SetDO doReset,0;
+            SetDO doRemove,0;
             MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
             MoveJ NewAtaq,v1000,fine,Gripper\WObj:=WO_themainone;
         
-            WaitDI Mouse_Input, 1;
-            WaitTime 0.5;
-        !WaitDI (Mouse_Input OR Headphones_Input);
-            IF Headphones_Input = 0 THEN
-                MoveL Cogerte_Raton,v1000,fine,Gripper\WObj:=WO_themainone;
-                SetDO Mouse_Output2, 0;
-                SetDO Mouse_Outpu1, 1;
-                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
-                SetDO doReset, 1;
-                MoveL Soltar_Mouse,v1000,fine,Gripper\WObj:=WO_themainone;
-                SetDO Mouse_Outpu1, 0;
-                SetDO Mouse_Output2, 1;
-                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
-            ELSE
-                MoveL Cogerte_Cascos,v1000,fine,Gripper\WObj:=WO_themainone;
-                SetDO Mouse_Output2, 0;
-                SetDO Mouse_Outpu1, 1;
-                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
-                MoveL Soltar_Cascos,v1000,fine,Gripper\WObj:=WO_themainone;
-                SetDO Mouse_Outpu1, 0;
-                SetDO Mouse_Output2, 1;
-                MoveJ NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
-            ENDIF
-            SetDO doRemove, 1;
+            WaitDI Mouse_Input,1;
+            WaitTIme 0.5;
         
-        ENDWHILE
+            IF Headphones_Input=0 THEN
+                MoveL Cogerte_Raton,v1000,fine,Gripper\WObj:=WO_themainone;
+                SetDO Mouse_Output2,0;
+                SetDO Mouse_Outpu1,1;
+                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+                SetDO doReset,1;
+                MoveL Soltar_Mouse,v1000,fine,Gripper\WObj:=WO_themainone;
+                SetDO Mouse_Outpu1,0;
+                SetDO Mouse_Output2,1;
+                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+            ELSEIF Headphones_Input=1 THEN
+                MoveL Cogerte_Cascos,v1000,fine,Gripper\WObj:=WO_themainone;
+                SetDO Mouse_Output2,0;
+                SetDO Mouse_Outpu1,1;
+                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+                MoveL Soltar_Cascos,v1000,fine,Gripper\WObj:=WO_themainone;
+                SetDO Mouse_Outpu1,0;
+                SetDO Mouse_Output2,1;
+                MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
+            ENDIF
+                WaitTime 0.5;
+                SetDO doRemove,1;
+        GOTO INI;
         
     ENDPROC
 ENDMODULE
