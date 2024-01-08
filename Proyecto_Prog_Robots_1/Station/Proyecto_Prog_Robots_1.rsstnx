@@ -29,6 +29,24 @@
           </Value>
         </Element>
       </SignalValues>
+      <Bindings>
+        <Element type="TPropertyBinding" AllowCycle="false">
+          <SourceObject ID="5195" />
+          <SourceProperty Value="SensedPart" />
+          <TargetObject ID="5201" />
+          <TargetProperty Value="Object" />
+          <SourceObjectName Value="PlaneSensor_2" />
+          <TargetObjectName Value="Sink_2" />
+        </Element>
+        <Element type="TPropertyBinding" AllowCycle="false">
+          <SourceObject ID="5197" />
+          <SourceProperty Value="SensedPart" />
+          <TargetObject ID="5202" />
+          <TargetProperty Value="Object" />
+          <SourceObjectName Value="PlaneSensor_1" />
+          <TargetObjectName Value="Sink_1" />
+        </Element>
+      </Bindings>
       <IOConnections>
         <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="1" />
@@ -102,6 +120,38 @@
           <SourceObjectName Value="themainone" />
           <TargetObjectName Value="TOOL" />
         </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="5195" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="5201" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="PlaneSensor_2" />
+          <TargetObjectName Value="Sink_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="5197" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="5202" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="PlaneSensor_1" />
+          <TargetObjectName Value="Sink_1" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="1188" />
+          <SourceSignal Value="doRemove" />
+          <TargetObject ID="5195" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="themainone" />
+          <TargetObjectName Value="PlaneSensor_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="1188" />
+          <SourceSignal Value="doRemove" />
+          <TargetObject ID="5197" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="themainone" />
+          <TargetObjectName Value="PlaneSensor_1" />
+        </Element>
       </IOConnections>
       <UserData Value="" />
     </Station>
@@ -130,6 +180,8 @@
         <ObjectRef ID="4941" />
         <ObjectRef ID="5173" />
         <ObjectRef ID="5174" />
+        <ObjectRef ID="5195" />
+        <ObjectRef ID="5197" />
       </SimulatedObjects>
       <EventTable ID="4" />
       <ConnectedState Value="" />
@@ -3991,6 +4043,10 @@
         <ObjectRef ID="4448" />
         <ObjectRef ID="4466" />
         <ObjectRef ID="4938" />
+        <ObjectRef ID="5195" />
+        <ObjectRef ID="5197" />
+        <ObjectRef ID="5201" />
+        <ObjectRef ID="5202" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -4022,6 +4078,8 @@
         <ObjectRef ID="4512" />
         <ObjectRef ID="4514" />
         <ObjectRef ID="5175" />
+        <ObjectRef ID="5199" />
+        <ObjectRef ID="5204" />
       </Definitions>
       <Textures />
     </AssemblyRoot>
@@ -16226,27 +16284,11 @@
           <TargetObjectName Value="Qeue_Headphones" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="4467" />
-          <SourceSignal Value="SensorOut" />
-          <TargetObject ID="4475" />
-          <TargetSignal Value="Dequeue" />
-          <SourceObjectName Value="Headphones_Sensor" />
-          <TargetObjectName Value="Qeue_Headphones" />
-        </Element>
-        <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="4473" />
           <SourceSignal Value="Executed" />
           <TargetObject ID="4476" />
           <TargetSignal Value="Enqueue" />
           <SourceObjectName Value="Source_Mouse" />
-          <TargetObjectName Value="Queue_Mouse" />
-        </Element>
-        <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="4469" />
-          <SourceSignal Value="SensorOut" />
-          <TargetObject ID="4476" />
-          <TargetSignal Value="Dequeue" />
-          <SourceObjectName Value="Mouse_Sensor" />
           <TargetObjectName Value="Queue_Mouse" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
@@ -16377,6 +16419,46 @@
           <SourceObjectName Value="LogicGate_6" />
           <TargetObjectName Value="Source_Mouse" />
         </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4467" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="InputA" />
+          <SourceObjectName Value="Headphones_Sensor" />
+          <TargetObjectName Value="LogicGate_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4469" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="InputB" />
+          <SourceObjectName Value="Mouse_Sensor" />
+          <TargetObjectName Value="LogicGate_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="4475" />
+          <TargetSignal Value="Dequeue" />
+          <SourceObjectName Value="LogicGate_2" />
+          <TargetObjectName Value="Qeue_Headphones" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="Output" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="InputA" />
+          <SourceObjectName Value="LogicGate_2" />
+          <TargetObjectName Value="LogicGate_3" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="4467" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="4475" />
+          <TargetSignal Value="Dequeue" />
+          <SourceObjectName Value="Headphones_Sensor" />
+          <TargetObjectName Value="Qeue_Headphones" />
+        </Element>
       </IOConnections>
       <RoleObject ID="-1" />
     </SmartComponentInstance>
@@ -16419,12 +16501,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1310.17263161367" />
+            <Double Value="1313.16370304224" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="10" />
+            <Double Value="21.4285714285714" />
           </Value>
         </Attribute>
       </Attributes>
@@ -16564,7 +16646,7 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1306.31316889329" />
+            <Double Value="1307.87566889329" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
@@ -16922,12 +17004,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{5f7680bb-29e8-4ee5-b69e-f5a939f588ae};{2839d94e-1579-4ba7-8cfa-1476b3b1f7f1};{4c8ab7d0-88a2-4b15-95e4-430f89045765};{d1d71d99-3718-4f0d-8165-52efcc9cc9b9};{66a939ef-5404-4ef1-afc6-8f43774fcb8d};{03e2a2c4-08e5-4075-b9a9-ae76a1d6444b};{926815a6-5fa8-4618-8bee-607cfe9b5384};{8c1b5c7d-916d-48ef-8778-514e4d0f287d};{66e38129-c496-4be2-ad04-edc24b118d4a};{986630cd-8d7c-497b-835f-3c5fc67cc21f};{7c6882b9-f051-4767-a359-e968a9221f25};{30578bb3-0eb2-425d-acb6-8b23693ebdb2};{d97f1cd3-a2f7-4bd6-92b9-76b3eb2b6e34};{c300db59-31d5-4efb-b1e8-bc170c6ecb60};{2232bca8-2d3f-4403-8a8e-013e99c0ff53};{23439bc7-5991-49e0-b46d-990f1ae2c20c};{cc20a378-5d0a-4886-9283-99e369d1a319};{0abf2617-e11c-4108-92e6-09a6a8a73df5};{eb6215ba-01f3-4f6a-af7b-b096765bc1a0};{f8c40b83-5b43-4230-a074-1abcf6cb5528};{ac9cfbe9-b626-40c0-a955-5efb1156dd65};{c17f1e12-160d-4a9a-bfbd-9d127e26952b};{87c1d730-25e3-4d95-bf46-2ce6953c0a7a};{471a3580-2351-4f02-b6d5-f27bd4d19176};{7185d0c9-903b-4160-b2c7-79e85702f161};{51bb0b32-e131-4b79-be13-244167ea6728};{fb374b99-278f-4042-80c8-4ff4606e81e9};{df820581-4cbe-4353-9d5d-33283584515e};{e00e34a4-f45f-47e8-8181-a3d50d1ac628};{78632a17-2a19-4edd-8847-f6b4c8d83460};{84a30c24-7c0b-4b65-ac37-99b44562191a};{8027a2b4-e236-4952-84fe-1eb643f80800};{5805a7cd-0d46-4e7d-bdc9-88d240ed65b7};{1f151e77-ded0-4d51-8fd4-a2fa48a39306};{03953787-ae18-43b5-a33f-45b4e9c5ab71};{21698db0-4a52-4c80-9362-9db08066e000};{5ade8c01-4537-4928-8a26-9fb68819b8f8};{99af3ad3-4df6-4c0d-a1be-ab3bdc90e27b};{f730e1e6-1a94-4632-ad1d-0bbe29b6e37b};{6e637696-44d8-4e58-afc3-34cedaf88940};{029cdd1a-de1e-43a0-bd3e-6ff29247f429};{aab67a26-d2d3-450b-9cb3-37c84193c221};{f524097d-fd21-48cc-9eff-77c752a61cb9}" />
+            <String Value="{1f151e77-ded0-4d51-8fd4-a2fa48a39306};{03953787-ae18-43b5-a33f-45b4e9c5ab71};{21698db0-4a52-4c80-9362-9db08066e000};{5ade8c01-4537-4928-8a26-9fb68819b8f8};{99af3ad3-4df6-4c0d-a1be-ab3bdc90e27b};{f730e1e6-1a94-4632-ad1d-0bbe29b6e37b};{6e637696-44d8-4e58-afc3-34cedaf88940};{029cdd1a-de1e-43a0-bd3e-6ff29247f429};{aab67a26-d2d3-450b-9cb3-37c84193c221};{f524097d-fd21-48cc-9eff-77c752a61cb9};{c1564306-85f5-45c4-a43a-16447b2c00f7};{8baf9460-71ab-4a8c-978f-cf9045d3b7b9};{43494447-f59d-4307-aa0a-feab97087b6b};{4d613eb8-d5c6-4f61-8fde-23961f501ff5};{32f9e89d-bc32-4958-896c-5102657eac6f};{41f07f23-32ae-47be-b5c2-61cecdc55090};{f00540ba-79c0-42fd-affa-f7c26675ec4f};{37c33258-0b59-41b2-8127-6563913b3ce2};{a8916711-cb59-4b18-ac8a-c7515a9a08ae};{deb36045-8e14-4817-8555-37431ef29571};{4fa23dfd-02d6-4053-a8a4-72b32ea8474c};{c3114245-ecaa-42d8-b1f2-b998586e6af3};{2382d06b-8c96-40bf-adc9-ec6de05c9999};{7caa2acc-89ce-43d7-b910-9ae740861672};{b8dc3ca1-1384-427a-81a0-8314458f29df};{e3058ca5-b5ff-46cd-af80-52758fa6677b};{70ea3cc3-857e-4428-a419-8793990baca6};{815e3e2d-8325-4b65-a96d-7b361991365f};{b2b1e51d-ba15-46c2-aa5a-fd237d98bc56};{730af102-4b62-432b-bb3e-73637b116b97};{6f7e1b66-4dfc-4cf3-9162-47ea9d5a0101};{1a3b527a-ff7a-4206-ad0d-b00a9845b3c3};{b72a9fa0-8fd1-414b-ae4d-c361c90921ae};{f2932ef9-3ba0-4a97-a368-ae2ba6614fdf};{cc66ead1-b1bc-416d-b256-96e27f7dbb48};{9ca2ab8a-2746-40b7-a16f-31a78adb2f13};{e8cb46f0-9f34-44f4-bb54-edfe5b86d03f};{65aeebe0-6c6c-4219-a769-b849dc0d7ee7};{34cb97af-2d7c-494b-92e2-30e918fea921};{b7339c0b-9d7b-4a58-8fd4-6a22fd506904};{2dbf213e-22cf-4768-8087-f8da1784f3f3};{d41ec45c-b989-4e5d-ae6f-1b840b6dce07};{03647a4a-dacd-4f9e-b4f9-75d3ba1fbc69};{031f686a-3f7d-4676-85e0-a2b12c4bc836};{a73afe78-c4ea-46cc-b7a3-2e16446367a4};{02366902-c982-4218-b2bd-9e2581c5c7c6};{ce8f3bb7-027b-48a8-b345-173b68f11f14};{e30529a3-f7b1-45ca-bd56-697dcafe8de7};{c1fc90f6-6e12-47ca-868a-067a4686a5d9};{5aa0fef3-b034-4dd5-82a9-be62f3c78ebd};{5740b505-7979-4b48-9ccc-8b64ce650e88};{308d64d3-8db0-444e-ad8b-dc3e51b2a471};{4fe75c1b-64b8-40f5-93b3-e303618ea7cd};{8064d738-bb9f-4de1-985d-9000c84ad84d};{50e2e82e-93aa-4594-b715-ac4221f0ba80};{be510001-a872-46ef-8244-648912148284};{8c158e66-53b1-43d6-b167-bffbdb197e46};{623fec64-18a3-49a6-bc5b-6b5ab0724049};{85b523ab-3d50-4a51-bc42-f03ea008da20};{e1519948-27da-4a5e-b53b-9fe6aff6b077};{e44c33c4-a87c-4f42-8af2-0346f2068cd0};{1686d174-f620-4aab-87d6-cbb7e322f634};{9e0d0409-0a28-414c-9119-178d903f784d};{28c5b9ec-3501-4ff2-a382-423728cf6b3f};{8217a9d1-c402-4bac-9f9f-f76b37bafdf6}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="4" />
+            <Integer Value="2" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17035,7 +17117,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{4f854f38-6757-4bdb-a794-2720b2e942f1};{ab299754-0bab-4e74-a6e0-f51d23dc4042};{1d1f31f6-2752-4536-a917-a34b4aafc2c2};{7b89a755-c297-40fe-a86d-70527f0e735d};{2a77bf86-7f59-4f60-80f0-11e5e1ec7272};{2ad1b207-7767-4cce-82fe-b3beec4cbdeb};{38d118cc-fcd9-49f9-8120-592feee6e198};{a09d3f3b-b7d9-4611-8c21-3ee0d82e9068};{7c9914af-ff92-403a-a22d-fa99080d89fb};{50fe2287-bae3-4772-bde2-cc3bb1b51162};{bcd22465-5ef7-4eed-b025-bc7cd4342d7f};{063cde4b-ed14-411f-bd42-8a64cd2e39be};{c088b828-cfff-490b-8ee5-c63f94035929};{77e8c259-785c-4da3-81f7-99f189588a4e};{88174d8b-5cbc-4e98-a8c8-33c04d38a2ca};{8fc0be2f-e7d4-4778-88a7-7b118e6c2de8};{063506f1-bc05-49a7-9625-d5d7a89d171e};{869f6169-061b-4734-9e82-ad43ebfc7cbb};{ab2e570f-081e-414b-94ac-799cb4d5ae27};{c8719fd6-a68d-4bef-9b8f-32e14a0136bd};{9576c5fc-04e1-4edb-bc16-ea3777c66d84};{45c6b65e-216b-46af-ab0d-a6dfd0885c98};{e4294346-dce0-461f-bcca-a4ba9626d776};{c14c9ae6-2907-44f7-951c-852e0194cc7b};{2cb446c1-1b7b-4658-a6bd-c61ebc6e28cd};{a1c44c06-ea4d-4e31-9fce-db6260c64e39};{a0218873-9d05-425c-98a9-0bd4798d8de8};{771bfe29-d0b6-4166-8e45-5891340f6edd};{0dcca1ab-4586-4d6f-af1c-3ef883d51e9e};{c3df0daa-855e-4adc-8387-4830794cc92a}" />
+            <String Value="{7d841f14-a25b-49f2-bd32-fdc12826aeea};{4286d115-1bc0-4ad6-bb29-53bb9b92e757};{63f6244c-4322-4bdc-9c04-6f6d0bf5f4da};{c9c6f933-ac60-4baf-a39b-fa56a1f98f3a};{ba45e6b3-c052-43a0-b8c9-372d7158062d};{f84bef28-e308-4e4c-b046-7e8d913d21a8};{c4f0194a-4236-4960-b12d-877c8126d5a6};{b34f5cf1-cc5b-4a7d-ab47-3dd155e2c2e1};{f628303c-836e-42c5-a7a9-218c016a8a56};{e48676b3-f01e-43d5-b2cb-5fdfb3337c97};{8ce60017-28d0-4b46-bbc0-c3de49fe04a2};{0597faaa-2a48-4796-b281-e9ebea5aa23e};{dae50a61-e3ca-4324-8582-2f13b4394730};{049a1917-630d-42f7-b78d-26b1e2015fec};{6950dbd9-6233-4971-8fae-0259d7cc070d};{402d4de6-b301-4b22-8ece-a7bd989f61db};{c9de5bfb-7264-4b63-aef0-bee4272a0454};{f31ff970-7544-4ccb-ba7f-1cb3221a0de1};{3c4f7ff7-91e1-4088-be51-bdab37dd9db2};{77c4961d-e02c-498b-85e4-d1162bb3daed};{2937f374-639b-439b-8d71-51ec3360d72d};{186e73fb-7798-41af-9628-69e6ade63baf};{015f3c19-2d44-419b-be78-aa39b3825f20};{e4145d2f-e08b-4830-a3bc-f74c07002f8b};{23374131-da7a-48aa-9975-eebc3f397f58};{f96060d4-f42b-4d68-9f59-1b52c9e2dead};{f1800c07-cb0c-4350-956b-de463f5ab3ff};{3f0d539f-5ed3-41ce-962f-92d7ac1b3ba0};{3bc14ba5-852f-4e8f-8fc1-d2b2fbc1df7e};{7cd7d777-275d-43fb-9e59-ddf10d84d0f3};{b0c076f2-f3f3-4915-8263-ef21bd785d6d};{ba62d32f-0ba7-4bd8-8137-00cc708916f5};{9abf6546-e446-42fe-8029-895f3029e070};{4269c7f2-5122-4f0a-8c1a-92a011d2f7a7};{80de9e6c-1672-4603-9dd4-be789a6ff158};{02b0fb06-5906-4d15-b05b-70b44ba9037b};{e7a35a68-33ae-4da3-996a-f0ec3efdf659};{9282e20e-b4ae-4b91-906f-6f971e84640f};{8c6d89b5-d84b-4eea-9ee3-e045b12bc0d2};{a6831898-a11b-45f6-8a7d-a8a3d2ed821a};{2c027506-ddbe-4516-af19-3b43a998827e};{054e87f5-f308-458b-891d-d53edf97951b}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
@@ -17050,7 +17132,7 @@
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="278.962336626966" />
+            <Double Value="277.399836626966" />
           </Value>
         </Attribute>
       </Attributes>
@@ -17153,7 +17235,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;CurrentTime">
           <Value>
-            <Double Value="16.752" />
+            <Double Value="25.44" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17476,7 +17558,7 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="10" />
+            <Double Value="11.5625" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
@@ -17543,7 +17625,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Value">
           <Value>
-            <Double Value="0.8403622274475" />
+            <Double Value="0.587955826701576" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Min">
@@ -17622,7 +17704,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.8403622274475" />
+            <Double Value="0.587955826701576" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17693,7 +17775,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.8403622274475" />
+            <Double Value="0.587955826701576" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -18109,9 +18191,11 @@
       <RoutineCalls>
         <ObjectRef ID="4893" />
         <ObjectRef ID="4899" />
+        <ObjectRef ID="5181" />
         <ObjectRef ID="5007" />
         <ObjectRef ID="5022" />
         <ObjectRef ID="4944" />
+        <ObjectRef ID="5177" />
         <ObjectRef ID="5037" />
         <ObjectRef ID="4959" />
         <ObjectRef ID="4965" />
@@ -18128,6 +18212,7 @@
         <ObjectRef ID="4995" />
         <ObjectRef ID="5001" />
         <ObjectRef ID="5157" />
+        <ObjectRef ID="5187" />
       </RoutineCalls>
     </PathProcedureDeclaration>
     <RAPIDDeclarationInfo ID="4492" Name="" Parent="4491" Local="false" EnableSync="true">
@@ -18475,7 +18560,7 @@
       <CodeBehindLocation Value="" />
     </SmartComponentDef>
     <Asset ID="4530" Name="Resources.en.xml" Parent="4529" AllowSave="true">
-      <Blob StreamType="BlobStream" StreamID="17b3c3c14295450f8e51333275809d9f" StreamChangeRef="63a8605250a34de5a9cdf4c7da0f67b2" />
+      <Blob StreamType="BlobStream" StreamID="a87df8736efd46beafa1689fa9b7f27d" StreamChangeRef="6c49abb05ba5470fb1b1cba2ea08c0c7" />
       <OriginalSource Value="" />
     </Asset>
     <DataDeclaration ID="4531" Name="Soltar_Cascos" Parent="1190" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
@@ -18581,7 +18666,7 @@
       <CodeBehindLocation Value="" />
     </SmartComponentDef>
     <Asset ID="4937" Name="Resources.en.xml" Parent="4936" AllowSave="true">
-      <Blob StreamType="BlobStream" StreamID="9618328e6e664d969d253b1cc0247677" StreamChangeRef="9bcbe5d9979846ff8e9069eb11f823be" />
+      <Blob StreamType="BlobStream" StreamID="073fb4138b644ab68715ee046bcc75e1" StreamChangeRef="5d851e1a03df469c9022fb46852bbb57" />
       <OriginalSource Value="" />
     </Asset>
     <SmartComponentInstance ID="4938" Name="TOOL" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
@@ -18919,7 +19004,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[-0.025527099609375 0.4493935546875 0.894687805175781]" />
+            <String Value="[-0.065137451171875 -0.464687805175781 0.846375366210938]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -18996,7 +19081,7 @@
       <SignalValues>
         <Element Key="Active">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="SensorOut">
@@ -19541,7 +19626,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -19610,7 +19698,7 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="InputB">
@@ -19620,7 +19708,7 @@
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -19687,17 +19775,17 @@
       <SignalValues>
         <Element Key="InputA">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
       </SignalValues>
@@ -19715,9 +19803,9 @@
       <SourceObject ID="4516" />
       <TargetObject ID="4941" />
       <OffsetTransform>
-        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711946E-07" W="0" />
+        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711942E-07" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-1.93384404711946E-07" Y="0" Z="0.999999999999981" W="0" />
+        <RowZ X="-1.93384404711942E-07" Y="0" Z="0.999999999999981" W="0" />
         <RowT X="0.000217867022343166" Y="7.00000000044212E-06" Z="0.0514800489124443" W="1" />
       </OffsetTransform>
       <OriginalTransform>
@@ -19727,6 +19815,427 @@
         <RowT X="-0.579067762113533" Y="-7E-06" Z="1.286443" W="1" />
       </OriginalTransform>
     </Attachment>
+    <ActionInstructionCall ID="5177" Name="WaitTime" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5178" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5178" Name="" Parent="5177">
+      <RoutineArguments>
+        <ObjectRef ID="5179" />
+        <ObjectRef ID="5180" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5179" Name="InPos" Parent="5178" Enabled="false" />
+    <RoutineArgument ID="5180" Name="Time" Parent="5178" Value="0.5" />
+    <ActionInstructionCall ID="5181" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5182" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5182" Name="" Parent="5181">
+      <RoutineArguments>
+        <ObjectRef ID="5183" />
+        <ObjectRef ID="5184" />
+        <ObjectRef ID="5185" />
+        <ObjectRef ID="5186" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5183" Name="SDelay" Parent="5182" Enabled="false" />
+    <RoutineArgument ID="5184" Name="Sync" Parent="5182" Enabled="false" />
+    <RoutineArgument ID="5185" Name="Signal" Parent="5182" Value="doRemove" />
+    <RoutineArgument ID="5186" Name="Value" Parent="5182" Value="0" />
+    <ActionInstructionCall ID="5187" Name="SetDO" Parent="4491" TrigValidity="0">
+      <ArgumentList ID="5188" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5188" Name="" Parent="5187">
+      <RoutineArguments>
+        <ObjectRef ID="5189" />
+        <ObjectRef ID="5190" />
+        <ObjectRef ID="5191" />
+        <ObjectRef ID="5192" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5189" Name="SDelay" Parent="5188" Enabled="false" />
+    <RoutineArgument ID="5190" Name="Sync" Parent="5188" Enabled="false" />
+    <RoutineArgument ID="5191" Name="Signal" Parent="5188" Value="doRemove" />
+    <RoutineArgument ID="5192" Name="Value" Parent="5188" Value="1" />
+    <SmartComponentInstance ID="5195" Name="PlaneSensor_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Origin">
+          <Value>
+            <String Value="[-0.065 -0.465 0.775]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Axis1">
+          <Value>
+            <String Value="[0.1 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Axis2">
+          <Value>
+            <String Value="[0 0.1 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Tag">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPart">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="368.5" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="405" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{20630244-bf54-4b24-bfc6-6accf4ec5886}" />
+      <Definition ID="5" DocID="13" />
+      <ChildInstances>
+        <ObjectRef ID="5196" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Origin" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Axis1" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|VectorUsage=Direction|Reference=Local" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Axis2" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|VectorUsage=Direction|Reference=Local" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Tag" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.ProjectObjectTag" />
+          <Attributes Value="AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPart" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.Part" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Active" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SensorOut" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Active">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="SensorOut">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <ComponentInstance ID="5196" Name="_sensorPart_" Parent="5195" UIVisible="false" PickingEnabled="false" Detectable="false" PhysicsMotionControl="0">
+      <Definition ID="5199" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <SmartComponentInstance ID="5197" Name="PlaneSensor_1" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="true" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Origin">
+          <Value>
+            <String Value="[-0.025 0.45 0.8]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Axis1">
+          <Value>
+            <String Value="[0.1 0 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Axis2">
+          <Value>
+            <String Value="[0 0.1 0]" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Tag">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPart">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="315" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="179" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{0da6eebf-3dc9-49ac-884c-fa1da22a7164}" />
+      <Definition ID="5" DocID="13" />
+      <ChildInstances>
+        <ObjectRef ID="5203" />
+      </ChildInstances>
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Origin" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|Reference=Local" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Axis1" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|VectorUsage=Direction|Reference=Local" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Axis2" />
+          <Type Value="ABB.Robotics.Math.Vector3" />
+          <Attributes Value="Quantity=Length|VectorUsage=Direction|Reference=Local" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Tag" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.ProjectObjectTag" />
+          <Attributes Value="AutoApply=True" />
+        </Element>
+        <Element type="TDynamicProperty" ReadOnly="true" UIVisible="true">
+          <Id Value="SensedPart" />
+          <Type Value="ABB.Robotics.RobotStudio.Stations.Part" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Active" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="false" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="SensorOut" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Active">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="SensorOut">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <PartDef ID="5199" Name="" Parent="1183">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="e6a9d2b9704f4ae0ab75d9b30125e08d" StreamChangeRef="08af6c0da39f4136bcd1ee38df592617" />
+      <BoundingBox>
+        <Min X="-0.065" Y="-0.465" Z="0.775" />
+        <Max X="0.035" Y="-0.365" Z="0.775" />
+      </BoundingBox>
+    </PartDef>
+    <SmartComponentInstance ID="5201" Name="Sink_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Object">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="728" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="430" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{a4a4ec6f-c8d8-463d-bd38-7bee65d8b58e}" />
+      <Definition ID="4" DocID="14" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Object" />
+          <Type Value="ABB.Robotics.RobotStudio.ProjectObject" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Execute" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Executed" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Execute">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Executed">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <SmartComponentInstance ID="5202" Name="Sink_1" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" IsSimable="false" Protected="false">
+      <Attributes>
+        <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Object">
+          <Value>
+            <ObjectRef ID="-1" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="733" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="273" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Definition ID="4" DocID="14" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="SmartComponent" />
+      <ClipPlane ID="-1" />
+      <Properties>
+        <Element type="TDynamicProperty" ReadOnly="false" UIVisible="true">
+          <Id Value="Object" />
+          <Type Value="ABB.Robotics.RobotStudio.ProjectObject" />
+          <Attributes Value="" />
+        </Element>
+      </Properties>
+      <SignalDefinitions>
+        <Element type="TIOSignalDef" SignalType="0" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Execute" />
+        </Element>
+        <Element type="TIOSignalDef" SignalType="1" ReadOnly="false" UIVisible="true" AutoReset="true" MinValue="0" MaxValue="0" Flags="0">
+          <Name Value="Executed" />
+        </Element>
+      </SignalDefinitions>
+      <SignalValues>
+        <Element Key="Execute">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+        <Element Key="Executed">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Element>
+      </SignalValues>
+      <RoleObject ID="-1" />
+    </SmartComponentInstance>
+    <ComponentInstance ID="5203" Name="_sensorPart_" Parent="5197" UIVisible="false" PickingEnabled="false" Detectable="false" PhysicsMotionControl="0">
+      <Definition ID="5204" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <PartDef ID="5204" Name="" Parent="1183">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="c93dab6f0391448ca04ffba9bbb05730" StreamChangeRef="e6c78a33ef0c484b857246fab41835af" />
+      <BoundingBox>
+        <Min X="-0.025" Y="0.45" Z="0.8" />
+        <Max X="0.075" Y="0.55" Z="0.8" />
+      </BoundingBox>
+    </PartDef>
   </Objects>
   <ReferencedDocuments>
     <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
@@ -19741,5 +20250,7 @@
     <DocRef ID="12" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\LinearMover.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\LinearMover.rslib" GUID="{6336703E-A316-45A7-88E8-D9ACFEDADA3D}" />
     <DocRef ID="2" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Attacher.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Attacher.rslib" GUID="{5EB1A378-C8EE-4275-B5ED-572A5A08C6E5}" />
     <DocRef ID="4" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Detacher.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Detacher.rslib" GUID="{DE445536-5F6E-479E-8238-896C04DEAF42}" />
+    <DocRef ID="13" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\PlaneSensor.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\PlaneSensor.rslib" GUID="{2F96A635-CAF5-433B-9585-1089FF5C8EEF}" />
+    <DocRef ID="14" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Components\Sink.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\ABB Library\Components\Sink.rslib" GUID="{99D4B56A-16E0-4540-BA82-955F6252E466}" />
   </ReferencedDocuments>
 </PIMDocument>

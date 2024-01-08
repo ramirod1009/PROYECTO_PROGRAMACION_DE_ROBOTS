@@ -30,11 +30,13 @@ MODULE Module1
         WHILE TRUE DO 
         SetDO Mouse_Outpu1, 0;
         SetDO Mouse_Output2, 1;
+        SetDO doRemove,0;
         
         MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
         MoveL NewAtaq,v1000,fine,Gripper\WObj:=WO_themainone;
         
         WaitDI Mouse_Input, 1;
+        WaitTime 0.5;
         !WaitDI (Mouse_Input OR Headphones_Input);
         IF Headphones_Input = 0 THEN
             MoveL Cogerte_Raton,v1000,fine,Gripper\WObj:=WO_themainone;
@@ -45,7 +47,7 @@ MODULE Module1
             SetDO Mouse_Outpu1, 0;
             SetDO Mouse_Output2, 1;
             MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
-        ELSE 
+        ELSEIF Headphones_Input = 1 THEN
             MoveL Cogerte_Cascos,v1000,fine,Gripper\WObj:=WO_themainone;
             SetDO Mouse_Output2, 0;
             SetDO Mouse_Outpu1, 1;
@@ -55,7 +57,7 @@ MODULE Module1
             SetDO Mouse_Output2, 1;
             MoveL NewIni,v1000,fine,Gripper\WObj:=WO_themainone;
         ENDIF
-        
+            SetDO doRemove,1;
         ENDWHILE
     ENDPROC
 ENDMODULE
