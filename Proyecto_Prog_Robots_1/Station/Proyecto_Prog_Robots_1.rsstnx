@@ -163,7 +163,6 @@
     </SimulationRoot>
     <SimulationConfiguration ID="3" Name="" Parent="2" VirtualTimeMode="1" DataRecordingEnabled="true">
       <SimulatedObjects>
-        <ObjectRef ID="1188" />
         <ObjectRef ID="2258" />
         <ObjectRef ID="3328" />
         <ObjectRef ID="4467" />
@@ -182,6 +181,7 @@
         <ObjectRef ID="5174" />
         <ObjectRef ID="5195" />
         <ObjectRef ID="5197" />
+        <ObjectRef ID="1188" />
       </SimulatedObjects>
       <EventTable ID="4" />
       <ConnectedState Value="" />
@@ -15058,7 +15058,7 @@
         <RowX X="0.909938112330604" Y="0" Z="-0.414744055687623" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0.414744055687623" Y="0" Z="0.909938112330604" W="0" />
-        <RowT X="-0.0209748657246912" Y="0" Z="-0.05145823811357" W="1" />
+        <RowT X="-0.0209748657246913" Y="0" Z="-0.05145823811357" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -15087,7 +15087,7 @@
         <RowX X="0.776469263157931" Y="0" Z="-0.630155126433944" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0.630155126433944" Y="0" Z="0.776469263157931" W="0" />
-        <RowT X="-0.116376247844726" Y="0" Z="0.0976812802306026" W="1" />
+        <RowT X="-0.116376247844727" Y="0" Z="0.0976812802306029" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -15116,7 +15116,7 @@
         <RowX X="0.776469263157931" Y="0" Z="-0.630155126433944" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0.630155126433944" Y="0" Z="0.776469263157931" W="0" />
-        <RowT X="-0.116376247844726" Y="0" Z="0.0976812802306026" W="1" />
+        <RowT X="-0.116376247844727" Y="0" Z="0.0976812802306029" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -18736,7 +18736,7 @@
         </Element>
         <Element Key="SOLTAR">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -19024,9 +19024,9 @@
         <ObjectRef ID="5172" />
       </ChildInstances>
       <Transform>
-        <RowX X="-0.630154976276886" Y="0" Z="0.776469385020091" W="0" />
+        <RowX X="-0.630154976276886" Y="0" Z="0.77646938502009" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="-0.776469385020091" Y="0" Z="-0.630154976276886" W="0" />
+        <RowZ X="-0.77646938502009" Y="0" Z="-0.630154976276886" W="0" />
         <RowT X="-0.610856371855094" Y="-6.99999999934991E-06" Z="1.09356931495625" W="1" />
       </Transform>
       <Source Value="" />
@@ -19780,12 +19780,12 @@
         </Element>
         <Element Key="InputB">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
         <Element Key="Output">
           <Value>
-            <Integer Value="1" />
+            <Integer Value="0" />
           </Value>
         </Element>
       </SignalValues>
@@ -19803,9 +19803,9 @@
       <SourceObject ID="4516" />
       <TargetObject ID="4941" />
       <OffsetTransform>
-        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711942E-07" W="0" />
+        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711934E-07" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-1.93384404711942E-07" Y="0" Z="0.999999999999981" W="0" />
+        <RowZ X="-1.93384404711934E-07" Y="0" Z="0.999999999999981" W="0" />
         <RowT X="0.000217867022343166" Y="7.00000000044212E-06" Z="0.0514800489124443" W="1" />
       </OffsetTransform>
       <OriginalTransform>
@@ -19973,7 +19973,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -20220,7 +20223,10 @@
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
