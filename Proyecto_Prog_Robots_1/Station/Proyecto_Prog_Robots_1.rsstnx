@@ -31,19 +31,27 @@
       </SignalValues>
       <Bindings>
         <Element type="TPropertyBinding" AllowCycle="false">
-          <SourceObject ID="5560" />
+          <SourceObject ID="-1" />
           <SourceProperty Value="SensedPart" />
-          <TargetObject ID="5566" />
+          <TargetObject ID="5567" />
           <TargetProperty Value="Object" />
-          <SourceObjectName Value="PlaneSensorMouse" />
-          <TargetObjectName Value="Sink" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Sink_2" />
         </Element>
         <Element type="TPropertyBinding" AllowCycle="false">
           <SourceObject ID="5562" />
           <SourceProperty Value="SensedPart" />
-          <TargetObject ID="5567" />
+          <TargetObject ID="5566" />
           <TargetProperty Value="Object" />
           <SourceObjectName Value="PlaneSensorHeadphones" />
+          <TargetObjectName Value="Sink" />
+        </Element>
+        <Element type="TPropertyBinding" AllowCycle="false">
+          <SourceObject ID="5560" />
+          <SourceProperty Value="SensedPart" />
+          <TargetObject ID="5567" />
+          <TargetProperty Value="Object" />
+          <SourceObjectName Value="PlaneSensorMouse" />
           <TargetObjectName Value="Sink_2" />
         </Element>
       </Bindings>
@@ -139,25 +147,41 @@
         <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="1188" />
           <SourceSignal Value="doRemove" />
+          <TargetObject ID="-1" />
+          <TargetSignal Value="Active" />
+          <SourceObjectName Value="themainone" />
+          <TargetObjectName Value="LineSensor" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="-1" />
+          <SourceSignal Value="SensorOut" />
+          <TargetObject ID="5567" />
+          <TargetSignal Value="Execute" />
+          <SourceObjectName Value="LineSensor" />
+          <TargetObjectName Value="Sink_2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="1188" />
+          <SourceSignal Value="doRemove" />
           <TargetObject ID="5562" />
           <TargetSignal Value="Active" />
           <SourceObjectName Value="themainone" />
           <TargetObjectName Value="PlaneSensorHeadphones" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="5560" />
+          <SourceObject ID="5562" />
           <SourceSignal Value="SensorOut" />
           <TargetObject ID="5566" />
           <TargetSignal Value="Execute" />
-          <SourceObjectName Value="PlaneSensorMouse" />
+          <SourceObjectName Value="PlaneSensorHeadphones" />
           <TargetObjectName Value="Sink" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="5562" />
+          <SourceObject ID="5560" />
           <SourceSignal Value="SensorOut" />
           <TargetObject ID="5567" />
           <TargetSignal Value="Execute" />
-          <SourceObjectName Value="PlaneSensorHeadphones" />
+          <SourceObjectName Value="PlaneSensorMouse" />
           <TargetObjectName Value="Sink_2" />
         </Element>
       </IOConnections>
@@ -15156,6 +15180,11 @@
             <String Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;TcpTraceData xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xD;&#xA;  &lt;TraceStopTCP&gt;false&lt;/TraceStopTCP&gt;&#xD;&#xA;  &lt;StopCategory&gt;0&lt;/StopCategory&gt;&#xD;&#xA;  &lt;FollowWorkobject&gt;true&lt;/FollowWorkobject&gt;&#xD;&#xA;  &lt;ClearTraceAtStart&gt;true&lt;/ClearTraceAtStart&gt;&#xD;&#xA;  &lt;PrimaryColor&gt;-1&lt;/PrimaryColor&gt;&#xD;&#xA;  &lt;ColorBySignal&gt;false&lt;/ColorBySignal&gt;&#xD;&#xA;  &lt;SignalDisplayName /&gt;&#xD;&#xA;  &lt;UseColorScale&gt;false&lt;/UseColorScale&gt;&#xD;&#xA;  &lt;ColorMin&gt;0&lt;/ColorMin&gt;&#xD;&#xA;  &lt;ColorMax&gt;1&lt;/ColorMax&gt;&#xD;&#xA;  &lt;UseSecondaryColor&gt;false&lt;/UseSecondaryColor&gt;&#xD;&#xA;  &lt;SecondaryColor&gt;-65536&lt;/SecondaryColor&gt;&#xD;&#xA;  &lt;ConditionType&gt;None&lt;/ConditionType&gt;&#xD;&#xA;  &lt;ConditionValue1&gt;0&lt;/ConditionValue1&gt;&#xD;&#xA;  &lt;ConditionValue2&gt;0&lt;/ConditionValue2&gt;&#xD;&#xA;  &lt;ShowEvents&gt;false&lt;/ShowEvents&gt;&#xD;&#xA;  &lt;StopPositionColor&gt;-16711681&lt;/StopPositionColor&gt;&#xD;&#xA;&lt;/TcpTraceData&gt;" />
           </Value>
         </Attribute>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
       </Attributes>
       <UniqueId Value="{ac2f5179-a32b-4706-beac-08f2fa4ea948}" />
       <Definition ID="11" DocID="1" />
@@ -15493,6 +15522,11 @@
         <Attribute Key="TcpTraceData">
           <Value>
             <String Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;TcpTraceData xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xD;&#xA;  &lt;TraceStopTCP&gt;false&lt;/TraceStopTCP&gt;&#xD;&#xA;  &lt;StopCategory&gt;0&lt;/StopCategory&gt;&#xD;&#xA;  &lt;FollowWorkobject&gt;true&lt;/FollowWorkobject&gt;&#xD;&#xA;  &lt;ClearTraceAtStart&gt;true&lt;/ClearTraceAtStart&gt;&#xD;&#xA;  &lt;PrimaryColor&gt;-1&lt;/PrimaryColor&gt;&#xD;&#xA;  &lt;ColorBySignal&gt;false&lt;/ColorBySignal&gt;&#xD;&#xA;  &lt;SignalDisplayName /&gt;&#xD;&#xA;  &lt;UseColorScale&gt;false&lt;/UseColorScale&gt;&#xD;&#xA;  &lt;ColorMin&gt;0&lt;/ColorMin&gt;&#xD;&#xA;  &lt;ColorMax&gt;1&lt;/ColorMax&gt;&#xD;&#xA;  &lt;UseSecondaryColor&gt;false&lt;/UseSecondaryColor&gt;&#xD;&#xA;  &lt;SecondaryColor&gt;-65536&lt;/SecondaryColor&gt;&#xD;&#xA;  &lt;ConditionType&gt;None&lt;/ConditionType&gt;&#xD;&#xA;  &lt;ConditionValue1&gt;0&lt;/ConditionValue1&gt;&#xD;&#xA;  &lt;ConditionValue2&gt;0&lt;/ConditionValue2&gt;&#xD;&#xA;  &lt;ShowEvents&gt;false&lt;/ShowEvents&gt;&#xD;&#xA;  &lt;StopPositionColor&gt;-16711681&lt;/StopPositionColor&gt;&#xD;&#xA;&lt;/TcpTraceData&gt;" />
+          </Value>
+        </Attribute>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
           </Value>
         </Attribute>
       </Attributes>
@@ -15967,6 +16001,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4442" Name="soport_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4441" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -15998,6 +16039,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4444" Name="sop_2" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4443" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -16029,6 +16077,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4446" Name="soport_3" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4445" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -16060,6 +16115,13 @@
       </BoundingBox>
     </PartDef>
     <ComponentInstance ID="4448" Name="sop_3" Parent="1183" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <Definition ID="4447" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -16167,7 +16229,7 @@
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="59" />
+            <Double Value="58" />
           </Value>
         </Attribute>
       </Attributes>
@@ -17042,12 +17104,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{066d29f2-bce6-407b-8917-cc186e036ef9};{2f953a84-c082-4a05-960a-d452f836b217};{71707707-dbf1-4f4a-9388-0f565623da9f};{dec82805-0302-4230-87fa-94a22ccbae29};{880f91ca-2f46-4113-81d0-bbc39953e493};{d02d055e-a6ba-475b-af1c-83331e4dedc1};{99b5a3e3-7a6c-48da-8866-6e647fd07945};{9a50e3e9-ac08-4621-99e9-684d3d6765f5};{5fc793a3-fea9-458d-b1af-71b1c9d84d32};{afeeb1ac-db38-4335-b172-5b2b89455333};{5a5e2437-f38c-4d7c-ba16-9d202043621b};{8fd2e782-5c4e-41dd-a92b-5774187c1e5c};{3c6cd2ef-78b0-4fcd-a60a-9b3ea98c168e};{8409dcf6-5fc3-4784-9abe-60b3ab3cd924};{07007ee0-bd65-4c97-95a0-bd80bfe6b5c9};{ce9b3313-a1e7-4c87-b375-b35dd9c060ad};{63d32f13-6051-45bc-99b3-e4052e3c3cf0};{28857d76-17f9-4229-a6d4-f5629b6e3072};{33a4277d-6cef-430a-aea1-d16d6e7fabed};{e6370e39-53a7-4554-b9e3-1a5d02deed4d};{9c80c4e9-f34b-45cb-8355-b2a5a93fc01f};{32b6e92b-897f-4fb8-bc71-8e1bc8566235};{45e0461c-23a1-4a71-b3d8-2b7fe5b6d534};{1a76620d-4be2-4d8b-af9a-e3a54e68fadd};{de7df945-7745-4eff-adf0-e3ee1b2c9626};{135697e1-e2f2-4359-9214-17e95e17f271};{4d4ccbb5-1098-4a05-8347-e3aab35233ad};{227c198e-91cf-4e9b-86b0-269606592f8f};{9e0b7a7b-6bcc-47ab-9dab-e441b44ad190};{39aae0f7-b90a-41d3-9c37-d213c3befd98};{930f4beb-71b4-4cf9-a760-78d524a11256};{926812ab-e09b-4c07-bdf5-e533bf35190f};{8aa3397c-7110-404e-a83d-f89271a1f52a};{c6160486-8ee5-4e78-b816-d9a4fe56e44f};{442d313c-60b8-4694-bff5-9b4124de29db};{5b2bb5d4-6d9e-4836-b2c5-9d427f2f317a};{e250edec-0323-4c5f-b4ae-40daebf02898};{106e965e-2009-4c03-8463-d70849af6263};{ee59b56c-2e09-40fc-a7fe-524f6a929904};{2adf4d96-785e-4535-b440-a2feb4ee8842};{efcef28a-22d5-4c1d-b9b4-137b9456f1b7};{130e5db9-1021-468d-9c1f-cb0850354b80};{847015d2-b0a7-46e3-8340-1cf45fcbff09};{c59e2fa1-68dc-4c52-b3ed-172db6535d02};{e1ce3938-32e9-4a7b-80e8-7f00f52831c5};{78528c6b-f6d4-49a7-99ad-bb2ff0f6e95c};{e840e18a-63ef-4135-bc06-9f66fce81c32};{9376ffc4-5f21-4261-8a99-e1c73787509c};{5dfe944f-03ae-4eaf-9ed3-9d754c2ef17d};{bb08ade7-f425-4962-819b-1a3a2b519d67};{20b4e4e9-b994-49b5-808a-07d2fdb9cd31};{8a79f747-cb93-4f66-95b5-75c01ac188b1};{c25f0c23-e3cf-4dbd-9c33-01d3a50bb42e};{b6a16069-e560-4a7e-aef1-ab6c8d6847af};{adacab50-375e-4e68-ac5f-d04de9e01c96};{9d85cfad-9ae6-4b9e-a3db-14a80adb6ab7};{4025747e-91f4-4161-bdcb-7968b015e3af};{8d2ab9fb-d164-4cae-ac89-9399970845d2};{51b38e86-7e00-4358-9d2a-466000338307};{b2b2be11-442b-4353-9536-868cea0e5968};{d699a5f1-2644-48d4-aff8-90ed331078fc};{ab2a9ed7-924f-4ece-870f-d53fc8a852dc};{70628dfc-21b2-464f-b749-1521cf574389};{b158e05f-b49d-4197-9a09-d11bdc4ac631};{892ca467-3368-480a-b5e5-495d331f6632};{01480439-fe61-4f16-936b-a42418b87503};{6e89cd73-961a-4d56-8c19-0e4c5e1c7b66};{17e0fb9b-26f0-4ef4-9421-4b74a6fc92fd};{3804b05c-01f9-4fe2-a15e-ed764451f515};{2dc2a202-e60f-49ae-815f-feba948842f1};{5a02037c-afd2-4385-8f7b-c17655b7cd76};{829d5dca-a00c-4691-8b70-3a912c902233};{f56b8fdb-a495-4544-b2eb-214ccaaaab2c};{ab7977a7-a984-42fa-98dc-b9f6706e33da};{a378e876-4160-4942-816c-628a18f2f7d7};{31f17c10-19de-4c09-a694-10441bc556c8};{9c191694-0f34-47f6-877d-073abc6d0a43};{ca1c092b-fdd3-410d-8344-547e3fbe4699};{50d1bdff-866b-4306-8556-d55065836078};{659cfb90-caca-4221-8dcb-8f7cde28a6ca};{d48eeb5e-838e-4aa3-b8d1-a1bb643f19c7};{d75f0e00-f603-420e-ac4b-c47d1b3fed63};{7b293166-36e6-4b3f-835f-3a7ff4c1de07};{8310f44e-d2ce-4403-bf21-f1bd2b3d0809};{4468e497-0789-441e-bf7c-c434244e40cd};{bec6c490-9565-4773-8fbf-5d3a55cae051};{99ce4323-e6d8-4bca-9bae-2c51c94b29ea};{495cc432-4a8c-4416-b9ec-11ceb4503ffb};{ce8bf5e6-ba76-4e34-a870-8d3d7dcdc6de};{7ea794f2-e9b0-43b5-815d-2401aca3f915};{864c6b1a-83fb-4ad8-ab10-97c0b6c9e353};{5a77a960-1f82-4682-a8cf-9dfacc20d1a8};{1ad91d96-d820-4142-96ca-caa7ba078503};{6f09adc9-6ae5-489f-9991-92f53ed63993};{e410814d-e910-4325-ac9c-a9f8f5d9c566};{ff475dc5-17c2-459c-8f4d-1810006a8935};{83499fe9-577b-40e8-ac1b-343fc007abad};{54a5b616-c039-43dc-8640-c0a322fc2c9e};{5661972c-bf54-47d1-8a5f-c4e614ec6c6a};{9b358bcc-f2e5-4cfc-bab4-55a641a61658};{542042fc-6370-4fe0-bb5f-f981dcf692e5};{1b95232c-554e-434c-b3ad-dbb2577adb50};{bdd4fdde-27d1-48cf-8f63-87638b65630d};{180207cc-f905-448b-b83f-63a533ef9b6b};{99c5a8ae-175c-4756-ba1d-c1b1f0bb7cfd};{a73e453c-4f6c-449e-85b0-c9d213807355};{9ccf8f0d-3362-4918-a1a7-0ef6108b3dbb};{1d4162e3-376a-4ba1-8691-ff0646d56c3c};{e9a7de36-5399-4aea-9d29-b6371b560220};{f348511e-f45d-41e3-b39f-aad6c920f953};{428ef8b0-3174-40be-b6c3-ec3fd486e475};{49eecd12-e1e2-4ce0-9738-505ee74b6867};{5d239d1e-9192-471e-be24-12698f6ca155};{6967ce97-a392-4fd6-a48f-68de5f3aa69f};{625b52bf-4a20-4e63-9367-699731899f39}" />
+            <String Value="{39aae0f7-b90a-41d3-9c37-d213c3befd98};{930f4beb-71b4-4cf9-a760-78d524a11256};{926812ab-e09b-4c07-bdf5-e533bf35190f};{8aa3397c-7110-404e-a83d-f89271a1f52a};{c6160486-8ee5-4e78-b816-d9a4fe56e44f};{442d313c-60b8-4694-bff5-9b4124de29db};{5b2bb5d4-6d9e-4836-b2c5-9d427f2f317a};{e250edec-0323-4c5f-b4ae-40daebf02898};{106e965e-2009-4c03-8463-d70849af6263};{ee59b56c-2e09-40fc-a7fe-524f6a929904};{2adf4d96-785e-4535-b440-a2feb4ee8842};{efcef28a-22d5-4c1d-b9b4-137b9456f1b7};{130e5db9-1021-468d-9c1f-cb0850354b80};{847015d2-b0a7-46e3-8340-1cf45fcbff09};{c59e2fa1-68dc-4c52-b3ed-172db6535d02};{e1ce3938-32e9-4a7b-80e8-7f00f52831c5};{78528c6b-f6d4-49a7-99ad-bb2ff0f6e95c};{e840e18a-63ef-4135-bc06-9f66fce81c32};{9376ffc4-5f21-4261-8a99-e1c73787509c};{5dfe944f-03ae-4eaf-9ed3-9d754c2ef17d};{bb08ade7-f425-4962-819b-1a3a2b519d67};{20b4e4e9-b994-49b5-808a-07d2fdb9cd31};{8a79f747-cb93-4f66-95b5-75c01ac188b1};{c25f0c23-e3cf-4dbd-9c33-01d3a50bb42e};{b6a16069-e560-4a7e-aef1-ab6c8d6847af};{adacab50-375e-4e68-ac5f-d04de9e01c96};{9d85cfad-9ae6-4b9e-a3db-14a80adb6ab7};{4025747e-91f4-4161-bdcb-7968b015e3af};{8d2ab9fb-d164-4cae-ac89-9399970845d2};{51b38e86-7e00-4358-9d2a-466000338307};{b2b2be11-442b-4353-9536-868cea0e5968};{d699a5f1-2644-48d4-aff8-90ed331078fc};{ab2a9ed7-924f-4ece-870f-d53fc8a852dc};{70628dfc-21b2-464f-b749-1521cf574389};{b158e05f-b49d-4197-9a09-d11bdc4ac631};{892ca467-3368-480a-b5e5-495d331f6632};{01480439-fe61-4f16-936b-a42418b87503};{6e89cd73-961a-4d56-8c19-0e4c5e1c7b66};{17e0fb9b-26f0-4ef4-9421-4b74a6fc92fd};{3804b05c-01f9-4fe2-a15e-ed764451f515};{2dc2a202-e60f-49ae-815f-feba948842f1};{5a02037c-afd2-4385-8f7b-c17655b7cd76};{829d5dca-a00c-4691-8b70-3a912c902233};{f56b8fdb-a495-4544-b2eb-214ccaaaab2c};{ab7977a7-a984-42fa-98dc-b9f6706e33da};{a378e876-4160-4942-816c-628a18f2f7d7};{31f17c10-19de-4c09-a694-10441bc556c8};{9c191694-0f34-47f6-877d-073abc6d0a43};{ca1c092b-fdd3-410d-8344-547e3fbe4699};{50d1bdff-866b-4306-8556-d55065836078};{659cfb90-caca-4221-8dcb-8f7cde28a6ca};{d48eeb5e-838e-4aa3-b8d1-a1bb643f19c7};{d75f0e00-f603-420e-ac4b-c47d1b3fed63};{7b293166-36e6-4b3f-835f-3a7ff4c1de07};{8310f44e-d2ce-4403-bf21-f1bd2b3d0809};{4468e497-0789-441e-bf7c-c434244e40cd};{bec6c490-9565-4773-8fbf-5d3a55cae051};{99ce4323-e6d8-4bca-9bae-2c51c94b29ea};{495cc432-4a8c-4416-b9ec-11ceb4503ffb};{ce8bf5e6-ba76-4e34-a870-8d3d7dcdc6de};{7ea794f2-e9b0-43b5-815d-2401aca3f915};{864c6b1a-83fb-4ad8-ab10-97c0b6c9e353};{5a77a960-1f82-4682-a8cf-9dfacc20d1a8};{1ad91d96-d820-4142-96ca-caa7ba078503};{6f09adc9-6ae5-489f-9991-92f53ed63993};{e410814d-e910-4325-ac9c-a9f8f5d9c566};{ff475dc5-17c2-459c-8f4d-1810006a8935};{83499fe9-577b-40e8-ac1b-343fc007abad};{54a5b616-c039-43dc-8640-c0a322fc2c9e};{5661972c-bf54-47d1-8a5f-c4e614ec6c6a};{9b358bcc-f2e5-4cfc-bab4-55a641a61658};{542042fc-6370-4fe0-bb5f-f981dcf692e5};{1b95232c-554e-434c-b3ad-dbb2577adb50};{bdd4fdde-27d1-48cf-8f63-87638b65630d};{180207cc-f905-448b-b83f-63a533ef9b6b};{99c5a8ae-175c-4756-ba1d-c1b1f0bb7cfd};{a73e453c-4f6c-449e-85b0-c9d213807355};{9ccf8f0d-3362-4918-a1a7-0ef6108b3dbb};{1d4162e3-376a-4ba1-8691-ff0646d56c3c};{e9a7de36-5399-4aea-9d29-b6371b560220};{f348511e-f45d-41e3-b39f-aad6c920f953};{428ef8b0-3174-40be-b6c3-ec3fd486e475};{49eecd12-e1e2-4ce0-9738-505ee74b6867};{5d239d1e-9192-471e-be24-12698f6ca155};{6967ce97-a392-4fd6-a48f-68de5f3aa69f};{625b52bf-4a20-4e63-9367-699731899f39};{75428e2c-4469-43be-a9bd-9735c176189e};{31c5372c-c27c-46e2-a553-fc011d1e3f04};{b27c12d8-0713-462c-b807-a288c584ab43};{27653244-aaec-4ced-bc8c-7cd6d4b04a3c};{e92b42cc-d412-4e1c-b542-dca2f59c51bb};{0442f31c-8fd9-4f98-9401-c47e45140609};{46a5a403-1d87-4e6f-8c34-5cc11c9f46fc};{7043e708-1a3c-477d-b07f-f3ad9b2255e8};{953fa381-db9e-4667-b9cb-ddc646e80f16};{67c518f6-89d1-4891-9121-773852821c10};{d05e1296-fc36-4618-b13e-ed57e39e1634};{4bb0a45a-13ad-4236-8ff1-2157d6a34251};{0dafa162-d558-49e4-9c95-4c5375adcfe4};{4f6caa5c-a035-4aed-9339-bc5813c716dc};{36519fa2-5a26-42dd-a922-cd0207cf4778};{b6cb6449-61a5-42b0-81ca-f763d85a99c6};{be4b9ec1-ae0c-4ef2-8869-006be3c095a6};{a1768b20-36b3-4b71-a081-55abbd8de392};{cfc895a1-a3b2-46b0-b89a-07fea26f7091};{6bcead93-18fd-4125-a838-ab0c1aa6e40a};{658bb922-4e53-4a67-8100-2cd8e56aff4c};{bbc11181-a130-4b81-9c31-f67e0820a36e};{5c916a1c-22c4-4298-bc23-e2c8fa1efe60};{8e6b713a-07fe-4ec9-9ddc-7b982a6c44d1};{b752db04-60a6-4036-8ca1-b627ad44180f};{1ecc2808-fd5b-4447-8ccf-09dbe9c24e59};{50146f9c-99f8-4a2e-9a8b-a1ce0dd70816};{0b064151-1685-400e-93ae-79063fadd287};{e5affb71-81c2-458f-9912-35b3662cbf05};{c82df724-d817-462d-8193-ace2ba9af85b};{db25aa95-532e-4c44-a814-1c2cd7d59210};{07e8ac48-cfe1-48d0-9f6b-1db5ef0aeee0};{68d521f0-ef10-40ac-893b-a92e352f655a};{474fbb78-b068-47dc-91d6-b765bedaf48d};{a54d55f5-42af-42b6-8b1c-78ce171df11b};{f2ad4617-2080-456e-adaf-8197f28feacc};{aaa4ed06-e0fd-4354-aa91-f1b68300874a};{f7b224c6-0d22-41f8-b366-9da5b0aa757e};{e608e45a-5933-4eb1-b692-b22064169229};{03216640-434b-4dd4-9fd1-de9dfd9895cd};{59cfe68c-e7a7-411e-bdb5-b98bd1fa0792};{598d40fc-d0f7-4078-827d-4d315ab89928};{6abf66ee-a4af-4b1e-a1e5-72ca0a655e24}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="4" />
+            <Integer Value="1" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17155,12 +17217,12 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Queue">
           <Value>
-            <String Value="{e3739628-7396-40e5-8998-00e0b00dee72};{005af4c6-2f96-4108-9a45-07127857d062};{a00e7c51-8d0b-41e1-a15f-00a37bba66bf};{b8d3ca27-3a8d-4c05-b473-19b0dae81b80};{4bad2485-0b3f-428e-90e3-e8882f599799};{e62e00f6-34f9-4b44-9e1d-2f763c2e4a61};{4c1fb4ff-0025-4dab-bfd8-ddc310f98ec9};{3cd4b211-c3a8-4198-a083-3404353579be};{ca14e492-22f4-4ca6-9bd5-67c1efe0e174};{fe798093-3d55-4aaa-b534-6574a6ba7490};{ddbfa934-7dc7-466f-9f98-95d8a9e6ea33};{d8e8354d-c83d-4d1c-a94e-6b77ffa059b5};{61faab7e-7cca-4032-8b47-920762d824a3};{9b252353-445b-4b6c-92e3-b9c4ca83953d};{4310d670-6e68-4223-9d8b-17de883cd769};{9e98d9b2-fed0-4e22-a58b-4b9e3a3a064d};{2af9f4d0-f4f6-465b-a2d0-2d5e8fd86603};{08ddc994-d9e3-4bd4-9f93-f240c1a13a60};{4ca46330-1454-4e68-91c3-04de209fa3fb};{1b72deef-5d60-4417-8686-4add8035fd2a};{a0d186eb-1b06-42c4-9245-842cfdee843e};{163334be-3c57-474a-b3a1-85c194973ecc};{b69b2e62-f8aa-47a9-8962-e220b95ff647};{fe42c51f-28b9-4382-9ace-2ddcc1fb4e47};{a312faf1-acc3-4061-a7ba-611d34b02999};{a7d94637-d9fd-48d2-8bd6-25734833ea48};{be686c79-9e39-4b3a-b4b0-c3e29afb9d4f};{494a13c9-a9d3-4658-bc79-bbe35eb418d5};{3a28e50e-575f-4da2-99a2-a634c5ccbacc};{fd3126bc-2525-4f4c-a880-1d1fa092657c};{e7604ad0-97c6-4def-bdea-8e34d270cca5};{84276a0e-7f0b-4ffe-b179-2f7b4c6375b7};{fc90524f-c195-4061-a17a-d7b5b21913dd};{876ba0e0-b657-4b67-82df-ee6313c9aae3};{2cc7e540-f1b8-49f0-8fe7-1565c19d7cb4};{ef0c6636-76fd-4456-96c7-4d2a24b9819d};{0423ca10-c23d-4f5a-99d1-dd3ed74b4296};{8c592b7f-6e0b-43bf-b1c2-16fc007226e3};{d4c0505a-2241-48db-b24d-06c9d8a3d72b};{dfbe5c64-9da8-4ebb-b240-b433a2b96bf1};{ca04ee4f-7585-4a37-b164-28d94e1d2050};{e7f4a2f0-711d-4db3-8a3a-4a3e344bb16e};{c4a2f90b-896b-4004-9c86-03718069eba0};{2ff21e1b-be59-4d2a-b8eb-56e6ac5d166a};{39209e16-8865-40c7-906b-1a8e12ce72c9};{3f7fe40f-3bdd-4f5c-a495-5bbcd2c0a726};{3e3c5541-b45d-44f9-b255-1f178a878f3b};{a2d0e952-6ecb-4a0b-9349-6da2b8461252};{ac5b810e-188e-4a3a-b01d-e880059d0f1b};{ee703d98-f619-45dd-bb3b-808320c26d09};{82fc1c0b-0a81-40e4-bce6-70b5317824e5};{55cdfddf-9d24-4aae-a96a-05d660cac74e};{c64544ea-ec98-409f-933c-09164becb3a6};{b57abcaa-8789-40eb-b189-f6cfb825f85d};{5e8df26b-278a-4a9d-972b-bc9d723174db};{d494d04c-ff33-486b-870a-436d328b3a48};{7002e2f1-7227-4174-b0b5-ff9ad9f75885};{210ae4fc-15dd-42d1-8d6b-585713ac2708};{b5335509-370d-4c60-b96c-3704b5572a69};{9bc00bd4-f1d3-4f68-b4dd-b299e8c81bae};{3021e815-482d-49de-a224-59987f4c8bc0};{eb920dd6-b7c7-41d6-a0ab-612c4b391012};{ee53a2c1-955c-4698-af83-ff96cba167ec};{16df037e-e136-469b-808a-46adef1a97a0};{6193d4de-c495-4fd5-8ae5-00d333506d8e};{9d8f9971-1497-4e16-97e0-a92dee3f3f99};{3b54e8a0-11cf-4994-af01-0a3bbe37f11b};{05259471-8f0a-43fe-814b-17d8395d5ef7};{ea98318a-b7c9-4d3e-9c95-bd8f68f30653};{f8d5403a-5af4-476b-85b6-e91236f48b6b};{e2f1cbcd-b5a6-4d66-85cf-1070f93ae024};{020f0db4-8d29-48d6-a842-2e67be138ec9};{00e645e8-8a9c-4128-8bed-332e404dc21f};{28cb885c-f36b-45ca-ac03-8faae82870e3};{5fce26cc-8cfb-421a-8aca-e876eebb06d8};{883c2174-335f-4b6b-b5bc-fe89527d7e5b};{e18670db-3b8d-471a-82a9-fba27a9b69fe};{5b416db0-0960-49a9-9470-78bb89e88f0a};{5922b55e-2265-4b67-a053-28822834666a};{38809a3a-6fba-44c9-8d0d-8437062b1d13};{af1d9bd7-c4b4-4dff-987e-c80e1d2c0b19};{74bca361-9846-489d-9cee-a63f559c3033};{a9c07fc2-0465-4659-b4fe-e8b906b666d8};{5ec0cdf4-9674-4491-8e2e-cc3ce79b452e};{1ef67140-d326-43df-bbaa-a8355439b3d0};{81651f15-6273-4ecb-a0cf-67906745d7d8};{8bd8c840-f992-4b82-8c9c-7452d6517df8};{37c63a2f-1a3e-490a-a3cb-bd6dc05d66d2};{7856cdb0-372a-4efb-8aa0-c44ee7f1a531};{6531cf84-5bac-4885-9032-0c90605b461c};{59e6207d-ec33-49d6-ba76-508da2ef6c3b};{052962fb-bc2d-4029-9801-30d3db61b6d6};{03bf9eeb-d15e-418b-bece-baa7c4f4ad4f}" />
+            <String Value="{3f7fe40f-3bdd-4f5c-a495-5bbcd2c0a726};{3e3c5541-b45d-44f9-b255-1f178a878f3b};{a2d0e952-6ecb-4a0b-9349-6da2b8461252};{ac5b810e-188e-4a3a-b01d-e880059d0f1b};{ee703d98-f619-45dd-bb3b-808320c26d09};{82fc1c0b-0a81-40e4-bce6-70b5317824e5};{55cdfddf-9d24-4aae-a96a-05d660cac74e};{c64544ea-ec98-409f-933c-09164becb3a6};{b57abcaa-8789-40eb-b189-f6cfb825f85d};{5e8df26b-278a-4a9d-972b-bc9d723174db};{d494d04c-ff33-486b-870a-436d328b3a48};{7002e2f1-7227-4174-b0b5-ff9ad9f75885};{210ae4fc-15dd-42d1-8d6b-585713ac2708};{b5335509-370d-4c60-b96c-3704b5572a69};{9bc00bd4-f1d3-4f68-b4dd-b299e8c81bae};{3021e815-482d-49de-a224-59987f4c8bc0};{eb920dd6-b7c7-41d6-a0ab-612c4b391012};{ee53a2c1-955c-4698-af83-ff96cba167ec};{16df037e-e136-469b-808a-46adef1a97a0};{6193d4de-c495-4fd5-8ae5-00d333506d8e};{9d8f9971-1497-4e16-97e0-a92dee3f3f99};{3b54e8a0-11cf-4994-af01-0a3bbe37f11b};{05259471-8f0a-43fe-814b-17d8395d5ef7};{ea98318a-b7c9-4d3e-9c95-bd8f68f30653};{f8d5403a-5af4-476b-85b6-e91236f48b6b};{e2f1cbcd-b5a6-4d66-85cf-1070f93ae024};{020f0db4-8d29-48d6-a842-2e67be138ec9};{00e645e8-8a9c-4128-8bed-332e404dc21f};{28cb885c-f36b-45ca-ac03-8faae82870e3};{5fce26cc-8cfb-421a-8aca-e876eebb06d8};{883c2174-335f-4b6b-b5bc-fe89527d7e5b};{e18670db-3b8d-471a-82a9-fba27a9b69fe};{5b416db0-0960-49a9-9470-78bb89e88f0a};{5922b55e-2265-4b67-a053-28822834666a};{38809a3a-6fba-44c9-8d0d-8437062b1d13};{af1d9bd7-c4b4-4dff-987e-c80e1d2c0b19};{74bca361-9846-489d-9cee-a63f559c3033};{a9c07fc2-0465-4659-b4fe-e8b906b666d8};{5ec0cdf4-9674-4491-8e2e-cc3ce79b452e};{1ef67140-d326-43df-bbaa-a8355439b3d0};{81651f15-6273-4ecb-a0cf-67906745d7d8};{8bd8c840-f992-4b82-8c9c-7452d6517df8};{37c63a2f-1a3e-490a-a3cb-bd6dc05d66d2};{7856cdb0-372a-4efb-8aa0-c44ee7f1a531};{6531cf84-5bac-4885-9032-0c90605b461c};{59e6207d-ec33-49d6-ba76-508da2ef6c3b};{052962fb-bc2d-4029-9801-30d3db61b6d6};{03bf9eeb-d15e-418b-bece-baa7c4f4ad4f};{b0fa00cd-bf71-47c1-936f-aa3299e11f1c};{f4b6ed91-8a55-4502-8813-35f570c30da5};{87d8f6ef-f121-4fd8-bc04-16ca7cb6ff44};{d43fff85-3bcc-4041-8b1f-d9cfc2c604e7};{25113df2-7f9e-4e82-829c-c76995be911a};{f9398286-ee64-404c-bae2-4df3b4640bb6};{cb3a89f0-0cc3-4c17-a794-bc48dd9014a0};{6712811c-c54e-4d9b-81d2-2d4f5f4a89ac};{d17d2b5a-2f14-4b07-81c8-9de634d6e9d3};{165d3d1c-cb69-4eb5-bd80-f91b17f41ee5};{f1e4e974-bd8a-4687-8083-83106ce85686};{4107ab9e-0a9b-4abb-b83c-4a8d0e9b9149};{51cf3144-87ea-4700-9ac0-7f7cd618b66a};{6773657e-63cf-46ea-8a82-d88f957a460f};{a8c6a877-e745-467c-af96-9b9bce65e73a};{c2919400-23d6-4b89-bb80-33460f89eb3d};{fea8351b-438a-422d-aab3-8607fd5e3f6f};{19e330a5-ee51-4f7f-ab8d-396497325e67};{632d50e2-bc22-4d18-a21d-0ab362ed05bd};{9b74a3bf-338b-4887-af47-853fba2aab1d};{2f88cf18-7926-4a8d-889b-ca738e8cf2df};{23811231-5913-4737-9c31-b9a8aa39b770};{8a245199-7e8b-47a9-87f0-f332fb55f09a};{d68f7af5-ed82-4485-8ff3-1902a009c6ad};{7b513b6c-03f4-4a09-8d23-031bc93fb6cb};{8c7b2c99-8a96-437f-bffe-6a7bbdcb1f3e};{10f86d6f-9148-4ea6-b449-05ebf13b29f8};{a195e238-32e3-4ea0-9f88-611d79d5fc37};{b5877ff4-25b8-4405-8e03-d844f06a0c83};{efb76912-ed6a-4fe9-b97a-4055b6a979fb};{b79a76c2-1121-4ea3-92ae-b51e12d9d7bb};{89c7a015-a04c-4ec7-ae67-03923f211604};{0caca11d-b5d4-423e-be5c-587c20b114a4};{19bf3bb4-7bb5-41fb-9db6-62fcd6ba1090};{8a9d3a08-ded5-4710-af25-4cddb4d97a69};{90fde3f1-b455-48a9-b707-cc34faf64a49};{67664892-59d2-4075-ae68-ba2bde8beccc};{a8bbedb4-c1e8-422b-975b-05b7e2d712f3};{9c26fcb3-a93d-4be8-a9a3-771a9dece5fa};{e806b7d9-eeed-44a2-8fad-d39d92c66d10};{3fd23ab0-f1df-4e9f-a4e6-451f8287a167};{4ca44894-de70-478c-a7fe-a1ab25940f6b};{ac5e8c91-e99c-487e-ba07-405a92b888ac};{ff072cb1-e8ff-4662-810c-80bc41d15c2a};{3dc31326-4790-435d-8d28-5958a684ee6e};{d78bbb08-c891-4089-8cd1-c207a58f477f};{f2aa1b11-7c6a-4c91-8d0e-9a2f1683fb89};{e903afd8-40c7-492b-ac37-f710aadc23d7};{a13c7e4d-003f-4f61-83db-cfb333e61fe9};{3d594f6b-c996-4031-9b1f-c235cf260a9c};{7fab9704-c8a3-4046-908b-72006ff2b750};{b0e201ff-7c3f-4f0b-87cf-398122668c01}" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;NumberOfObjects">
           <Value>
-            <Integer Value="2" />
+            <Integer Value="1" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17273,7 +17335,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;CurrentTime">
           <Value>
-            <Double Value="19.08" />
+            <Double Value="32.688" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -17663,7 +17725,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Value">
           <Value>
-            <Double Value="0.261591569642346" />
+            <Double Value="0.499997888458892" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Min">
@@ -17742,7 +17804,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.261591569642346" />
+            <Double Value="0.499997888458892" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -17813,7 +17875,7 @@
       <Attributes>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;ValueA">
           <Value>
-            <Double Value="0.261591569642346" />
+            <Double Value="0.499997888458892" />
           </Value>
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;Operator">
@@ -18243,7 +18305,7 @@
         <ObjectRef ID="5472" />
         <ObjectRef ID="5536" />
         <ObjectRef ID="5542" />
-        <ObjectRef ID="5243" />
+        <ObjectRef ID="5582" />
         <ObjectRef ID="5487" />
         <ObjectRef ID="5370" />
         <ObjectRef ID="5376" />
@@ -19036,7 +19098,7 @@
         </Attribute>
         <Attribute Key="&lt;f9d86f70-b630-415c-bebe-591ae83bc39f&gt;SensedPoint">
           <Value>
-            <String Value="[-0.0252177734375 0.449643737792969 0.892505065917969]" />
+            <String Value="[-0.02535595703125 0.449531829833984 0.894087951660156]" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerX">
@@ -19383,9 +19445,9 @@
       <SourceObject ID="4516" />
       <TargetObject ID="4941" />
       <OffsetTransform>
-        <RowX X="-0.999999999999981" Y="0" Z="-1.93384404711934E-07" W="0" />
+        <RowX X="-0.999999999999981" Y="0" Z="-1.9338440471193E-07" W="0" />
         <RowY X="0" Y="-1" Z="0" W="0" />
-        <RowZ X="-1.93384404711934E-07" Y="0" Z="0.999999999999981" W="0" />
+        <RowZ X="-1.9338440471193E-07" Y="0" Z="0.999999999999981" W="0" />
         <RowT X="0.000217867022343166" Y="7.00000000044212E-06" Z="0.0514800489124443" W="1" />
       </OffsetTransform>
       <OriginalTransform>
@@ -19445,40 +19507,6 @@
     <RoutineArgument ID="5212" Name="Tool" Parent="5202" Value="Gripper" />
     <RoutineArgument ID="5213" Name="WObj" Parent="5202" Value="WO_themainone" />
     <RoutineArgument ID="5214" Name="TLoad" Parent="5202" Enabled="false" />
-    <MoveInstructionCall ID="5243" Name="MoveJ" Parent="4491" Thickness="2" Reachable="1">
-      <ArgumentList ID="5244" />
-      <GroupName Value="Move" />
-      <TemplateGroupName Value="Default" />
-      <Color Red="1" Green="1" Blue="0" Alpha="1" />
-    </MoveInstructionCall>
-    <RoutineArgumentList ID="5244" Name="" Parent="5243">
-      <RoutineArguments>
-        <ObjectRef ID="5245" />
-        <ObjectRef ID="5246" />
-        <ObjectRef ID="5247" />
-        <ObjectRef ID="5248" />
-        <ObjectRef ID="5249" />
-        <ObjectRef ID="5250" />
-        <ObjectRef ID="5251" />
-        <ObjectRef ID="5252" />
-        <ObjectRef ID="5253" />
-        <ObjectRef ID="5254" />
-        <ObjectRef ID="5255" />
-        <ObjectRef ID="5256" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5245" Name="Conc" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5246" Name="ToPoint" Parent="5244" Value="NewIni" />
-    <RoutineArgument ID="5247" Name="ID" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5248" Name="Speed" Parent="5244" Value="v1000" />
-    <RoutineArgument ID="5249" Name="V" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5250" Name="T" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5251" Name="Zone" Parent="5244" Value="fine" />
-    <RoutineArgument ID="5252" Name="Z" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5253" Name="Inpos" Parent="5244" Enabled="false" />
-    <RoutineArgument ID="5254" Name="Tool" Parent="5244" Value="Gripper" />
-    <RoutineArgument ID="5255" Name="WObj" Parent="5244" Value="WO_themainone" />
-    <RoutineArgument ID="5256" Name="TLoad" Parent="5244" Enabled="false" />
     <MoveInstructionCall ID="5257" Name="MoveJ" Parent="4491" Thickness="2" Reachable="1">
       <ArgumentList ID="5258" />
       <GroupName Value="Move" />
@@ -19927,12 +19955,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="1186.9809609884" />
+            <Double Value="1185.25682305737" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="636.411531785516" />
+            <Double Value="634.687393854481" />
           </Value>
         </Attribute>
       </Attributes>
@@ -19999,7 +20027,7 @@
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="790.689655172414" />
+            <Double Value="781" />
           </Value>
         </Attribute>
       </Attributes>
@@ -20158,12 +20186,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="320.272727272727" />
+            <Double Value="276.655705996131" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="232.727272727273" />
+            <Double Value="202.94003868472" />
           </Value>
         </Attribute>
       </Attributes>
@@ -20283,12 +20311,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="269.454545454545" />
+            <Double Value="287.659574468085" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="447.363636363636" />
+            <Double Value="448.42746615087" />
           </Value>
         </Attribute>
       </Attributes>
@@ -20373,12 +20401,12 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="634.772727272727" />
+            <Double Value="610.304642166344" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="269.909090909091" />
+            <Double Value="476.292069632495" />
           </Value>
         </Attribute>
       </Attributes>
@@ -20432,15 +20460,16 @@
         </Attribute>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="660.409090909091" />
+            <Double Value="605.089941972921" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="461.727272727273" />
+            <Double Value="285.131528046422" />
           </Value>
         </Attribute>
       </Attributes>
+      <UniqueId Value="{79b13178-6797-4da8-9bf3-8f569682ab66}" />
       <Definition ID="4" DocID="15" />
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -20544,6 +20573,40 @@
         <Max X="0.075" Y="0.55" Z="0.775" />
       </BoundingBox>
     </PartDef>
+    <MoveInstructionCall ID="5582" Name="MoveJ" Parent="4491" Thickness="2" Reachable="1">
+      <ArgumentList ID="5583" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="5583" Name="" Parent="5582">
+      <RoutineArguments>
+        <ObjectRef ID="5584" />
+        <ObjectRef ID="5585" />
+        <ObjectRef ID="5586" />
+        <ObjectRef ID="5587" />
+        <ObjectRef ID="5588" />
+        <ObjectRef ID="5589" />
+        <ObjectRef ID="5590" />
+        <ObjectRef ID="5591" />
+        <ObjectRef ID="5592" />
+        <ObjectRef ID="5593" />
+        <ObjectRef ID="5594" />
+        <ObjectRef ID="5595" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5584" Name="Conc" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5585" Name="ToPoint" Parent="5583" Value="NewIni" />
+    <RoutineArgument ID="5586" Name="ID" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5587" Name="Speed" Parent="5583" Value="v1000" />
+    <RoutineArgument ID="5588" Name="V" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5589" Name="T" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5590" Name="Zone" Parent="5583" Value="fine" />
+    <RoutineArgument ID="5591" Name="Z" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5592" Name="Inpos" Parent="5583" Enabled="false" />
+    <RoutineArgument ID="5593" Name="Tool" Parent="5583" Value="Gripper" />
+    <RoutineArgument ID="5594" Name="WObj" Parent="5583" Value="WO_themainone" />
+    <RoutineArgument ID="5595" Name="TLoad" Parent="5583" Enabled="false" />
   </Objects>
   <ReferencedDocuments>
     <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB120%\IRB120_3_58_G_01.rslib" RelativeLocation="..\..\..\..\..\..\..\..\..\Program Files (x86)\ABB\RobotStudio 2023\Packages\ABB.RobotStudio.Models.IRB120-1.1\RobotStudio\LibraryComponents\IRB120_3_58_G_01.rslib" GUID="{5F9FB8B8-3DB6-4FA0-946D-865F3D9EEECF}" />
